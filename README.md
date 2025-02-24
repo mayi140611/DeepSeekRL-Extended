@@ -12,6 +12,7 @@ I hope this might help other people understand things better, and maybe provide 
 
 ## Installation
 ```
+# python 3.11-12
 pip install -r requirements.txt
 ```
 
