@@ -1,0 +1,342 @@
+###### ORIGINAL PROMPT #####
+
+A company has 200 employees.  60% of the employees drive to work.  Of the employees who don't drive to work, half take public transportation. How many more employees drive to work than take public transportation?
+
+#### ANS ####
+
+40
+#### GENERATION 1 RESPONSE ####
+
+
+system
+60% of the 200 employees drive to work, which is 200 * 0.60 = 120 employees. The remaining employees who don't drive to work are 200 - 120 = 80 employees. Half of the employees who don't drive take public transportation, which is 80 / 2 = 40 employees. 120 - 40 = 80 more employees drive to work than take public transportation.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.004000000189989805
+Total reward: 0.5040000081062317
+
+#### GENERATION 2 RESPONSE ####
+
+system
+Employees who don't drive to work: 200 * 0.4 = 80
+Employees who take public transportation: 80/2 = 40
+Employees who drive to work: 200 - 80 = 120
+Difference: 120 - 40 = 80
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.16200000047683716
+Total reward: 0.6620000004768372
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+The company has 200 employees. 60% of the employees drive to work, so there are \( 200 \times \frac{60}{100} = 120 \) employees who drive to work.
+
+Of the 120 employees who drive to work, the remaining \( 120 - (200 - 120) \) do not drive, so there are \( 200 - 120 = 80 \) employees who do not drive to work. Half of this group takes public transportation, so \( 80 \times \frac{1}{2} = 40 \) employees take public transportation.
+
+The difference is \( 120 - 40 = 80 \).
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.13899999856948853
+Total reward: 0.3610000014305115
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+60% of 200 employees drive to work, which is 0.60 * 200 = 120 employees.
+The remaining employees do not drive to work, which is 200 - 120 = 80 employees.
+Half of the employees who do not drive to work take public transportation, which is 0.50 * 80 = 40 employees.
+The difference between the employees who drive and take public transportation is 120 - 40 = 80 employees.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+The company has 200 employees, 60% of which, or 120 employees, drive to work. The remaining 80 employees do not drive, of which half, or 40 employees, take public transportation. Therefore, there are 120 - 40 = 80 employees who drive to work and take public transportation.
+
+There are 80 employees who both drive and take public transportation.
+
+...
+
+<answer>
+80
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.1289999932050705
+Total reward: 0.3709999918937683
+
+#### GENERATION 6 RESPONSE ####
+
+system
+The number of employees who drive to work is 200 * 60/100 = 120. The number of employees who don't drive to work is 200 - 120 = 80. 40% of the employees who don't drive to work take public transportation, a total of 80 * 40/100 = 32 employees. There are 120 - 32 = 88 employees who are solely driven to work. 
+
+</reasoning>
+<answer>
+88
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.024000000208616257
+Total reward: 0.5239999890327454
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+60% of the employees drive to work, so 60/100 * 200 = 120 employees drive to work.
+Of the employees who don't drive to work, half take public transportation, so 1/2 * (200 - 120) = 40 employees take public transportation.
+There are 120 - 40 = 80 more employees who drive to work than take public transportation.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.020999999716877937
+Total reward: 0.5210000276565552
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Employees who drive to work = 200 * 60% = 120
+Employees who don't drive to work = 200 - 120 = 80
+Of the employees who don't drive to work, half take public transportation = 80 / 2 = 40
+More employees drive to work than take public transportation = 120 - 40 = 80
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.07100000232458115
+Total reward: 0.5709999799728394
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+200 * 0.6 = 120 employees drive to work.
+120 * 0.5 = 60 employees take public transportation.
+120 - 60 = 60 employees drive to work more than take public transportation.
+
+</reasoning>
+<answer>
+60
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.16300000250339508
+Total reward: 0.6629999876022339
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+The number of employees who do not drive to work is 200 * 0.4 = 80 employees. Of the employees who do not drive to work, 80 / 2 = 40 employees take public transportation.
+...
+</reasoning>
+<answer>
+60
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1589999943971634
+Total reward: 0.6589999794960022
+
+#### GENERATION 11 RESPONSE ####
+
+system
+60% of the employees drive to work, so 200 * 0.60 = 120 employees drive to work.
+Of the employees who don't drive to work, half take public transportation, so 200 - 120 = 80 employees don't drive to work.
+Of the employees who don't drive to work, half take public transportation, so 80 / 2 = 40 employees take public transportation.
+Therefore, there are 120 - 40 = 80 more employees who drive to work than take public transportation.
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0989999994635582
+Total reward: 0.4009999930858612
+
+#### GENERATION 12 RESPONSE ####
+
+system
+The company has a total of 200 employees, and 60% of them drive to work, which means 200 * 0.6 = 120 employees drive to work.
+Of the employees who don't drive to work, half take public transportation, which means (200 - 120) * 0.5 = 40 employees take public transportation.
+So, there are 120 - 40 = 80 more employees who drive to work than take public transportation.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.03400000184774399
+Total reward: 0.4659999907016754
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+The number of employees who drive to work is 200 * 0.6 = 120
+The number of employees who don't drive to work is 200 - 120 = 80
+half of these 80 employees take public transportation, so 80/2 = 40 employees take public transportation.
+40 employees take public transportation and 120 employees drive to work, so 120 - 40 = 80 employees more drive to work.
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.01899999938905239
+Total reward: 0.48100000619888306
+
+#### GENERATION 14 RESPONSE ####
+
+system
+60% of the employees drive to work, which is 200 employees * 0.6 = 120 people.
+The remaining employees who don't drive to work is 200 - 120 = 80 people.
+Half of the remaining employees take public transportation, which is 80 people/2 = 40 people.
+Therefore, there are 120 - 40 = 80 employees who drive to work than take public transportation.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.008999999612569809
+Total reward: 0.4909999966621399
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+60% of the employees drive to work, which is \( 200 \times 0.60 = 120 \) employees. The remaining 40% of employees don't drive, so \( 200 \times 0.40 = 80 \) employees take public transportation. Half of these 80 employees take public transportation by bus, which is \( 80 \times 0.50 = 40 \) employees.
+
+There are 120 - 40 = 80 more employees who drive to work than take public transportation.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.06199999898672104
+Total reward: 0.43799999356269836
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+60% of the 200 employees drive to work, which is 200 * 0.60 = 120 employees.
+The remaining employees, who don't drive, is 200 - 120 = 80 employees.
+Of the 80 employees who don't drive, half take public transportation, which is 80 * 0.50 = 40 employees.
+Therefore, there are 120 - 40 = 80 more employees who drive to work than those who take public transportation.
+
+</reasoning>
+<answer>
+80
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+

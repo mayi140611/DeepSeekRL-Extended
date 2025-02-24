@@ -1,0 +1,374 @@
+###### ORIGINAL PROMPT #####
+
+Mary used 15 gallons of fuel this week. Last week she used 20% less. How much fuel did she use in total for the two weeks?
+
+#### ANS ####
+
+27
+#### GENERATION 1 RESPONSE ####
+
+header
+<reasoning>
+Mary used 15 gallons of fuel this week. Last week, she used 20% less fuel than this week, which means she used 80% of 15 gallons. To find the total fuel used, we need to calculate 20% of 15 gallons and add it to 15 gallons.
+</reasoning>
+<answer>
+15 gallons * 20% = 3 gallons
+15 gallons + 3 gallons = 18 gallons
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.16200000047683716
+Total reward: 0.16200000047683716
+
+#### GENERATION 2 RESPONSE ####
+
+system
+Mary used 15 gallons of fuel this week. Last week she used 20% less fuel, which means she used 15 gallons - 20% of 15 gallons. 
+
+15 gallons - (0.20 * 15 gallons) = 15 - 3 = 12 gallons.
+
+So, last week she used 12 gallons of fuel.
+
+In total, for the two weeks, she used 15 gallons + 12 gallons = 27 gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+Mary used 15 gallons of fuel this week. Last week she used 20% less, which is calculated as:
+
+\( 15 \text{ gallons} \times 20\% = 15 \text{ gallons} \times \frac{20}{100} = 15 \text{ gallons} \times 0.2 = 3 \text{ gallons} \)
+
+So, last week she used 3 gallons of fuel.
+
+For the two weeks, the total fuel usage is the sum of the fuel used this week and last week:
+
+\( 15 \text{ gallons} + 3 \text{ gallons} = 18 \text{ gallons} \)
+
+</reasoning>
+<answer>
+18
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 4 RESPONSE ####
+
+system
+Last week Mary used 15 gallons * 20% = 3 gallons less fuel than this week. So in total she used 15 gallons - 3 gallons = 12 gallons last week.
+
+Therefore, Mary used a total of 15 gallons + 12 gallons = 27 gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+Last week, Mary used 20% less fuel than she did this week. 
+
+\(20\% \text{ of } 15 \text{ gallons} = 0.20 \times 15 = 3 \text{ gallons}\)
+
+So, Mary used \(15 \text{ gallons} - 3 \text{ gallons} = 12 \text{ gallons}\) last week.
+
+Total fuel used for the two weeks is \(15 \text{ gallons} + 12 \text{ gallons} = 27 \text{ gallons}\).
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Mary used 15 gallons of fuel this week. Last week she used 20% less, which is 15 * 0.2 = 3 gallons less. So, she used 15 - 3 = 12 gallons last week. In total, she used 15 + 12 = 27 gallons for the two weeks.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+Last week she used 15 gallons * 20/100 = 3 gallons less fuel than this week.
+So she used 15 gallons - 3 gallons = 12 gallons of fuel in last week.
+In total she used 15 gallons + 12 gallons = 27 gallons of fuel.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Last week she used 15 gallons * 0.20 = 3 gallons less fuel.
+So in total for two weeks, she used 15 gallons + 3 gallons = 18 gallons.
+
+</reasoning>
+<answer>
+18
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+Last week she used 15 gallons * 0.2 = 3 gallons less fuel.
+So in total she used 15 gallons – 3 gallons = 12 gallons last week.
+In total she used 12 gallons + 15 gallons = 27 gallons for two weeks.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+Last week, Mary used 20% less fuel than the week before. 20% of 15 gallons is 0.4 of 15 gallons, which is 15 * 0.2 = 3 gallons. So she used 15 - 3 = 12 gallons of fuel last week.
+
+In total she had used 15 gallons of fuel last week + 12 gallons of fuel this week, which is 15 + 12 = 27 gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 11 RESPONSE ####
+
+system
+First, calculate the fuel used last week when it is 20% less than this week's fuel usage:
+20% of 15 gallons = 0.20 * 15 gallons = 3 gallons
+
+Now, subtract that amount from this week's fuel usage to find last week's fuel usage:
+15 gallons - 3 gallons = 12 gallons
+
+Next, add the fuel used this week to the fuel used last week to find the total:
+15 gallons + 12 gallons = 27 gallons
+
+So, Mary used a total of 27 gallons of fuel for the two weeks.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Last week she used 20% of 15 gallons, which is 1.2 gallons. So she used 15 - 1.2 = 13.8 gallons last week. Total fuel used for two weeks is 15 + 13.8 = 28.8 gallons.
+
+</reasoning>
+<answer>
+28.8
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.375
+
+#### GENERATION 13 RESPONSE ####
+
+system
+Last week, Mary used 20% of 15 gallons, which is 15 * 0.20 = 3 gallons less.
+So, last week she used 15 - 3 = 12 gallons.
+Combined, in the two weeks, she used 12+15 = 27 gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 14 RESPONSE ####
+
+system
+15 gallons is 100%-20% = 80% of the fuel used last week.
+
+So last week she used 80% / 100% * 15 gallons = 12 gallons
+
+So the total fuel used is 15 gallons + 12 gallons = 27 gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 15 RESPONSE ####
+
+system
+To find out how much fuel Mary used in total for the two weeks, we need to first calculate how much fuel she used last week.
+
+Last week, she used 20% less fuel than this week, which means she used 80% of this week's fuel. 
+
+So, 80% of 15 gallons is \(15 \times 0.80 = 12\) gallons.
+
+Now we add this to this week's fuel usage:
+
+\(15 + 12 = 27\) gallons.
+
+Therefore, the total fuel used over the two weeks is 27 gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 16 RESPONSE ####
+
+system
+Last week she used \( 15 \times (1 - 20\%) = 15 \times 0.8 = 12 \) gallons of fuel.
+
+So, total fuel used for both weeks \( = 15 + 12 = 27 \) gallons.
+
+</reasoning>
+<answer>
+27
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+

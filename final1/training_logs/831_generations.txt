@@ -1,0 +1,521 @@
+###### ORIGINAL PROMPT #####
+
+Lana and her friends go to a theater on the weekend to watch a new play Joan told them was live. When they arrived, Lana saw 100 cars in the front parking lot. She saw two times more vehicles at the back than there were in the front parking lot. If the total number of cars at the end of the play was 700, how many more cars packed into the parking lot during the play?
+
+#### ANS ####
+
+300
+#### GENERATION 1 RESPONSE ####
+
+
+system
+<reasoning>
+Let's calculate the total number of vehicles at the back parking lot.
+
+Lana sees 100 cars in the front parking lot. At the back there are two times more vehicles, so that’s \(2 \times 100 = 200\) cars. 
+So, the total number of vehicles at the back parking lot is \(200 + 100 = 300\). 
+
+Adding the cars from the front and back, \(100 + 200 = 300\) vehicles.
+
+The play goes on for a few hours and the total numbers of vehicles increases from 300 to 700. The increase in the number of vehicles during the play is \(700 - 300 = 400\).
+
+Therefore, the number of more cars that packed into the parking lot during the play is 400.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the number of vehicles at the front parking lot as \( F \) and the number of vehicles at the back parking lot as \( B \).
+
+From the problem, we know:
+1. \( F = 100 \) (number of vehicles at the front parking lot)
+2. \( B = 2 \times F \) (number of vehicles at the back parking lot is twice the number in the front parking lot)
+
+We can calculate \( B \) as follows:
+\[ B = 2 \times 100 = 200 \]
+
+If the total number of vehicles in the parking lot at the end of the play was 700, and \( F + B \) represented the number of vehicles at that point, we can calculate the initial number of vehicles by subtracting the number at the end of the play (700) from the total:
+\[ \text{Initial vehicles} = 700 - 700 = 0 \]
+
+However, the initial number of vehicles (0) indicates that 0 new cars arrived during the play, and 0 were removed, which suggests that all the cars were accounted for by the end of the play. This might suggest there was a misunderstanding of the problem setup, or perhaps there is an error in the provided information.
+
+To proceed correctly, we need to reconcile the given information:
+\[ F + B + (\text{new cars arrived}) = 700 \]
+\[ 100 + 200 + (\text{new cars arrived}) = 700 \]
+\[ 300 + (\text{new cars arrived}) = 700 \]
+\[ (\text{new cars arrived}) = 700 - 300 \]
+\[ (\text{new cars arrived}) = 400 \]
+
+So, Lana saw 100 cars at the front, 200 at the back, and 400 new cars arrived during the play. The final number of cars is:
+\[ \text{Total cars} = 100 + 200 + 400 = 700 \]
+And we know the total number of cars was 700 at the end of the play.
+
+Therefore, the number of new cars that packed into the parking lot during the play is 400.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 3 RESPONSE ####
+
+system
+<reasoning>
+Let's start by determining how many vehicles were in the back parking lot. According to the information given, there were two times more vehicles in the back parking lot than in the front. Since there were 100 vehicles in the front parking lot, we can calculate the number of vehicles in the back as follows:
+
+$$
+\text{Number of vehicles in the back} = 2 \times \text{Number of vehicles in the front} = 2 \times 100 = 200
+$$
+
+Now, let's find the total number of vehicles in the front and back parking lots before the play began:
+
+$$
+\text{Total vehicles before the play} = \text{Number of vehicles in the front} + \text{Number of vehicles in the back} = 100 + 200 = 300
+$$
+
+The total number of cars at the end of the play was given as 700. To find out how many more cars packed into the parking lot during the play, we subtract the total number of vehicles present before the play from the total number of cars at the end of the play:
+
+$$
+\text{Increase in vehicles} = \text{Total cars at the end of the play} - \text{Total vehicles before the play} = 700 - 300 = 400
+$$
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+<reasoning>
+To solve this problem, we need to calculate the number of cars seen in the back of the parking lot and then determine how many more cars packed into the parking lot during the play.
+
+First, we know that Lana saw 100 cars in the front parking lot. According to the problem, the number of vehicles in the back is two times the number in the front. Therefore, the number of cars in the back is \(2 \times 100 = 200\).
+
+Next, to find the total number of cars at the end of the play, we add the number of cars in the front and the number of cars in the back. This gives us \(100 + 200 = 300\) cars.
+
+The total number of cars at the end of the play was 700. This means that the number of cars that packed into the parking lot during the play is the total number of cars at the end of the play minus the number of cars at the beginning of the play. Therefore, the number of additional cars that packed into the parking lot during the play is \(700 - 300 = 400\).
+
+So, 400 more cars packed into the parking lot during the play.
+
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the number of cars in the front parking lot as \( F \) and the number of cars in the back parking lot as \( B \). According to the problem, Lana saw 100 cars in the front parking lot, so \( F = 100 \). The problem states that there are two times more vehicles at the back than there were in the front parking lot, so \( B = 2 \times F \). Substituting \( F = 100 \), we get \( B = 2 \times 100 = 200 \).
+
+The total number of cars at the end of the play was 700. Therefore, the number of cars that packed into the parking lot during the play is the total number of cars at the end of the play minus the number of cars that were there initially, which is:
+\[ 700 - (F + B) = 700 - (100 + 200) = 700 - 300 = 400 \]
+
+Thus, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 6 RESPONSE ####
+
+system
+<reasoning>
+Let's break down the problem:
+
+1. The number of cars in the front parking lot is 100.
+2. The number of cars in the back parking lot is two times more than the front, which means there are \( 100 \times 2 = 200 \) cars in the back.
+3. At the end of the play, the total number of cars is 700.
+4. To find out how many additional cars packed into the parking lot during the play, we subtract the number of cars at the beginning of the play from the total number of cars at the end: 
+   \( 
+   700 - 100 - 200 = 400
+   \).
+
+Therefore, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the number of vehicles at the front parking lot as \( F \) and the number of vehicles at the back parking lot as \( B \).
+
+From the problem, we know:
+1. \( F = 100 \)
+2. \( B = 2 \times F = 2 \times 100 = 200 \)
+3. The total number of cars at the end of the play is \( T = 700 \).
+
+The total number of cars before the play can be expressed as:
+\[ F + B + \text{additional cars} = 700 \]
+
+Substituting the known values for \( F \) and \( B \):
+\[ 100 + 200 + \text{additional cars} = 700 \]
+
+Solving for the additional cars:
+\[ 300 + \text{additional cars} = 700 \]
+\[ \text{additional cars} = 700 - 300 \]
+\[ \text{additional cars} = 400 \]
+
+Thus, 400 additional cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 8 RESPONSE ####
+
+system
+<reasoning>
+1. We know that Lana saw 100 cars in the front parking lot.
+2. When Lana saw the back parking lot, she saw two times more vehicles than there were in the front parking lot, hence $2 \times 100 = 200$ cars.
+3. To calculate the total number of cars in the parking lot initially, we add the cars in the front and back parking lots together: $100 + 200 = 300$ cars.
+4. The total number of cars at the beginning was 300.
+5. The total number of cars at the end was given as 700.
+
+To find out how many cars packed into the parking lot, we subtract the initial number of cars from the final number of cars: \(700 - 300 = 400\).
+
+Thus, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+<reasoning>
+Initially, Lana saw 100 cars in the front parking lot. The number of vehicles at the back was two times the number in the front, which is \(2 \times 100 = 200\) cars. Therefore, the total number of cars on the weekend was \(100 + 200 = 300\) cars. The number of cars that packed into the parking lot during the play was the difference between the total number of cars during the play and the initial number of cars, which is \(700 - 300 = 400\) cars. 
+
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+<reasoning>
+Let's break it down step by step:
+1. Initially, Lana saw 100 cars in the front parking lot.
+2. The back parking lot had two times more vehicles than the front parking lot.
+   - Two times more than 100 cars is \(2 \times 100 = 200\) cars.
+   
+3. The total number of cars at the beginning was the sum of the cars in both parking lots:
+   \[
+   100 \, (\text{front parking lot}) + 200 \, (\text{back parking lot}) = 300 \, \text{cars}
+   \]
+4. The total number of cars at the end of the play was 700.
+
+5. To find out how many more cars packed into the parking lot during the play, we subtract the initial total number of cars from the final total:
+   \[
+   700 - 300 = 400 \, \text{cars}
+   \]
+
+6. Therefore, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+<reasoning>
+To determine how many more cars packed into the parking lot during the play, we need to follow these steps:
+
+1. Determine the number of cars in the back parking lot. According to the problem, Lana saw two times more vehicles in the back than there were in the front parking lot. Since there were 100 cars in the front parking lot, the number of cars in the back parking lot is \(2 \times 100 = 200\).
+
+2. Calculate the total number of cars in the parking lot before the play started. This is the sum of the cars in the front and back parking lots, which is \(100 + 200 = 300\).
+
+3. Determine the number of cars packed into the parking lot during the play. The total number of cars at the end of the play was 700. Therefore, the number of cars that packed into the parking lot during the play is \(700 - 300 = 400\).
+
+So, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+<reasoning>
+Let's break down the information given:
+
+1. There were 100 cars in the front parking lot.
+2. There were two times more vehicles at the back than in the front. So, there were 2 * 100 = 200 cars at the back parking lot.
+3. The total number of cars at the end of the play was 700.
+
+We need to find out how many more cars packed into the parking lot during the play.
+
+First, we calculate the initial total number of cars at the start:
+Front parking lot + Back parking lot = 100 + 200 = 300 cars
+
+Next, we determine how many additional cars joined the parking lot during the play:
+Total number of cars at the end - Initial total number of cars = 700 - 300 = 400 cars
+
+Therefore, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 13 RESPONSE ####
+
+system
+To find out how many more cars packed into the parking lot during the play, we need to break down the information given:
+
+1. Lana saw 100 cars in the front parking lot.
+2. The back parking lot had two times more vehicles than the front parking lot.
+3. The total number of cars at the end of the play was 700.
+
+First, we calculate the number of cars in the back parking lot:
+- Back parking lot = 2 × Front parking lot
+- Back parking lot = 2 × 100
+- Back parking lot = 200
+
+Next, we calculate the total number of cars before the play:
+- Total cars before play = Front parking lot + Back parking lot
+- Total cars before play = 100 + 200
+- Total cars before play = 300
+
+Now, we find out how many cars packed into the parking lot during the play:
+- Cars packed into the parking lot during the play = Total cars at the end of the play - Total cars before play
+- Cars packed into the parking lot during the play = 700 - 300
+- Cars packed into the parking lot during the play = 400
+
+Therefore, 400 more cars packed into the parking lot during the play.
+
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the number of cars in the front parking lot as \( F \) and the number of cars in the back parking lot as \( B \).
+
+According to the problem, Lana saw 100 cars in the front parking lot, so \( F = 100 \).
+
+The problem states that there were two times more vehicles at the back than there were in the front parking lot, so \( B = 2F \).
+
+Substituting the value of \( F \), we get \( B = 2 \times 100 = 200 \).
+
+The total number of cars at the end of the play was 700, which includes all the cars from both parking lots and the additional cars that packed into the parking lot during the play. Let \( x \) be the number of additional cars that packed into the parking lot during the play.
+
+So, the total number of cars in the parking lot can be expressed as the sum of the cars in both parking lots and the additional cars during the play, i.e., \( F + B + x = 700 \).
+
+Substituting the values of \( F \) and \( B \), we get \( 100 + 200 + x = 700 \).
+
+Simplifying this equation, we get \( 300 + x = 700 \), which further simplifies to \( x = 700 - 300 \) or \( x = 400 \).
+
+Therefore, 400 more cars packed into the parking lot during the play.
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+<reasoning>
+First, let's determine the number of vehicles at the back of the parking lot. According to the problem, Lana saw two times more vehicles at the back than there were in the front parking lot. The front parking lot had 100 vehicles, so the number of vehicles at the back is \(2 \times 100 = 200\).
+
+Now, let's calculate the total number of vehicles initially in the parking lot before the play: front parking lot vehicles + back parking lot vehicles = \(100 + 200 = 300\).
+
+After the play, the total number of vehicles was given as 700. Therefore, the increase in the number of vehicles due to the play is \(700 - 300 = 400\).
+
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the number of cars in front of the theater as \( A \) and the number of cars in back as \( B \). According to the problem, \( A = 100 \).
+
+The problem states that there were two times more vehicles at the back than in the front parking lot. Therefore, we have:
+\[ B = 2A \]
+\[ B = 2 \times 100 = 200 \]
+
+The total number of cars at the end of the play was given as \( T = 700 \). This includes all cars from the front, back, and during the play:
+\[ T = A + B + X \]
+where \( X \) represents the number of cars added during the play.
+
+Substituting the known values:
+\[ 700 = 100 + 200 + X \]
+\[ 700 = 300 + X \]
+\[ X = 700 - 300 \]
+\[ X = 400 \]
+
+Hence, the number of cars added during the play is 400.
+
+</reasoning>
+<answer>
+400
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+

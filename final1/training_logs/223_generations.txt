@@ -1,0 +1,380 @@
+###### ORIGINAL PROMPT #####
+
+Andy and Bob went to the canteen to buy snacks. They spent the same amount. Andy bought a can of soda at $1 and two hamburgers at $2 each.  Bob ordered two sandwiches for $3 and a can of fruit drink.  How much did Bob's fruit drink cost?
+
+#### ANS ####
+
+2
+#### GENERATION 1 RESPONSE ####
+
+
+system
+Andy spent 1 + 2*2 = $5. Bob spent 3 + amount of the fruit drink.
+As Andy and Bob spent the same, there is a $5 gap to cover, hence the fruit drink costs $5.
+</reasoning>
+<answer>
+5
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1770000010728836
+Total reward: 0.6769999861717224
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+Andy spent $1 on soda + 2 hamburgers at $2 each = $5.
+Bob also spent $3 on two sandwiches.
+So Bob's fruit drink cost $5 - $3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.2029999941587448
+Total reward: 2.703000068664551
+
+#### GENERATION 3 RESPONSE ####
+
+
+user
+Let's calculate the total amount Andy spent:
+- Andy bought a can of soda at $1.
+- He bought two hamburgers at $2 each, so that's 2 * $2 = $4.
+- Therefore, Andy spent $1 + $4 = $5 in total.
+
+Since Andy and Bob spent the same amount, Bob also spent $5 in total.
+
+Bob ordered two sandwiches for $3, so the cost of the sandwich was $3 * 2 = $6.
+
+To find the cost of Bob's fruit drink, we subtract the cost of the sandwiches from the total amount Bob spent:
+$5 (total) - $6 (sandwiches) = -$1.
+
+The negative value indicates that it seems Bob's fruit drink was actually bought by Andy and the negative balance is for Andy's extra spending on lunch. 
+
+Therefore, Bob's fruit drink cost $0, as the total spent must cover both Andy's and Bob's expenditures.
+
+</reasoning>
+<answer>
+0
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.4129999876022339
+Total reward: 0.08700001239776611
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Andy spent 1 + 2*2 = $5. Bob spent 3 + cost of fruit drink = $5. Thus, the cost of the fruit drink is 5 - 3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.2199999988079071
+Total reward: 2.7200000286102295
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+Andy spent 1 can of soda + 2 hamburgers × $2 each = $4.
+Bob spent 2 sandwiches × $3 each = $6.
+To find the cost of Bob's fruit drink, we'll subtract Andy's total from Bob's total: $6 - $4 = $2.
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.14100000262260437
+Total reward: 2.6410000324249268
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+Andy's purchases amount to 1 can of soda + 2 hamburgers, which equals $1 + 2 * $2 = $5.
+
+Bob's purchases amount to 2 sandwiches and a can of fruit drink, which equals 2 * $3 = $6.
+
+Since Andy and Bob spent the same amount, and Andy spent $5, it means Bob also spent $5.
+
+Bob's fruit drink cost $1 (2 sandwiches cost $3, leaving $1 for the fruit drink).
+
+</reasoning>
+<answer>
+1
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.01899999938905239
+Total reward: 0.48100000619888306
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+Andy spent:
+1 can of soda + 2 hamburgers = 1 + 2*2 = $5
+
+Bob spent:
+2 sandwiches + 1 can of fruit drink = $3 + 1 can of fruit drink
+
+Since Andy and Bob spent the same amount, we can deduce that Bob's fruit drink cost:
+5 - 3 = $2
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.10499999672174454
+Total reward: 2.6050000190734863
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Andy spent 1 can of soda + 2 hamburgers * $2/hamburger = $1 + $4 = $5.
+Bob spent 2 sandwiches * $3/sandwich = $6.
+$5 - $6 = $1.
+
+</reasoning>
+<answer>
+1
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.20600000023841858
+Total reward: 0.7059999704360962
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+Andy spent 1 (soda) + 2 * 2 (hamburgers) = $5.
+
+Bob spent 3 (sandwiches) + cost of fruit drink = $3 + cost of fruit drink
+
+Since Andy and Bob spent the same amount, Bob's fruit drink cost 5 - 3 = $2.
+
+</reasoning>
+<answer>2</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 2.625
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+Andy's total spent is 1 + 2*2 = $5.
+Bob's total spent is 3 + cost of the fruit drink = $5.
+
+cost of the fruit drink = $5 - $3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.20200000703334808
+Total reward: 2.7019999027252197
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+Andy spent $1 + 2*$2 = $1 + $4 = $5.
+Bob spent $3 + the cost of the fruit drink = $5.
+The cost of the fruit drink is $5 - $3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.2029999941587448
+Total reward: 2.703000068664551
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Andy spent $1 (soda) + $2 (first hamburger) + $2 (second hamburger) = $5.
+
+Bob spent $3 (sandwiches) + cost of a fruit drink.
+
+Since Andy and Bob spent the same amount, we can set up the equation:
+
+$5 = $3 (sandwiches) + cost of a fruit drink.
+
+Now, let's solve for the cost of the fruit drink:
+
+cost of a fruit drink = $5 - $3
+
+Thus:
+
+cost of a fruit drink = $2
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.028999999165534973
+Total reward: 2.4709999561309814
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+Andy's total cost was $1 (soda) + $2 (hamburger) * 2 = $5. Since Andy and Bob spent the same amount, Bob's total cost was $5 as well.
+
+Bob's total cost was $3 (sandwiches) + cost (fruit drink).
+So Bob's fruit drink cost $5 - $3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.10000000149011612
+Total reward: 2.5999999046325684
+
+#### GENERATION 14 RESPONSE ####
+
+system
+Andy spent 1 + 2x2 = 5 dollars. Bob spent 3+3=6 dollars. 
+
+<span style="font-weight: bold; color: darkblue;">Therefore,</span> Bob's fruit drink cost 6-3=3 dollars.
+
+</reasoning>
+<answer>
+3
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.17000000178813934
+Total reward: 0.6700000166893005
+
+#### GENERATION 15 RESPONSE ####
+
+system
+Andy spent $1 on soda + $2 x 2 on hamburgers = $1 + $4 = $5.
+Bob spent $3 + price of fruit drink = $5.
+Therefore, the price of Bob's fruit drink is $5 - $3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.17299999296665192
+Total reward: 2.6730000972747803
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+Andy bought two hamburgers for $2 each, so he spent $4 on hamburgers.
+He also bought a can of soda for $1.
+So, Andy's total expenditure is $4 + $1 = $5.
+
+Bob ordered two sandwiches for $3 and a can of fruit drink.
+So, Bob's total expenditure is $3 + (cost of the fruit drink).
+
+Since Andy and Bob spent the same amount, we can set up the equation:
+$3 + cost of the fruit drink = $5
+
+Now, we solve for the cost of the fruit drink:
+cost of the fruit drink = $5 - $3 = $2.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.13600000739097595
+Total reward: 2.363999843597412
+

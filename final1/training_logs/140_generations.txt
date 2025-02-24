@@ -1,0 +1,442 @@
+###### ORIGINAL PROMPT #####
+
+Fern is checking IDs to get into an R-rated movie. She denied 20% of the 120 kids from Riverside High, 70% of the 90 kids from West Side High, and half the 50 kids from Mountaintop High. How many kids got into the movie?
+
+#### ANS ####
+
+148
+#### GENERATION 1 RESPONSE ####
+
+
+system
+First, calculate the number of kids from each school who were denied entry:
+   - From Riverside High: \( 0.20 \times 120 = 24 \)
+   - From West Side High: \( 0.70 \times 90 = 63 \)
+   - From Mountaintop High: \( \frac{1}{2} \times 50 = 25 \)
+
+Next, calculate the number of kids from each school who were allowed entry:
+   - From Riverside High: \( 120 - 24 = 96 \)
+   - From West Side High: \( 90 - 63 = 27 \)
+   - From Mountaintop High: \( 50 - 50 = 0 \)
+
+Now calculate the total number of kids who got into the movie:
+\( 96 + 27 + 0 = 123 \)
+
+</reasoning>
+<answer>
+123
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.21199999749660492
+Total reward: 0.2879999876022339
+
+#### GENERATION 2 RESPONSE ####
+
+system
+Fern denied IDs to 20/100*120 = 24 kids from Riverside High.
+She denied IDs to 70/100*90 = 63 kids from West Side High.
+She denied IDs to 50/2*50 = 25 kids from Mountaintop High.
+So she denied IDs to 24+63+25 = 112 kids.
+Therefore, 120+90+50-112 = 148 kids got into the movie.
+
+</reasoning>
+<answer>
+148
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0560000017285347
+Total reward: 2.555999994277954
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+Total kids from Riverside High: 120 × 0.20 = 24 kids were denied. Total kids from West Side High: 90 × 0.70 = 63 kids were denied. Total kids from Mountaintop High: 50 ÷ 2 = 25 kids were denied. Total kids who were denied: 24 + 63 + 25 = 112 kids. Total kids that got into the movie: 120 + 90 + 50 - 112 = 148 kids. 
+
+</reasoning>
+<answer>
+148
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.014999999664723873
+Total reward: 2.515000104904175
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Fern denied 20% of the 120 kids from Riverside High, which is \( 0.20 \times 120 = 24 \) kids. Denying 20% means that only 80% of the kids from Riverside High were allowed into the movie. Thus, the number of kids allowed from Riverside High is \( 0.80 \times 120 = 96 \).
+
+Fern denied 70% of the 90 kids from West Side High, which is \( 0.70 \times 90 = 63 \) kids. Denying 70% means that only 30% of the kids from West Side High were allowed into the movie. Thus, the number of kids allowed from West Side High is \( 0.30 \times 90 = 27 \).
+
+Fern denied half of the 50 kids from Mountaintop High, meaning she denied \( 0.50 \times 50 = 25 \) kids. Denying half means that only the other half were allowed into the movie. Thus, the number of kids allowed from Mountaintop High is \( 50 - 25 = 25 \).
+
+To find the total number of kids who got into the movie, add the allowed kids from each high school: \( 96 + 27 + 25 = 148 \).
+
+</reasoning>
+<answer>
+148
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.5960000157356262
+Total reward: 1.9040000438690186
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+To find out how many kids got into the R-rated movie, we'll first calculate the number of kids from each high school who are allowed in, based on their percentages.
+
+From Riverside High:
+\( 120 \times 20\% = 120 \times 0.20 = 24 \) kids were denied access.
+
+From West Side High:
+\( 90 \times 70\% = 90 \times 0.70 = 63 \) kids were denied access.
+
+From Mountaintop High:
+\( 50 \times 50\% = 50 \times 0.50 = 25 \) kids were denied access.
+
+Now, we'll subtract the number of kids denied access from the total number of kids from each high school to find out how many got in:
+- Riverside High: \( 120 - 24 = 96 \) kids got in.
+- West Side High: \( 90 - 63 = 27 \) kids got in.
+- Mountaintop High: \( 50 - 25 = 25 \) kids got in.
+
+Finally, we'll add these numbers together to find the total number of kids who got into the movie:
+\( 96 + 27 + 25 = 148 \) kids.
+
+</reasoning>
+<answer>
+148
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Fern denied 20% of the 120 kids from Riverside High, which is 0.20 * 120 = 24 kids.
+She denied 70% of the 90 kids from West Side High, which is 0.70 * 90 = 63 kids.
+She denied half the 50 kids from Mountaintop High, which is 0.5 * 50 = 25 kids.
+24 kids from Riverside High were denied, so she let 120 - 24 = 96 kids in.
+63 kids from West Side High were denied, so she let 90 - 63 = 27 kids in.
+25 kids from Mountaintop High were denied, so she let 50 - 25 = 25 kids in.
+Therefore, she let 96 + 27 + 25 = 148 kids into the movie.
+
+</reasoning>
+<answer>
+148
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.19599999487400055
+Total reward: 2.303999900817871
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+Fern denied 20% of the 120 kids from Riverside High, so she denied \( 0.2 \times 120 = 24 \) kids.
+Fern denied 70% of the 90 kids from West Side High, so she denied \( 0.7 \times 90 = 63 \) kids.
+Fern denied half the 50 kids from Mountaintop High, so she denied \( 0.5 \times 50 = 25 \) kids.
+
+The total number of kids she denied is \( 24 + 63 + 25 = 112 \) kids.
+
+The total number of kids she allowed into the movie is \( 120 + 90 + 50 = 260 \) kids.
+
+To find out how many kids got into the movie, we subtract the number of kids she denied from the total number of kids:
+
+\( 260 - 112 = 148 \)
+
+</reasoning>
+<answer>148</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 2.625
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+First, calculate the number of kids from each school who were denied entry:
+
+- From Riverside High: \( 20\% \) of 120 kids, which is \( 0.2 \times 120 = 24 \) kids.
+- From West Side High: \( 70\% \) of 90 kids, which is \( 0.7 \times 90 = 63 \) kids.
+- From Mountaintop High: \( 50 \) kids were exactly half, so \( 0.5 \times 50 = 25 \) kids.
+
+Now, calculate the total number of kids who did not get in:
+
+- \( 24 \) kids + \( 63 \) kids + \( 25 \) kids \( = 112 \) kids.
+
+Finally, subtract this total from the overall number of kids to find those who got into the movie:
+
+- \( 120 + 90 + 50 \) kids \( - \) \( 112 \) kids \( = 148 \) kids.
+
+</reasoning>
+<answer>
+148
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.30799999833106995
+Total reward: 2.191999912261963
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+To determine how many kids got into the movie, we need to calculate the number of kids rejected from each high school and then subtract that from the total number of kids from each school.
+
+From Riverside High, Fern denied 20% of the 120 kids:
+\( 120 \times 0.20 = 24 \) kids were denied.
+
+From West Side High, Fern denied 70% of the 90 kids:
+\( 90 \times 0.70 = 63 \) kids were denied.
+
+From Mountaintop High, Fern denied half the 50 kids:
+\( 50 \times 0.50 = 25 \) kids were denied.
+
+Now, let's find out how many kids got into each school by subtracting the number of kids denied from the total.
+
+From Riverside High, with 120 kids:
+\( 120 - 24 = 96 \) kids got into the movie.
+
+From West Side High, with 90 kids:
+\( 90 - 63 = 27 \) kids got into the movie.
+
+From Mountaintop High, with 50 kids:
+\( 50 - 25 = 25 \) kids got into the movie.
+
+Finally, let's sum up the kids from all three high schools to find the total number of kids who got into the movie:
+\( 96 + 27 + 25 = 158 \) kids.
+
+</reasoning>
+<answer>
+158
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.6579999923706055
+Total reward: -0.15799999237060547
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+The number of kids from Riverside High who got into the movie is 80. The number of kids from West Side High who got into the movie is 63. The number of kids from Mountaintop High who got into the movie is 25. In total, 178 kids got into the movie.
+
+</reasoning>
+<answer>
+178
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.08399999886751175
+Total reward: 0.5839999914169312
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+To find out how many kids got into the R-rated movie, we need to calculate the number of kids who were allowed past each high school and then sum these numbers.
+
+Riverside High:
+20% of 120 kids were denied entry:
+\( 0.20 \times 120 = 24 \) kids were denied from Riverside High.
+
+West Side High:
+70% of 90 kids were denied entry:
+\( 0.70 \times 90 = 63 \) kids were denied from West Side High.
+
+Mountaintop High:
+Half (50%) of 50 kids were denied entry:
+\( 0.50 \times 50 = 25 \) kids were denied from Mountaintop High.
+
+Now, we subtract the denied kids from the total to get the kids who got in:
+\( 120 + 90 + 50 - 24 - 63 - 25 = 121 \) kids got into the movie.
+
+</reasoning>
+<answer>
+121
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.33000001311302185
+Total reward: 0.16999998688697815
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Fern denied 20% of the 120 kids from Riverside High, so she denied \(0.20 \times 120 = 24\) kids from Riverside High. 
+
+She denied 70% of the 90 kids from West Side High, so she denied \(0.70 \times 90 = 63\) kids from West Side High.
+
+She denied half the 50 kids from Mountaintop High, so she denied \(0.50 \times 50 = 25\) kids from Mountaintop High.
+
+The total number of kids that got into the movie is the total number of kids minus the number that were denied. 
+
+Thus, total kids that got into the movie is \(120 + 90 + 50 - (24 + 63 + 25) = 267 - 112 = 155\).
+
+</reasoning>
+<answer>
+155
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.23399999737739563
+Total reward: 0.26600000262260437
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+Fern denied 20% of the kids from Riverside High, so 80% of the kids got in. That's 99 kids (80% of 120).
+
+She denied 70% of the kids from West Side High, so 30% got in. That's 27 kids (30% of 90).
+
+She denied 50 kids from Mountaintop High (she denied half of the kids).
+
+Total: 99 + 27 + 25 = 151 kids got into the movie.
+
+</reasoning>
+<answer>
+151
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.009999999776482582
+Total reward: 0.5099999904632568
+
+#### GENERATION 14 RESPONSE ####
+
+system
+Fern denied:
+20% of 120 kids = 0.20 * 120 = 24 kids from Riverside High
+70% of 90 kids = 0.70 * 90 = 63 kids from West Side High
+1/2 of 50 kids = 0.5 * 50 = 25 kids from Mountaintop High
+
+Total number of kids denied access to the movie = 24 + 63 + 25 = 112
+
+Total number of kids who could get through = 120 + 90 + 50 - 112 = 148
+
+</reasoning>
+<answer>
+148
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.004000000189989805
+Total reward: 2.503999948501587
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+Fern denied 20% of the kids from Riverside High, so she denied 20/100 * 120 = 24 kids from Riverside High.
+Fern denied 70% of the kids from West Side High, so she denied 70/100 * 90 = 63 kids from West Side High.
+Fern denied half the kids from Mountaintop High, so she denied 1/2 * 50 = 25 kids from Mountaintop High.
+In total, Fern denied 24 + 63 + 25 = 112 kids.
+Therefore, 120 - 112 = 8 kids got into the movie.
+
+</reasoning>
+<answer>
+8
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.08100000023841858
+Total reward: 0.4189999997615814
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+Fern denied IDs to 20% of 120 kids from Riverside High, which is 0.20 * 120 = 24 kids.
+Fern denied IDs to 70% of 90 kids from West Side High, which is 0.70 * 90 = 63 kids.
+Fern denied IDs to half the 50 kids from Mountaintop High, which is 0.50 * 50 = 25 kids.
+
+In total, Fern denied IDs to 24 + 63 + 25 = 112 kids.
+
+Thus, 120 - 112 = 8 kids got into the movie.
+
+</reasoning>
+<answer>
+8
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.02800000086426735
+Total reward: 0.47200000286102295
+

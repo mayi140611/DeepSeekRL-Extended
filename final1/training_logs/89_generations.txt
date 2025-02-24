@@ -1,0 +1,462 @@
+###### ORIGINAL PROMPT #####
+
+Krystian works in the library. He borrows an average of 40 books every day. Every Friday, his number of borrowed books is about 40% higher than the daily average. How many books does he borrow in a week if the library is open from Monday to Friday?
+
+#### ANS ####
+
+216
+#### GENERATION 1 RESPONSE ####
+
+
+system
+To determine how many books Krystian borrows in a week, we need to calculate the number of books borrowed on each day and then sum them up.
+
+1. Calculate the number of books borrowed on a regular day (Monday to Thursday):
+   \[
+   \text{Books per day (Monday to Thursday)} = 40
+   \]
+   Since there are 4 regular days:
+   \[
+   \text{Total books for regular days} = 4 \times 40 = 160
+   \]
+
+2. Calculate the number of books borrowed on Friday:
+   \[
+   \text{Books per day (Friday)} = 40 + 0.40 \times 40 = 40 \times 1.40 = 56
+   \]
+
+3. Calculate the total number of books borrowed in the week:
+   \[
+   \text{Total books for the week} = \text{Books for regular days} + \text{Books for Friday} = 160 + 56 = 216
+   \]
+
+Therefore, the total number of books Krystian borrows in a week is 216.
+
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.4580000042915344
+Total reward: 2.0420000553131104
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+On a normal day, he borrows 40 books. On Friday, he borrows an additional 40% of books borrowed on a normal day. That is 24 books per day (40 + 40 * ( 40 / 100 )). In a 7 day week, he borrows 280 books on Monday - Friday (40 * 5 = 200), and he borrows 240 books on Friday (24 * 5 = 120).
+
+He borrows 400 books in a week. The reason is that he borrowed 280 books on Monday to Friday, and 120 books on Friday.
+
+<answer>
+400 books
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.1940000057220459
+Total reward: -0.1940000057220459
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+Krystian works from Monday to Friday. Therefore, the days the library is open is from Monday to Friday.
+
+Average number of books borrowed per day from Monday to Friday is:
+\[ 40 \text{ books/day} \times 5 \text{ days} = 200 \text{ books} \]
+
+On Friday, the number of books borrowed is 40% higher than the daily average of 40 books:
+\[ 40 \text{ books} + (40 \% \text{ of } 40 \text{ books}) = 40 \text{ books} + (0.4 \times 40 \text{ books}) = 40 \text{ books} + 16 \text{ books} = 56 \text{ books} \]
+
+Therefore, the total number of books borrowed in a week is the sum of Friday’s books and the days from Monday to Thursday:
+\[ \text{Total books} = 2 \times 200 \text{ books} + 56 \text{ books} = 400 \text{ books} + 56 \text{ books} = 456 \text{ books} \]
+
+</reasoning>
+<answer>
+456 books
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.4320000112056732
+Total reward: -0.4320000112056732
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Reasoning:
+Krystian borrows an average of 40 books every day. On Fridays, he borrows 40% more than this amount, so 40 * 1.4 = 56 books on Fridays. The combined number of books borrowed during the week is (3 * 40) + 56 = 140 books. 
+
+Answer:
+140
+
+This calculation takes into account the standard daily average for the other days of the week and adds the higher number of books borrowed on Fridays, resulting in a total of 140 books borrowed in the week.
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+To find out how many books Krystian borrows in a week, we need to calculate the average number of books he borrows per day and the additional books borrowed on Friday, then sum them up.
+
+First, let's calculate the average number of books borrowed per day from Monday to Thursday:
+\[ \text{Average books per day (Monday to Thursday)} = 40 \times 4 = 160 \]
+
+Next, we calculate the number of books borrowed on Friday, which is 40% higher than the average daily number of books:
+\[ \text{Books borrowed on Friday} = 40 \times (1 + 0.40) = 40 \times 1.40 = 56 \]
+
+Now we add up the books borrowed from Monday to Thursday and on Friday:
+\[ \text{Total books in a week} = 160 + 56 = 216 \]
+
+Therefore, Krystian borrows 216 books in a week.
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.4009999930858612
+Total reward: 2.0989999771118164
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+Krystian borrows 40 books every day from Monday to Thursday. On Friday, he borrows an extra 40%, which means on Friday he borrows \( 40 + (0.40 \times 40) = 40 + 16 = 56 \) books. To find out how many books he borrows in a week, we add up the total from Monday to Friday: \( 40 \times 4 + 56 = 160 + 56 = 216 \). Therefore, his weekly average is 216 books.
+
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.02500000037252903
+Total reward: 2.4749999046325684
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+On Monday to Thursday, Krystian borrows an average of 40 * 4 = 160 books.
+On Friday, he has 40 * 0.4 = 16 more books borrowed compared to the average number of books borrowed each day.
+In total, on Friday Krystian borrows 16 + 40 = 56 books.
+In total, Krystian borrows 160 + 56 = 216 books in a week.
+
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.03099999949336052
+Total reward: 2.5309998989105225
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+To find out how many books Krystian borrows in a week, we need to calculate the total number of books borrowed during the open days (Monday to Friday) and then add the extra books borrowed on Friday.
+
+First, calculate the total number of books borrowed from Monday to Thursday:
+\[ 40 \text{ books/day} \times 4 \text{ days} = 160 \text{ books} \]
+
+Next, find out how many books he borrows on Friday, which is 40% higher than his daily average:
+\[ 40 \text{ books} \times 0.40 = 16 \text{ books} \]
+
+Finally, add the number of books borrowed from Monday to Friday to the number of books borrowed on Friday:
+\[ 160 \text{ books} + 16 \text{ books} = 176 \text{ books} \]
+
+So, Krystian borrows a total of 176 books in a week.
+
+</reasoning>
+<answer>
+176
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.39100000262260437
+Total reward: 0.10899999737739563
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+To calculate the number of books Krystian borrows in a week, we need to consider the regular borrowing from Monday to Thursday and the extra borrowing on Fridays.
+
+First, let's calculate the average number of books borrowed on a weekday:
+\[ \text{Average weekday books} = 40 \]
+
+Then, let's calculate the number of books borrowed on Friday, which is 40% higher than the daily average:
+\[ \text{Friday books} = 40 + 0.40 \times 40 = 40 + 16 = 56 \]
+
+Now, let's calculate the total number of books borrowed in a week:
+\[ \text{Total week books} = \text{Monday to Thursday} + \text{Friday} \]
+\[ \text{Total week books} = (40 \times 4) + 56 \]
+\[ \text{Total week books} = 160 + 56 \]
+\[ \text{Total week books} = 216 \]
+
+So, Krystian borrows 216 books in a week if the library is open from Monday to Friday.
+
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.4740000069141388
+Total reward: 2.0260000228881836
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+To find out how many books Krystian borrows in a week, we need to break down his borrowing pattern and then sum up the total for each day of the week.
+
+Daily borrowing: 40 books
+Borrowing on Fridays is 40% higher than the daily average:
+\[ \text{Friday borrowing} = \text{Daily borrowing} + (0.40 \times \text{Daily borrowing}) = 40 + (0.40 \times 40) = 40 + 16 = 56 \text{ books} \]
+
+Now, calculate the total borrowing for the week:
+\[ \text{Total weekly borrowing} = \text{Weekly days} \times (\text{Daily borrowing} + \text{Friday borrowing}) = 5 \times (40 + 56) \]
+\[ = 5 \times 96 = 480 \text{ books} \]
+
+Thus, Krystian borrows a total of 480 books in a week.
+
+</reasoning>
+<answer>
+480
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.33399999141693115
+Total reward: 0.16600000858306885
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+To calculate the total number of books borrowed in a week, we need to calculate the number of books borrowed on weekdays and add it to the number of books borrowed on Friday.
+
+There are 5 weekdays in a week, and Krystian borrows an average of 40 books each day. Let's calculate the total number of books borrowed on weekdays:
+5 days * 40 books/day = 200 books
+
+On Friday, his number of borrowed books is about 40% higher than the daily average. To find out how many books he borrowed on Friday, we need to calculate 40% of the daily average and add it to the daily average.
+40% of 40 books = 0.40 * 40 books = 16 books
+
+Now, let's add the number of books borrowed on Friday to the total number of books borrowed on weekdays:
+200 books (weekdays) + 16 books (Friday) = 216 books
+
+Therefore, Krystian borrows 216 books in a week.
+</reasoning>
+<answer>
+216 books
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.5009999871253967
+Total reward: -0.5009999871253967
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Let's break down the problem:
+
+1. Krystian borrows an average of 40 books every day from Monday to Thursday. 
+   For the remaining days of the week (Friday to Sunday), his number of borrowed books is about 40% higher than the daily average.
+
+2. To find out how many books he borrows on Friday, we calculate the 40% increase on his daily average: 40 books * 40% = 40 * 0.4 = 16 additional books.
+   Therefore, on Friday, he borrows 40 (daily average) + 16 (40% increase) = 56 books.
+
+3. We then add the number of books borrowed on Friday to the number of books borrowed from Monday to Thursday:
+   Monday to Thursday: 40 books/day * 4 days = 160 books
+   Friday: 56 books
+
+   Total books borrowed in a week = 160 (Monday to Thursday) + 56 (Friday) = 216 books.
+
+Therefore, Krystian borrows 216 books in a week.
+
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.4779999852180481
+Total reward: 2.0220000743865967
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+Krystian borrows books on Monday through Thursday, so he borrows 40 books/day * 4 days = 160. On Friday, he borrows 40 * 1.40 = 56 books. In total, he borrows 160 + 56 = 216 books in a week.
+
+</reasoning>
+<answer>
+216
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.14100000262260437
+Total reward: 2.6410000324249268
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+The total number of books borrowed in a week can be calculated by considering the daily borrowings and the specific increase on Fridays.
+
+- Books borrowed on a regular day (Monday to Thursday, excluding Friday): \(40 \times 4 = 160\)
+- Friday's borrowings: As this is 40% higher than the daily average, \(40 \times (1 + 0.40) = 40 \times 1.40 = 56\)
+
+Now, summing up the books borrowed on a regular day for four days and on Friday for one day:
+
+- Total borrowed in a week = \(160 \times 4 + 56\)
+
+Now calculating this:
+
+\(160 \times 4 + 56 = 640 + 56 = 696\)
+
+Therefore, Krystian borrows 696 books in a week.
+
+</reasoning>
+<answer>
+696
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.2770000100135803
+Total reward: 0.22299998998641968
+
+#### GENERATION 15 RESPONSE ####
+
+SYSTEM
+To calculate the total number of books Krystian borrows in a week, we need to break down his borrowing habits for Monday to Friday separately and then sum them up.
+
+First, let's calculate the number of books borrowed from Monday to Thursday (excluding Friday, as it's not mentioned what other days he borrows from):
+
+- Average books borrowed daily: 40 books
+- Number of days: 4 (Monday, Tuesday, Wednesday, Thursday)
+
+Total books borrowed from Monday to Thursday:
+\[ 40 \text{ books/day} \times 4 \text{ days} = 160 \text{ books} \]
+
+Next, let's calculate the number of books borrowed on Friday:
+
+- Average books borrowed daily: 40 books
+- Number of books on Friday is 40% higher than the daily average.
+- 40% of 40 books = \( 0.40 \times 40 = 16 \) books
+- Therefore, 40 books + 16 books = 56 books on Friday.
+
+Now, we add the books borrowed from Monday to Thursday and the books borrowed on Friday:
+
+\[
+160 \text{ books (Monday to Thursday)} + 56 \text{ books (Friday)} = 216 \text{ books}
+\]
+
+Thus, Krystian borrows a total of 216 books in a week.
+
+</reasoning>
+<answer>
+216 books
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.7239999771118164
+Total reward: -0.7239999771118164
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+To determine the total number of books Krystian borrows in a week, we need to consider the average number of books borrowed daily and the additional number borrowed on Fridays.
+
+1. Calculate the number of books borrowed on Fridays:
+   - Generally, Krystian borrows 40 books per day.
+   - On Fridays, he borrows 40% more than the daily average.
+   - 40% of 40 books is calculated as follows: \(40 \times 0.40 = 16\) books.
+   - Therefore, on Fridays, he borrows \(40 + 16 = 56\) books.
+
+2. Calculate the total number of books borrowed in a week:
+   - From Monday to Thursday, he borrows 40 books per day.
+   - The total number of books borrowed from Monday to Thursday is \(40 \times 4 = 160\) books.
+   - On Friday, he borrows 56 books.
+   - Therefore, the total number of books borrowed in a week is \(160 + 56 = 216\) books.
+
+3. Determine how many books are borrowed on a Friday:
+   - The problem specifies that on Fridays, Krystian borrows 40% more books than the daily average.
+
+So, the answer is that Krystian borrows **216 books in a week**.
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+

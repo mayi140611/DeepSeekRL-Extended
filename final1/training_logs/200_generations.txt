@@ -1,0 +1,362 @@
+###### ORIGINAL PROMPT #####
+
+Sansa is a famous artist, she can draw a portrait and sell it according to its size. She sells an 8-inch portrait for $5, and a 16-inch portrait for twice the price of the 8-inch portrait. If she sells three 8-inch portraits and five 16-inch portraits per day, how many does she earns every 3 days?
+
+#### ANS ####
+
+195
+#### GENERATION 1 RESPONSE ####
+
+
+system
+First, determine the selling price of the 16-inch portrait, which is twice the price of 8-inch portrait: $5 * 2 = $10.
+
+The profit for each day from selling 3 x 8 = 24 inches of 8-inch portraits, is 24 * $5 = $120 from the 8-inch portraits.
+The profit for each day from selling 5 x 16 = 80 inches of 16-inch portraits, is 80 * $10 = $800 from the 16-inch portraits.
+
+On average, she makes $120 + $800 = $920 per day.
+
+Now, to find out how much she earns every 3 days, she multiplies this amount by 3, so: $3 * $920 = $2,760.
+
+</reasoning>
+<answer>
+2760
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.1940000057220459
+Total reward: 0.3059999942779541
+
+#### GENERATION 2 RESPONSE ####
+
+system
+The 16-inch portrait sells for 5*2 = $10.
+She earns 8*5=$40 from the 8-inch portrait per day.
+She earns 16*10=$160 from the 16-inch portrait per day.
+Hence, she earns a total of 40+160 = $200 per day.
+
+Therefore, she earns 200*3=$600 every 3 days.
+
+</reasoning>
+<answer>
+600
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.08500000089406967
+Total reward: 0.5849999785423279
+
+#### GENERATION 3 RESPONSE ####
+
+system
+The 16-inch portrait is sold for $10 since it is twice the price of the 8-inch portrait, and it is sold 5 times more than the 8-inch portrait, which is 5 * 3 = 15. She earns $5 * 3 = $15 from selling the 8-inch portraits every day. Thus, she earns $10 + $15 = $25 each day. Therefore, she earns $25 * 3 = $75 every 3 days.
+
+</reasoning>
+<answer>
+75
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.010999999940395355
+Total reward: 0.5109999775886536
+
+#### GENERATION 4 RESPONSE ####
+
+system
+The 16-inch portrait is priced at 2 * $5 = $10.
+The total amount she earns on a single day is $10 * 5 + $5 * 3 = $65.
+Thus, she earns $65 * 3 = $195 every 3 days.
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.17000000178813934
+Total reward: 2.6700000762939453
+
+#### GENERATION 5 RESPONSE ####
+
+system
+The 16-inch portrait is sold for $10 because 2 x $5 = $10.
+She earns $15 for one day because 3 x $5 + 5 x $10 = $55
+She earns $165 every 3 days because 3 x $15 = $45
+
+</reasoning>
+<answer>45</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.625
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Sansa sells an 8-inch portrait for $5, and a 16-inch portrait for twice the price of the 8-inch portrait, so she sells the 16-inch portrait for $5 * 2 = $10.
+
+She sells three 8-inch portraits per day, so she earns 3 * $5 = $15 from the 8-inch portraits every day.
+
+She sells five 16-inch portraits per day, so she earns 5 * $10 = $50 from the 16-inch portraits every day.
+
+Every day, she earns $15 + $50 = $65.
+
+Every three days, she earns $65 * 3 = $195.
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.12300000339746475
+Total reward: 2.376999855041504
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+The price of a 16-inch portrait is twice the price of an 8-inch portrait, so it is $5 \times 2 = $10.
+In one day, she sells three 8-inch portraits for $5 each, so she earns $5 \times 3 = $15 from the 8-inch portraits.
+She also sells five 16-inch portraits for $10 each, so she earns $10 \times 5 = $50 from the 16-inch portraits.
+In total, she earns $15 + $50 = $65 per day.
+In three days, she earns $65 \times 3 = $195.
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.08900000154972076
+Total reward: 2.4110000133514404
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+The price of one 16-inch portrait is $5 * 2 = $10.
+She earns $5 + $10 = $15 every day for selling 8-inch and 16-inch portraits.
+So she earns $15 * 3 = $45 every day.
+Therefore, she earns $45 * 3 = $135 every 3 days.
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.11599999666213989
+Total reward: 0.6159999966621399
+
+#### GENERATION 9 RESPONSE ####
+
+system
+Sansa earns 5 * 3 = $15 from selling three 8-inch portraits every day. She earns 5 * 2 = $10 from selling a 16-inch portrait. Thus, she earns 10 * 5 = $50 from selling five 16-inch portraits every day. Therefore, she earns 15 + 50 = $65 every day. Hence, she earns 65 * 3 = $195 every 3 days.
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.03999999910593033
+Total reward: 2.5399999618530273
+
+#### GENERATION 10 RESPONSE ####
+
+system
+The price of an 8-inch portrait is $5 and a 16-inch portrait is twice the price of an 8-inch portrait, which makes it $5 * 2 = $10. 
+She sells three 8-inch portraits per day, for a total of 3 * $5 = $15, and she also sells five 16-inch portraits per day, for a total of 5 * $10 = $50.
+So she earns $15 + $50 = $65 per day.
+So she earns $65 * 3 = $195 every 3 days.
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.03200000151991844
+Total reward: 2.4679999351501465
+
+#### GENERATION 11 RESPONSE ####
+
+system
+First, calculate the price of a 16-inch portrait: 
+\[ \text{Price of a 16-inch portrait} = 2 \times \text{Price of an 8-inch portrait} = 2 \times 5 = 10 \, \text{dollars} \]
+
+Next, calculate her daily earnings from selling three 8-inch portraits and five 16-inch portraits:
+\[ \text{Daily earnings from 8-inch portraits} = 3 \times 5 = 15 \, \text{dollars} \]
+\[ \text{Daily earnings from 16-inch portraits} = 5 \times 10 = 50 \, \text{dollars} \]
+\[ \text{Total daily earnings} = 15 + 50 = 65 \, \text{dollars} \]
+
+Finally, calculate her earnings over three days:
+\[ \text{Total earnings over 3 days} = 65 \times 3 = 195 \, \text{dollars} \]
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.3100000023841858
+Total reward: 2.190000057220459
+
+#### GENERATION 12 RESPONSE ####
+
+system
+Sansa sells an 8-inch portrait for $5, and a 16-inch portrait for twice the price of the 8-inch portrait, that is $5 x 2 = $10 per 16-inch portrait.
+She sells three 8-inch portraits and five 16-inch portraits per day, then her daily income would be (3 x $5) + (5 x $10) = $5 + $50 = $55
+If she earns $55 every day, then for 3 days, she earns $55 x 3 = $165
+</reasoning>
+<answer>
+165
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.023000000044703484
+Total reward: 0.47699999809265137
+
+#### GENERATION 13 RESPONSE ####
+
+system
+The 16-inch portrait sells for $5 x 2 = $10.
+She earns $5 x 3 = $15 from selling three 8-inch portraits per day.
+She earns $10 x 5 = $50 from selling five 16-inch portraits per day.
+Thus, she earns a total of $15 + $50 = $65 per day.
+Therefore, she earns $65 x 3 = $195 every 3 days.
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.04899999871850014
+Total reward: 2.5490000247955322
+
+#### GENERATION 14 RESPONSE ####
+
+system
+16 inch - $10
+8 inch - $5
+3 * $10 + 5 * $10 = $100
+3 * 10 + 5 * 10 + $100 = $250
+
+</reasoning>
+<answer>
+250
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.25200000405311584
+Total reward: 0.7519999742507935
+
+#### GENERATION 15 RESPONSE ####
+
+system
+Sansa sells an 8-inch portrait for $5 and a 16-inch portrait for twice the price of the 8-inch portrait, which is $10. 
+
+Every day, she sells:
+3 * $5 = $15 for an 8-inch portrait
+5 * $10 = $50 for a 16-inch portrait
+
+In 3 days, she will earn:
+3 days * $15 one 8-inch portrait for $5 = $45
+3 days * $50 one 16-inch portrait for $10 = $150
+
+So, in total, she will earn:
+$45 + $150 = $195
+</reasoning>
+<answer>195</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 2.625
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+To calculate the daily earnings, we first need to find out the price of the 16-inch portrait, which is twice the price of the 8-inch portrait. The 8-inch portrait is priced at $5, so the 16-inch portrait is priced at $10. 
+
+Now, she sells three 8-inch portraits per day, so her earnings from the 8-inch portraits are 3 * $5 = $15 per day. Similarly, she sells five 16-inch portraits per day, so her earnings from the 16-inch portraits are 5 * $10 = $50 per day.
+
+So, her total earnings per day are $15 + $50 = $65. 
+
+To find out her earnings in 3 days, we simply multiply her daily earnings by 3: $65 * 3 = $195. 
+
+</reasoning>
+<answer>
+195
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.28200000524520874
+Total reward: 2.2179999351501465
+

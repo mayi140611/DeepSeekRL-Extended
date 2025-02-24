@@ -1,0 +1,314 @@
+###### ORIGINAL PROMPT #####
+
+Jerome is taking a 150-mile bicycle trip. He wants to ride 12 miles for 12 days. How long will he ride on the 13th day to finish his goal?
+
+#### ANS ####
+
+6
+#### GENERATION 1 RESPONSE ####
+
+ superintendent
+Jerome rides 12 miles a day for 12 days, which totals 12 * 12 = 144 miles.
+His trip is 150 miles total, so he will ride 150 - 144 = 6 miles on the 13th day to finish his goal.
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1509999930858612
+Total reward: 2.6510000228881836
+
+#### GENERATION 2 RESPONSE ####
+
+system
+ Jerome rides 12 miles for 12 days, which means he has ridden a total of 12 * 12 = 144 miles.
+ He wants to ride 150 miles in total, so he will ride 150 - 144 = 6 miles on the 13th day.
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1509999930858612
+Total reward: 2.6510000228881836
+
+#### GENERATION 3 RESPONSE ####
+
+system
+Total distance = 150 miles.
+Days ridden = 12 days.
+Remaining distance = Total distance - Days ridden.
+Days on the 13th = Total days - Days rider.
+
+Remaining distance = 150 - 12 = 138 miles.
+Days on the 13th = 150 - 12 = 138.0 miles.
+<answer>
+138 miles.
+</answer>
+</reasoning>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.22599999606609344
+Total reward: 0.22599999606609344
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Jerome rides 12 miles every 12 days, which means he rides 1 mile every day. He has a total of 150 miles to ride. So, on the 13th day, he will ride the remaining miles: 150 - 12 * 12 = 150 - 144 = 6 miles.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1289999932050705
+Total reward: 2.628999948501587
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+To finish his goal, Jerome needs to ride a total of 150 miles. He plans to ride 12 miles for 12 days, which amounts to:
+
+\[ 12 \text{ miles/day} \times 12 \text{ days} = 144 \text{ miles} \]
+
+The difference between the total goal and the miles ridden for the first 12 days is:
+
+\[ 150 \text{ miles} - 144 \text{ miles} = 6 \text{ miles} \]
+
+Therefore, Jerome will ride 6 miles on the 13th day to finish his goal.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.07900000363588333
+Total reward: 2.4210000038146973
+
+#### GENERATION 6 RESPONSE ####
+
+system
+He will have ridden 12*12=144 miles after 12 days. So he needs to ride 150-144=6 miles on the 13th day.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.23100000619888306
+Total reward: 2.7309999465942383
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+He will ride 30 miles because 150 miles - 12 miles/day x 12 days = 30 miles
+</reasoning>
+<answer>
+30
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.257999986410141
+Total reward: 0.7580000162124634
+
+#### GENERATION 8 RESPONSE ####
+
+system
+Jerome is riding a total of 12 miles per day for 12 days, which is 12 * 12 = 144 miles. He wants to reach a total of 150 miles, so he will ride an additional 150 - 144 = 6 miles on the 13th day to finish his goal.
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.12200000137090683
+Total reward: 2.621999979019165
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+He needs to ride 1,500 - 12 * 12 = 1,500 - 144 = 1,356 miles on the 13th day.
+
+</reasoning>
+<answer>
+1356
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.2529999911785126
+Total reward: 0.753000020980835
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+He will ride 300 - 144 = 156 miles on the 13th day.
+</reasoning>
+<answer>
+156
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.2809999883174896
+Total reward: 0.781000018119812
+
+#### GENERATION 11 RESPONSE ####
+
+system
+Jerome rides 12 miles a day for 12 days, which totals 12 * 12 = 144 miles. He wants to make his trip 150 miles, and he has already ridden 144 miles, which means there are 150 - 144 = 6 miles left to ride. 
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1289999932050705
+Total reward: 2.628999948501587
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Jerome rides 12 miles every 12 days, which means he rides at a rate of 1 mile per day. To finish his goal of a 150-mile trip in 13 days, he will need to ride 150 - 12 x 12 = 150 - 144 = 6 miles on the 13th day.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 13 RESPONSE ####
+
+system
+He has already ridden for 12 * 12 = 144 miles. He wants to ride a total of 150 miles, so he will ride 150 - 144 = 6 miles on day 13.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.20200000703334808
+Total reward: 2.7019999027252197
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+He will ride 30 miles because 150 / 12 = 12.5
+He will ride 12 miles because 150 - 12 x 12 = 12
+</reasoning>
+<answer>
+12
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.23899999260902405
+Total reward: 0.7389999628067017
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+Jerome rides 12 miles for 12 days, totaling 12 * 12 = 144 miles. He has a target of 150 miles, 150 - 144 = 6 miles to ride on the 13th day.
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.19499999284744263
+Total reward: 2.694999933242798
+
+#### GENERATION 16 RESPONSE ####
+
+system
+He will ride 12 miles/day * 12 days = 144 miles
+He has 150 - 144 = 6 miles left to ride on the 13th day.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.23000000417232513
+Total reward: 2.7300000190734863
+

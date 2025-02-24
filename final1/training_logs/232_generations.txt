@@ -1,0 +1,346 @@
+###### ORIGINAL PROMPT #####
+
+Jolene and Phil have four children, each with the same birthday.  They gave birth to their first child exactly 15 years ago.  They gave birth to their second child exactly one year after the birth of their first child.  They gave birth to their third child on the fourth birthday of their second child. Two years after the birth of their third child, they gave birth to their fourth child.  How old, in years, is their fourth child?
+
+#### ANS ####
+
+8
+#### GENERATION 1 RESPONSE ####
+
+
+system
+The first child was born 15 years ago, so the second child is 15 - 1 = 14 years old.
+The third child is 4 years old because their birthday was on the fourth birthday of the second child.
+So their fourth child is 14 + 4 + 2 = 20 years old.
+
+</reasoning>
+<answer>
+20
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+The second child was born 1 year after the first and the second child is 15 years old, so the second child was born 2 years after the first.  Therefore the first child was born 15 - 2 = 13 years ago.  The third child was born on the fourth birthday of the second child, so the third child was born 4 years after the first child. Thus, the third child was born 15 - 4 = 11 years ago.  The fourth child was born two years after the third child, so the fourth child is 11 - 2 = 9 years old.
+
+</reasoning>
+<answer>
+9
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+The fourth child was born 4 years after their third child was born, which means the third child is \( 15 - 4 = 11 \) years old. The fourth child was born 2 years after the third child, so the fourth child is \( 11 - 2 = 9 \) years old.
+
+</reasoning>
+<answer>
+9
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Jolene and Phil gave birth to their first child 15 years ago, so their first child is currently 15 years old.
+They gave birth to their second child exactly one year after the birth of their first child, so the second child is currently 15 - 1 = 14 years old.
+They gave birth to their third child on the fourth birthday of their second child, so the third child is currently 14 - 4 = 10 years old.
+Two years after the birth of their third child, they gave birth to their fourth child, so the fourth child is currently 10 - 2 = 8 years old.
+
+</reasoning>
+<answer>
+8
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.20499999821186066
+Total reward: 2.2950000762939453
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+Jolene and Phil gave birth to their first child 15 years ago, so the first child is 15 years old.
+
+They gave birth to their second child on the 14th birthday of their first child (15 - 1). So the second child is $15 - 1 = 14$ years old.
+
+They gave birth to their third child on the 8th birthday of their second child (14 + 4 - 1 = 8 since 14 - 1 = 13, and 4 is their third child and 1 is their second child). Thus their third child is 8 years old.
+
+Finally, they gave birth to their fourth child two years after their third child, so their fourth child is $8 + 2 = 10$ years old.
+
+</reasoning>
+<answer>
+10
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+The second child was born 15 - 1 = 14 years ago. The third child was born 4 years after the second child was born, meaning the third child was born 14 + 4 = 18 years ago. The fourth child was born 2 years after the third child was born, meaning the fourth child is 18 + 2 = 20 years old.
+
+</reasoning>
+<answer>
+20
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+The first child was born 15 years ago, so the second child is 15 + 1 = 16 years old.
+The third child was born on the fourth birthday of the second child, so the third child is 16 + 4 = 20 years old.
+The fourth child was born two years after the third child, so the fourth child is 20 + 2 = 22 years old.
+
+</reasoning>
+<answer>
+22
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+The first child was born 15 years ago, so the second child was born 15 - 1 = 14 years ago. The third child was born on the fourth birthday of the second child, so the third child was born 14 - 4 = 10 years ago. The fourth child was born two years after the third child, so the fourth child was born 10 + 2 = 12 years ago, which means the fourth child is 12 years old. 
+
+</reasoning>
+<answer>
+12
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.035999998450279236
+Total reward: 0.46399998664855957
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+The first child was born 15 years ago, so the first child is 15 years old.
+Their second child was born one year after the first child, so the second child is 14 years old.
+Their third child was born on the fourth birthday of the second child, so the third child is 13 years old.
+Their fourth child was born two years after the third child, so the fourth child is 11 years old.
+
+</reasoning>
+<answer>
+11
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+The fourth child was born 2 years after the third child, so the fourth child is 2 years old.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+The second child was born 15-1=14 years ago. Their third child is 4 years old, so they were born 4+1=5 years ago. This means their first child was born 15-5=10 years ago. The fourth child was born 2 years after the third child, so they are 2 years old.
+
+</reasoning>
+<answer>
+2
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Phil and Jolene gave birth to their first child 15 years ago. The second child was born exactly one year after the first, so the second child is \(15 - 1 = 14\) years old. The third child was born on the fourth birthday of their second child, so the third child is \(14 + 4 = 18\) years old. Two years after the birth of the third child, the fourth child was born, so the fourth child is \(18 + 2 = 20\) years old.
+
+</reasoning>
+<answer>
+20
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+The second child was born 15 - 1 = 14 years ago.
+The third child was born 14 + 4 = 18 years ago.
+The fourth child was born 18 + 2 = 20 years ago.
+
+</reasoning>
+<answer>
+20
+</answer>
+
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+The second child was born 15 - 1 = 14 years ago.
+The third child was born 4 + 14 = 18 years ago.
+The fourth child was born 18 + 2 = 20 years ago.
+
+Therefore, the reason we get 20 as our answer is because of the logical progression of the ages of the children based on given times. The second reasoning is correct and the answer is 20. 
+</reasoning>
+<answer>
+20
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+The second child was born 15-1=14 years ago.  Their third child was then 14+4=18 years old.  Their fourth child was born 2*18=36 years ago.  Their fourth child is 3 years old.
+
+</reasoning>
+<answer>
+36
+</answer>
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+The first child was born 15 years ago, so the second child was born 1 year after the first, meaning the second child was born 14 years ago. The third child was born 4 years after the second child, so the third child was born 14 - 4 = 10 years ago. Two years after the birth of the third child, the fourth child was born, so the fourth child was born 10 - 2 = 8 years ago. 
+
+</reasoning>
+<answer>
+8
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+

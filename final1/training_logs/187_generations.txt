@@ -1,0 +1,405 @@
+###### ORIGINAL PROMPT #####
+
+Madeline has 5 boxes with 24 crayons in each. She noticed that 5/8 of the crayons in the 2 boxes were not yet used. In the 2 other boxes, only 2/3 of the crayons were used while the last box was not entirely used. How many unused crayons did Madeline have?
+
+#### ANS ####
+
+70
+#### GENERATION 1 RESPONSE ####
+
+system
+Madeline has a total of 5 * 24 = 120 crayons.
+
+In 2 boxes out of 5, 5/8 of crayons were not used. Therefore, a total of 2 * (5/8) = 5/4 = 1.25 boxes.
+
+This means that in 1.25 boxes out of 5, she has 1.25 * 24 = 30 unused crayons.
+
+The remaining box only had 1/3 of its crayons unused. Thus, in this box she had 1/3 * 24 = 8 unused crayons.
+
+In the other 2 boxes, 2/3 of all the crayons were used. Therefore, 1 - 2/3 = 1/3 of the crayons were not used in these boxes.
+
+The total number of unused crayons in these 2 boxes was 1/3 * 2 * 24 = 16.
+
+Therefore, the total number of unused crayons Madeline had was 30 + 8 + 16 = 54.
+
+</reasoning>
+<answer>
+54
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.29100000858306885
+Total reward: 0.20899999141693115
+
+#### GENERATION 2 RESPONSE ####
+
+system
+The total number of crayons that were not used is: 24*5 + 2*(24*(5/8)) = 120
+
+The total number of unused crayons in the 2 boxes is: 24*(5/8)*(2) = 120
+
+The total number of unused crayons in the 2 boxes is: 24*(1/3)*(2) + 24*(1/3)*((2/3)) = 80
+
+The total number of unused crayons in the 3 boxes is: 80 + 120 + 24 = 224
+
+</reasoning>
+<answer>224</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.625
+
+#### GENERATION 3 RESPONSE ####
+
+system
+The 5 boxes have 5*24 = 120 total crayons.
+The two boxes which were not entirely used had 2/8*24 = 6 unused crayons each.
+Thus, there were 2*6 = 12 unused crayons in these two boxes.
+The two other boxes had 2/3*24 = 16 unused crayons each. 
+Thus, there were 2*16 = 32 unused crayons in these two boxes.
+The last box had 24 unused crayons. 
+Thus, the total number of unused crayons was 12+12+32+24 = 80.
+</reasoning>
+<answer>80</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.625
+
+#### GENERATION 4 RESPONSE ####
+
+system
+First, let's calculate the total number of crayons she had.
+
+5 boxes * 24 crayons/box = 120 crayons
+
+Half the box have 24 / 2 = 12 crayons.
+
+For 2 boxes: 2 * 12 crayons = 24 crayons
+
+For the other two boxes, half were used in which means a half of the 24 crayons had been used for a total of 24/2 = 12 crayons.
+
+12 - 12 = 0 unused
+120 - 24 - 12 = 84 crayons.
+
+The last box was completely used leaving 84 unused crayons.
+
+</reasoning>
+<answer>
+84
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0860000029206276
+Total reward: 0.414000004529953
+
+#### GENERATION 5 RESPONSE ####
+
+system
+The 2 boxes with 24 crayons each contain 24 * 5/8 = 15 unused crayons each. The 2 other boxes with 8 boxes each contain 24 * 2/3 = 16 unused crayons each. And 24 + 24 + 16 + 16 + 24 = 104 unused crayons.
+
+</reasoning>
+<answer>
+104
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1289999932050705
+Total reward: 0.6290000081062317
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Madeline has 2 boxes with 24 crayons in each, so she has a total of 2 * 24 = 48 unused crayons in these two boxes.
+In the other 2 boxes, 2/3 of the crayons were used, so there are 1 - 2/3 = 1/3 of the crayons unused in each of these boxes. 
+In each of the other 2 boxes, there are 24 * 1/3 = 8 unused crayons.
+Therefore, Madeline has a total of 48 + 8 + 8 = 72 unused crayons.
+
+</reasoning>
+<answer>
+72
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0430000014603138
+Total reward: 0.4569999873638153
+
+#### GENERATION 7 RESPONSE ####
+
+system
+The total number of crayons Madeline has is \(5 \times 24 = 120\).
+
+For the 2 boxes with crayons that were not used in total, the number of unused crayons is \( \frac{5}{8} \times 24 = 15 \) crayons per box.
+
+For the 2 boxes in which only the 2/3 were used, \(2 \times \frac{2}{3} \times 24 = 32\) unused crayons were made.
+
+For the last box which was not entirely used, the number of unused crayons is \( 120 - \frac{32}{3} = 115 \approx 115 \) crayons.
+
+The total number of unused crayon Madeline has is \(\boxed{115}\).
+
+</reasoning>
+<answer>
+115
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.1899999976158142
+Total reward: 0.3100000023841858
+
+#### GENERATION 8 RESPONSE ####
+
+system
+Madeline has a total of \(5 \times 24 = 120\) crayons. 
+
+5/8 of the crayons in the first 2 boxes (which contain \(2 \times 24 = 48\) crayons) were unused, so \(48 \times \frac{5}{8} = 30\) crayons were unused from these 48 crayons.
+
+2/3 of the crayons in the last 2 boxes (which contain \(2 \times 24 = 48\) crayons) were used, so \(48 \times \frac{2}{3} = 32\) of the crayons in these 48 crayons were used. Therefore, the number of unused crayons in these 48 is \(48 - 32 = 16\).
+
+The last box contains \(24\) crayons. Since the box is not entirely used, we assume that all crayons in it are unused. So, there are \(24\) unused crayons.
+
+In total, the number of unused crayons from all the boxes is \(30 + 16 + 24 = 70\).
+
+</reasoning>
+<answer>
+70
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.3889999985694885
+Total reward: 2.1110000610351562
+
+#### GENERATION 9 RESPONSE ####
+
+system
+Madeline has a total of 5 boxes * 24 crayons / box = 120 crayons.
+Half of the crayons in the 2 boxes that were not yet used was 2 boxes * 120 / box / 2 = 120 crayons
+In the other 2 boxes, she used 2 boxes * 24 crayons / box * 1 / 3 = 16 crayons
+And in the last box she didn't use any crayons.
+Then, Madeline had 120 crayons / 2 - 16 crayons - 15 unused crayons = 83 unused crayons.
+
+</reasoning>
+<answer>
+83
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.04800000041723251
+Total reward: 0.4519999921321869
+
+#### GENERATION 10 RESPONSE ####
+
+system
+The first part of the question is simple. In total there are 5*24=120 crayons. And her first two boxes have a total of 2*24=48 unused crayons. Her other two boxes have a total of 2*24=48 used crayons. So the last box has 24*1/3=8 unused crayons. So Madeline has a total of 48+48+8=104 unused crayons.
+
+</reasoning>
+<answer>
+104
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.03200000151991844
+Total reward: 0.5320000052452087
+
+#### GENERATION 11 RESPONSE ####
+
+system
+First, calculate the total number of crayons for each category:
+20 crayons * 5 boxes = 100 crayons in total.
+
+For the first 2 boxes, calculate the number of unused crayons:
+\( \frac{5}{8} \times 48 = 30 \) unused crayons in each box.
+
+For the 2 other boxes that did not completely use up their crayons, calculate the number of unused crayons:
+\( \frac{1}{3} \times 48 = 16 \) unused crayons in each box.
+
+For the last box, there is not enough information to determine the exact number of unused crayons, but we know that it did not completely use up all of its crayons.
+
+To find the total number of unused crayons, we add up the unused crayons from each box:
+\( 100 \) (total crayons) - \( 16 \) (used crayons from the other 2 boxes) + \( 30 \) (unused crayons from the first 2 boxes).
+
+\( 100 - 16 + 30 = 114 \).
+
+The number of unused crayons that Madeline has is 114.
+
+</reasoning>
+<answer>
+114
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.5370000004768372
+Total reward: -0.03700000047683716
+
+#### GENERATION 12 RESPONSE ####
+
+header
+<reasoning>
+First, we need to determine the total number of crayons Madeline has. Since she has 5 boxes with 24 crayons in each, the total number of crayons is \(5 \times 24\). Next, we need to calculate the number of unused crayons. We know that 5/8 of the crayons in the first 2 boxes were not yet used, so we can calculate the number of unused crayons in those boxes by taking 5/8 of the crayons in those boxes. We also know that in the other 2 boxes, 2/3 of the crayons were used, so the remaining 1/3 must be unused. Finally, in the last box, we need to consider the entire number of crayons, as the last box was not entirely used. The total number of unused crayons is the sum of the unused crayons in the first 2 boxes, the remaining 1/3 of the crayons in the other 2 boxes, and all crayons in the last box.
+</reasoning>
+
+user
+<answer>
+5 
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 13 RESPONSE ####
+
+system
+The total number of crayons in Madeline's 5 boxes is 5*24=120 crayons. 
+
+- For the first two boxes, the total number of unused crayons is 2*24*5/8=30.
+- For the second two boxes, the total number of unused crayons is 2*24*1/3=16.
+- For the last box, the total number of unused crayons is 24*(1 - 2/3)=8.
+
+Thus, the total number of unused crayons is 30 + 16 + 8 = 54.
+
+</reasoning>
+<answer>
+54
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.032999999821186066
+Total reward: 0.46700000762939453
+
+#### GENERATION 14 RESPONSE ####
+
+system
+To find out how many unused crayons Madeline had, we first need to determine the total number of crayons and then subtract the used crayons.
+
+Total crayons = Number of boxes * Crayons per box
+Total crayons = 5 boxes * 24 crayons/box
+Total crayons = 120 crayons
+
+Crayons not used in the first 2 boxes:
+
+Unused crayons = (5/8) * (24 crayons/box) * 2 boxes
+Unused crayons = (5/8) * 48
+Unused crayons = 30 crayons
+
+Unused crayons in the last box:
+
+Unused crayons = (1 - 2/3) * 24 crayons/box
+Unused crayons = (1/3) * 24
+Unused crayons = 8 crayons
+
+Unused crayons in the second 2 boxes:
+
+Unused crayons = 24 * 5/8
+Unused crayons = 15 crayons
+
+Remaining unused crayons:
+
+Total unused crayons = Unused crayons in the first 2 boxes + Unused crayons in the last box + Unused crayons in the second 2 boxes
+Total unused crayons = 30 + 8 + 15
+Total unused crayons = 53
+
+</reasoning>
+<answer>
+53
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.5230000019073486
+Total reward: -0.023000001907348633
+
+#### GENERATION 15 RESPONSE ####
+
+system
+Madeline has a total of 5 boxes with 40 crayons in each. She has 2 boxes with unused crayons amounting to 5/8 of the crayons in each box, and 2 boxes with used crayons which amount to 2/3 of each box. The last box is not entirely unused. So 5/8 of 24 crayons are not used in each of the 2 boxes, and all the crayons in the second box are used. So a total of 24 crayons are used in the second box. Thus, 24/3 of 24 = 16 crayons are used in the second box. From the first box, she thus has 12 unused crayons. 24 crayons in the first box and 24 crayons in the second box, means 48 unused crayons in total from the first two boxes, and 24 unused crayons in total from the last box. Thus, the total number of unused crayons she has is 48 + 24 = 72. 
+
+</reasoning>
+<answer>
+72
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.41100001335144043
+Total reward: 0.08899998664855957
+
+#### GENERATION 16 RESPONSE ####
+
+system
+Madeline has 5 boxes with 24 crayons in each, so she has a total of 5*24 = 120 crayons.
+In the 2 boxes with 5/8 of the crayons unused, there are a total of 2*24/8 = 6 unused crayons.
+In the 2 other boxes with 2/3 of the crayons used, there are a total of 2*24/3 = 16 unused crayons.
+In the last box, there are only X/12 of the crayons unused.
+The total number of unused crayons she has is 6+16+x/12 = 22+x/12
+</reasoning>
+<answer>
+22
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.07400000095367432
+Total reward: 0.4259999990463257
+

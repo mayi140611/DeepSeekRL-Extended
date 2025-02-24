@@ -1,0 +1,613 @@
+###### ORIGINAL PROMPT #####
+
+In April, Tank gathered 10 more Easter eggs than Emma in their first round of egg hunt. However, Emma gathered twice as many eggs as Tank in their second round of egg hunt, while Tank's total number of eggs in the second round was 20 less than the number she had gathered in the first round. If the total number of eggs in the pile they were collecting with 6 other people was 400 eggs, and Emma gathered 60 eggs in the second egg hunt round, find the number of eggs that the 6 other egg hunters collected?
+
+#### ANS ####
+
+220
+#### GENERATION 1 RESPONSE ####
+
+
+system
+In the first round, Emma gathered 60 / 2 = 30 eggs from Tank. Tank gathered 30 + 10 = 40 eggs in the first round. In the second round, Emma gathered 60 eggs from Tank. Tank gathered 20 less than the eggs he gathered in the first round, which means she gathered 40 + 20 = 60 eggs in the second round. In total, Tank gathered 40 + 60 = 100 eggs in the second round. Since Tank gathered 10 more eggs than Emma, Emma gathered 100 - 10 = 90 eggs in the second round. Therefore, the 6 other egg hunters collected 400 - 100 - 90 - 60 = 50 eggs.
+
+</reasoning>
+<answer>50</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.625
+
+#### GENERATION 2 RESPONSE ####
+
+system
+Let \( T_1 \) be the number of eggs collected by Tank in the first round, and \( E_1 \) be the number of eggs collected by Emma in the first round. According to the problem:
+
+\[ T_1 = E_1 + 10 \]
+\[ E_1 = 2T_1 \]
+
+Substitute \( E_1 \) in the second equation:
+
+\[ T_1 = 2(T_1) \]
+\[ T_1 = 50 \]
+\[ E_1 = 100 \]
+
+Now, let \( T_2 \) be the number of eggs collected by Tank in the second round, and \( E_2 \) be the number of eggs collected by Emma in the second round. According to the problem:
+
+\[ T_2 = T_1 - 20 \]
+\[ T_2 = 30 \]
+\[ E_2 = 2 \times 60 = 120 \]
+
+Let \( E_{\text{other}} \) be the number of eggs collected by the other 6 egg hunters. We have:
+
+\[ T_1 + E_1 + (T_2 + E_2) + E_{\text{other}} = 400 \]
+\[ 50 + 100 + (30 + 120) + E_{\text{other}} = 400 \]
+\[ 320 + E_{\text{other}} = 400 \]
+\[ E_{\text{other}} = 80 \]
+
+</reasoning>
+<answer>80</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.625
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+Let's denote the number of eggs Tank gathered in the first round as \( T_1 \), in the second round as \( T_2 \), and Emma's total number of eggs as \( E = 60 \). The number of eggs that the 6 other people collected is \( S \).
+
+From the problem, we have the following information:
+1. Emma gathered twice as many eggs as Tank in the second round: \( E = 2T_2 \).
+2. Tank gathered 10 more eggs than Emma in the first round: \( T_1 = E + 10 \).
+3. Tank's total number of eggs in the second round was 20 less than the number she gathered in the first round: \( T_2 = T_1 - 20 \).
+
+First, we substitute \( E = 60 \) into the second equation:
+\[ T_2 = 2 \times 60 = 120. \]
+
+Next, we substitute \( E = 60 \) and \( T_2 = 120 \) into the third equation:
+\[ T_1 = 60 + 10 = 70. \]
+Then, we find \( T_2 \):
+\[ T_2 = 70 - 20 = 50. \]
+
+The total number of eggs is the sum of the eggs collected by Emma and the other 6 people:
+\[ T_1 + T_2 + S + 6 \times 60 = 400. \]
+Substituting the known values:
+\[ 70 + 50 + S + 360 = 400. \]
+Simplifying, we get:
+\[ 480 + S = 400. \]
+Thus,
+\[ S = 400 - 480 = -80. \]
+
+The negative value for \( S \) suggests there might be a mistake in the interpretation or the problem setup, but if we consider it as part of the total collected by the other hunters, then the number of eggs that the other 6 people collected is:
+\[ \boxed{20} \]
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+In the first round of egg hunt:
+- Tank collected \(10\) more eggs than Emma.
+- Emma collected \(2 \times 60 = 120\) eggs.
+- Therefore, Tank collected \(60 + 10 = 70\) eggs.
+
+In the second round of egg hunt:
+- Emma collected \(120\) eggs.
+- Tank's egg count is \(70 - 20 = 50\) eggs.
+- Tank's contribution total is \(20\) less than Emma's, meaning Emma's total is \(50 + 20 = 70\) eggs in the second round.
+
+Total eggs collected by the two in the two hunts:
+\[60 + 120 + 50 + 70 = 200\]
+
+Total number of eggs collected (including 6 other egg hunters):
+\[400\]
+
+Therefore, the total eggs collected by the 6 other egg hunters is:
+\[400 - 200 = 200\]
+
+</reasoning>
+<answer>
+200
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 5 RESPONSE ####
+
+system
+From Emma's second round, we know that Tank gathered \(60 \times 2 = 120\) eggs. In the first round, Tank collected \(120 - 10 = 110\) eggs. Tank’s total was 20 less in the second round, so in the first round, he collected \(110 + 20 = 130\) eggs. Since Emma's total was \( 60/2 = 30\) less than Tank and together with the eggs collected in the second round, they gathered \(400 - 130 - 120 = 150\) eggs in the first round. 
+
+Adding the eggs from the second round of each participant, Tank and Emma gained \(120 + 60 = 180\) eggs, and the other 6 people, thus, gathered \(150 + 180 = 330\) eggs in total.
+
+</reasoning>
+<answer>
+330
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+Let's denote the number of eggs collected by Tank in the first round as \( T_1 \) and in the second round as \( T_2 \). Similarly, let's denote the number of eggs collected by Emma in the first round as \( E_1 \) and in the second round as \( E_2 \).
+
+From the problem, we have:
+\[ E_2 = 2T_2 \quad \text{(Emma gathered twice as many eggs as Tank in the second round)} \]
+\[ T_2 = T_1 - 20 \quad \text{(Tank's total number of eggs in the second round was 20 less than the number she had gathered in the first round)} \]
+\[ e = E_1 + E_2 \quad \text{(the total number of eggs collected by Tank, Emma, and the 6 other egg hunters)} \]
+\[ e = 400 \quad \text{(the total number of eggs in the pile)} \]
+\[ E_2 = 60 \quad \text{(Emma gathered 60 eggs in the second round)} \]
+
+First, we can substitute \( E_2 = 60 \) into the equation for Emma's eggs in the second round to find \( E_1 \):
+\[ 60 = 2T_2 \]
+\[ T_2 = 30 \]
+Now, we substitute \( T_2 = 30 \) into the equation \( T_2 = T_1 - 20 \) to find \( T_1 \):
+\[ 30 = T_1 - 20 \]
+\[ T_1 = 50 \]
+Now that we have \( T_1 = 50 \) and \( T_2 = 30 \), we can find \( E_2 \):
+\[ E_2 = 2T_2 = 2 \times 30 = 60 \]
+We already know \( E_2 = 60 \). Now we can find \( E_1 \) using the total number of eggs:
+\[ e = E_1 + E_2 \]
+\[ 400 = E_1 + 60 \]
+\[ E_1 = 400 - 60 = 340 \]
+So, the total number of eggs that Tank, Emma, and the 6 other egg hunters collected together is 400. To find the number of eggs that the 6 other egg hunters collected, we subtract the number of eggs that Tank and Emma gathered from the total:
+\[ \text{Number of eggs collected by the 6 other egg hunters} = 400 - E_1 - E_2 = 400 - 340 - 60 = 0 \]
+
+</reasoning>
+<answer>
+0
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+The total number of eggs gathered by Tank and Emma in the first round is 400 - 6 = 394. Emma gathered 60 eggs, so Tank gathered 394 - 60 = 334 eggs. Tank gathered 10 more Easter eggs than Emma in the first round, meaning Emma gathered 334 - 10 = 324 eggs in the first round. Tank gathered 20 less than Emma’s in the second round, meaning Emma gathered 324 + 20 = 344 eggs in the second round. Tank gathered 334 + 20 = 354 eggs in the second round. Emma gathered 60 + 344 = 404 eggs.
+
+The answer is 40.
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+In the first round, Emma gathered 60/2 = 30 eggs. Tank gathered 30-10 = 20 eggs in the first round. In the second round, Tank gathered 20+20 = 40 eggs. Emma gathered 60 eggs. Tank gathered 20 eggs in the first round and 40+20 = 60 eggs in the second round for a total of 60+60 = 120 eggs. The other 6 people gathered 400-120 = 280 eggs.
+
+</reasoning>
+<answer>
+280
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+Let's denote the number of eggs Emma gathered in the first round as \( E_{F1} \), the number of eggs Tank gathered in the first round as \( T_{F1} \), the number of eggs Emma gathered in the second round as \( E_{F2} \), and the number of eggs Tank gathered in the second round as \( T_{F2} \). We are given that Emma gathered twice as many eggs as Tank in the second round, and Tank gathered 10 more eggs than Emma in the first round.
+
+From the problem, we have the following information:
+1. \( E_{F2} = 2 \times T_{F2} \)
+2. \( T_{F2} = T_{F1} + 20 \)
+3. The total number of eggs they collected in the second round was 60 eggs.
+
+Using this information, we can find \( T_{F2} \):
+\[ T_{F2} = E_{F2} / 2 = 60 / 2 = 30 \]
+
+Now we can use the second equation to find \( T_{F1} \):
+\[ T_{F2} = T_{F1} + 20 \]
+\[ 30 = T_{F1} + 20 \]
+\[ T_{F1} = 30 - 20 = 10 \]
+
+Next, we need to find the total number of eggs gathered by Tank in both rounds:
+\[ \text{Total eggs by Tank} = T_{F1} + T_{F2} = 10 + 30 = 40 \]
+
+Finally, we can find the number of eggs collected by the 6 other egg hunters by subtracting Tank's total number of eggs and Emma's total number of eggs from the total number of eggs collected by all:
+\[ \text{Total eggs by other hunters} = 400 - (40 + 60) = 400 - 100 = 300 \]
+
+So, the number of eggs that the 6 other egg hunters collected is 300.
+
+</reasoning>
+<answer>
+300
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -1.0199999809265137
+Total reward: -0.5199999809265137
+
+#### GENERATION 10 RESPONSE ####
+
+system
+Tank gathered 60 / 2 = 30 eggs in the second egg hunt round. Therefore, Tank gathered 30 + 20 = 50 eggs in the first egg hunt round. Thus, Tank gathered 30 + 10 = 40 eggs in the first egg hunt round. Consequently, Tank gathered a total of 50 + 40 = 90 eggs over the two rounds.
+
+Tank and Emma initially gathered 90 + 60 = 150 eggs. Therefore, the other 6 egg-hunters gathered 400 - 150 = 250 eggs.
+
+</reasoning>
+<answer>
+250
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.06499999761581421
+Total reward: 0.4350000023841858
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+Tank gathered 60 / 2 = 30 eggs in their first round of egg hunt.
+Tank gathered 30 + 10 = 40 eggs in their second round of egg hunt.
+Tank gathered 40 - 20 = 20 eggs in their first round of egg hunt.
+Tank gathered 40 + 20 = 60 eggs in their second round of egg hunt.
+Tank's total number of eggs in the pile they were collecting with 6 other people was 40 + 60 = 100 eggs.
+The 6 other egg hunters collected 400 - 100 = 300 eggs.
+
+</reasoning>
+<answer>
+300
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 12 RESPONSE ####
+
+system
+Let's denote the number of eggs Tank gathered in the first round as \( T_1 \) and in the second round as \( T_2 \). Emma gathered eggs in a similar manner but with different numbers and relationships.
+
+Given:
+1. Tank gathered 10 more eggs than Emma in their first round.
+2. Emma gathered twice as many eggs as Tank in their second round.
+3. In the second round, Tank's total number of eggs was 20 less than the number she gathered in the first round.
+4. The total number of eggs gathered by Emma and her 6 other egg hunters in the second round is 60.
+5. The total number of eggs gathered by the group (Tank and the 6 other egg hunters) in total is 400.
+
+From these, we get:
+- Tank in the second round: \( T_2 = 2 \times 60 = 120 \)
+- Emma in the first round: \( E_1 = E_2 \)
+- Tank in the first round: \( T_1 \)
+- Emma in the second round: \( 2T_1
+
+From \( Tank_2 = T_1 - 20 \),
+\[ 120 = T_1 - 20 \implies T_1 = 140 \]
+
+Now we also know:
+\[ E = T + x = 140 + x \]
+\[ E + 6 = 140 + x + 8 \]
+where \( 6 \) is the number of eggs that the 6 other egg hunters collected.
+
+Given \( 140 + x + 6 = 400 \):
+\[ 146 + x = 400 \]
+\[ x = 254 \]
+
+Hence, the number of eggs that the 6 other egg hunters collected is 254.
+
+</reasoning>
+<answer>
+254
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.8730000257492065
+Total reward: -0.37300002574920654
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+Let's denote the number of eggs Tank gathered in the first round as \( T_1 \), and in the second round as \( T_2 \). Emma gathered \( E_2 \) eggs in the second round.
+
+From the problem, we know:
+1. Tank gathered 10 more eggs than Emma in the first round: \( T_1 = E_1 + 10 \).
+2. Emma gathered twice as many eggs as Tank in the second round: \( E_2 = 2T_2 \).
+3. Tank's total number of eggs in the second round was 20 less than the number she had gathered in the first round: \( T_2 = T_1 - 20 \).
+4. The total number of eggs in the pile was 400 eggs.
+
+Since the total number of eggs collected by Tank and Emma together was 400, we can write:
+\[ T_1 + E_1 + T_2 + E_2 = 400. \]
+
+Substituting the expressions for \( T_1 \), \( T_2 \), and \( E_2 \) in terms of \( E_1 \) and \( E_2 \), we get:
+\[ (E_1 + 10) + E_1 + (2E_1) + (2(E_1 + 10)) = 400. \]
+Simplifying, we get:
+\[ E_1 + 10 + E_1 + 2E_1 + 2E_1 + 20 = 400, \]
+\[ 6E_1 + 30 = 400, \]
+\[ 6E_1 = 370, \]
+\[ E_1 = 58.33. \]
+
+From the above solution, we can see we are not needed further. Let me correct and simplify our approach:
+
+Tank gathered 10 more eggs than Emma in the first round: \( T_1 = E_1 + 10 \).
+
+Emma gathered twice as many eggs as Tank in the second round: \( E_2 = 2T_2 \).
+
+Tank's total number of eggs in the second round was 20 less than the number she had gathered in the first round: \( T_2 = T_1 - 20 \).
+
+We can solve these equations correctly.
+
+Emma gathered 60 eggs in the second round, let's denote \( E_2 = 60 \).
+
+Tank gathered twice as many eggs as Emma in the second round: \( T_2 = 2 \times 60 = 120 \).
+
+Tank's total number of eggs in the first round was 20 less than the number he gathered in the second round: \( T_1 = 120 - 20 = 100 \).
+
+Emma gathered 58 eggs in the first round: \( E_2 = 58 \).
+
+Tank gathered 68 eggs in the first round: \( T_1 = 68 \).
+
+Total number of eggs gathered by Tank and Emma: \( 68 + 58 + 120 + 60 = 286 \).
+
+Six other people gathered 400 - 286 = 114 eggs.
+
+</reasoning>
+<answer>
+114
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -1.6399999856948853
+Total reward: -1.1399999856948853
+
+#### GENERATION 14 RESPONSE ####
+
+system
+Let \( T_1 \) and \( E_1 \) represent the number of eggs Emma and Tank gathered in their first round, respectively. According to the problem, in their first round, Tank gathered 10 more eggs than Emma:
+\[
+T_1 = E_1 + 10.
+\]
+
+In their second round, Emma gathered twice as many eggs as Tank:
+\[
+E_2 = 2T_2.
+\]
+
+Tank's number of eggs in the second round was 20 less than the amount she gathered in the first round:
+\[
+T_2 = T_1 - 20.
+\]
+
+Since \( T_1 = E_1 + 10 \), we can substitute \( T_1 \) in the equation for \( T_2 \):
+\[
+T_2 = (E_1 + 10) - 20 = E_1 - 10.
+\]
+
+In their first round, Emma gathered 60 eggs:
+\[
+E_2 = 20.
+\]
+
+Now, we have:
+\[
+E_2 = 2T_2 = 2(2E_1 - 10) = 4E_1 - 20.
+\]
+
+From \( E_2 = 20 \):
+\[
+4E_1 - 20 = 20 \implies 4E_1 = 40 \implies E_1 = 10.
+\]
+
+Substituting \( E_1 \) back, we find \( T_1 \):
+\[
+T_1 = E_1 + 10 = 10 + 10 = 20.
+\]
+
+Adding the number of eggs each gathered:
+\[
+T_1 + E_1 + T_2 + E_2 = 20 + 10 + (20 - 10) + 20 = 60.
+\]
+
+The total number of eggs gathered by Tank, Emma, and their 6 other friends:
+\[
+20 + 10 + 10 + 20 + 10 = 70.
+\]
+
+Given the total number of eggs collected is 400:
+\[
+400 - 70 = 330.
+\]
+
+Therefore, the number of eggs the 6 other hunters collected is:
+\[
+\bbox[5px, border:2px solid black]{330}. 
+\]
+
+</reasoning>
+<answer>
+330
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.9179999828338623
+Total reward: -0.4179999828338623
+
+#### GENERATION 15 RESPONSE ####
+
+
+user
+Let's denote the number of eggs Tank gathered in the first round by \( T_1 \) and in the second round by \( T_2 \). Similarly, let's denote the number of eggs Emma gathered in the first round by \( E_1 \) and in the second round by \( E_2 \).
+
+From the problem, we know:
+1. Tank gathered 10 more eggs than Emma in the first round, so \( T_1 = E_1 + 10 \).
+2. Emma gathered twice as many eggs as Tank in the second round, so \( E_2 = 2T_2 \).
+3. Tank's total number of eggs in the second round was 20 less than the number she had gathered in the first round, so \( T_2 = T_1 - 20 \).
+4. Their total number of eggs is 400, so \( T_1 + T_2 + E_1 + E_2 = 400 \).
+
+First, substitute \( T_2 = T_1 - 20 \) into the second condition:
+\[ E_2 = 2(T_1 - 20) = 2T_1 - 40. \]
+
+Now we have expressions for \( T_2 \) and \( E_2 \) in terms of \( T_1 \):
+\[ T_2 = T_1 - 20, \]
+\[ E_2 = 2T_1 - 40. \]
+
+Substitute these into the total eggs equation:
+\[ T_1 + (T_1 - 20) + E_1 + (2T_1 - 40) = 400. \]
+Simplify the equation:
+\[ 4T_1 - 60 + E_1 = 400. \]
+\[ 4T_1 + E_1 = 460. \]
+
+We also know from the first condition that \( E_1 = T_1 - 10 \), so substitute this into the previous equation:
+\[ 4T_1 + (T_1 - 10) = 460. \]
+\[ 5T_1 - 10 = 460. \]
+\[ 5T_1 = 470. \]
+\[ T_1 = 94. \]
+
+Now, use \( T_1 = 94 \) to find \( E_1 \) and \( T_2 \):
+\[ E_1 = T_1 - 10 = 94 - 10 = 84, \]
+\[ T_2 = T_1 - 20 = 94 - 20 = 74. \]
+
+Next, calculate \( E_2 \):
+\[ E_2 = 2T_2 = 2 \times 74 = 148. \]
+
+The total number of eggs gathered by the 6 other hunters is:
+\[ 400 - (E_1 + E_2) = 400 - (84 + 148) = 400 - 232 = 168. \]
+
+Therefore, the number of eggs that the 6 other egg hunters collected is:
+\[ \boxed{168}. \]
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 16 RESPONSE ####
+
+system
+Let \( T_1 \) be the number of eggs Tank gathered in the first round, and \( E_1 \) be the number of eggs Emma gathered in the first round. According to the problem:
+
+\[ T_1 = E_1 + 10 \]
+
+\[ E_2 \] is the number of eggs Emma gathered in the second round, and Emma's total eggs in both rounds are given by:
+
+\[ 2E_2 = T_1 + E_1 \]
+
+\[ T_2 \] is the number of eggs Tank gathered in the second round, and Tank's total in the second round is 20 less than in the first round, hence:
+
+\[ T_2 = T_1 - 20 \]
+
+Given:
+
+\[ E_2 = 60 \]
+
+Substituting \( E_2 \) in the ratio relationship:
+
+\[ 2 \times 60 = T_1 + E_1 \]
+\[ 120 = T_1 + E_1 \]
+
+From the first round gathering relationship:
+
+\[ T_1 = E_1 + 10 \]
+
+Substituting \( T_1 \) in the previous equation:
+
+\[ E_1 + 10 = E_1 + 10 \]
+\[ 120 = 10 \times 11 \]
+\[ T_1 = 110 \]
+
+Next, substituting \( T_2 \) in the second round gathering relationship:
+
+\[ T_2 = T_1 - 20 = 110 - 20 = 90 \]
+
+So, Tank gathered 90 eggs in the second round. 
+
+Total number of eggs they collected is 400, hence the 6 other egg hunters collected:
+
+\[ 400 - (110 + 60 + 90) \]
+
+
+</reasoning>
+<answer>
+10 <\/answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.8859999775886536
+Total reward: -0.8859999775886536
+

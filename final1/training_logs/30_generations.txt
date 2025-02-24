@@ -1,0 +1,470 @@
+###### ORIGINAL PROMPT #####
+
+Ann, Bill, Cate, and Dale each buy personal pan pizzas cut into 4 pieces. If Bill and Dale eat 50% of their pizzas and Ann and Cate eat 75% of the pizzas, how many pizza pieces are left uneaten?
+
+#### ANS ####
+
+6
+#### GENERATION 1 RESPONSE ####
+
+
+system
+Reasoning:
+1. Each of the four friends buys a personal pan pizza, which is cut into 4 pieces.
+2. Bill and Dale each eat 50% of their pizza, which is 4 * 0.5 = 2 pieces.
+3. Ann and Cate each eat 75% of their pizza, which is 4 * 0.75 = 3 pieces.
+4. Therefore, the total number of uneaten pizza pieces is 4 - 2 - 3 = 1.
+
+Answer:
+1
+...
+</reasoning>
+<answer>
+1
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.003000000026077032
+Total reward: 0.503000020980835
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+Reasoning:
+1. First, we need to determine how many pieces of pizza each person ate.
+2. Ann and Cate each ate 75% of their pizzas, which means they ate \(75/100 = 3/4\) of their pizzas.
+   - Ann ate \(4 \times 3/4 = 3\) pieces.
+   - Cate ate \(4 \times 3/4 = 3\) pieces.
+3. Bill and Dale each ate 50% of their pizzas, which means they ate \(50/100 = 1/2\) of their pizzas.
+   - Bill ate \(4 \times 1/2 = 2\) pieces.
+   - Dale ate \(4 \times 1/2 = 2\) pieces.
+4. Now we need to calculate the total number of pieces eaten and subtract from the total number of pieces.
+5. Total pieces eaten: \(3 + 3 + 2 + 2 = 10\) pieces.
+6. Total pieces left uneaten: \(4 \times 4 - 10 = 16 - 10 = 6\) pieces.
+
+Answer:
+6 pizza pieces are left uneaten.
+
+The above reasoning follows through a series of steps to determine the total number of pieces eaten and subsequently calculate the number of pieces left uneaten.
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+Total number of pizza pieces = 4 x 4 = 16 pieces
+
+Bill eats 50% of 4 pieces = 2 pieces
+Dale eats 50% of 4 pieces = 2 pieces
+
+Ann eats 75% of 4 pieces = 3 pieces
+Cate eats 75% of 4 pieces = 3 pieces
+
+Eaten altogether = 2 + 2 + 3 + 3 = 10 pieces
+
+Uneaten pieces = 16 - 10 = 6 pieces
+
+Therefore, the answer is 6.
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Let's start by determining the total number of pizza pieces. Each person buys a personal pan pizza, and each pizza is cut into 4 pieces. Therefore, the total number of pizza pieces is:
+\[ 4 \text{ pieces/pizza} \times 4 \text{ people} = 16 \text{ pieces} \]
+
+Next, we calculate how many pieces each person eats. Bill and Dale each eat 50% of their pizzas:
+\[ 50\% \text{ of } 16 \text{ pieces} = \frac{50}{100} \times 16 = 0.5 \times 16 = 8 \text{ pieces} \]
+So, Bill and Dale together eat:
+\[ 8 \text{ pieces} + 8 \text{ pieces} = 16 \text{ pieces} \]
+
+Ann and Cate together eat 75% of their pizzas:
+\[ 75\% \text{ of } 16 \text{ pieces} = \frac{75}{100} \times 16 = 0.75 \times 16 = 12 \text{ pieces} \]
+So, Ann and Cate together eat:
+\[ 12 \text{ pieces} \]
+
+Now, we need to find out how many pieces are left uneaten. Subtract the number of pieces eaten from the total number of pieces:
+\[ 16 \text{ pieces} - (8 \text{ pieces} + 12 \text{ pieces}) = 16 \text{ pieces} - 20 \text{ pieces} = 4 \text{ pieces} \]
+
+Therefore, the number of pizza pieces left uneaten is:
+\[ \boxed{4} \]
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+To determine the number of uneaten pizza pieces, we need to follow these steps:
+
+1. Calculate the total number of pizza pieces each person receives.
+2. Determine how many pieces each person eats.
+3. Subtract the number of pieces eaten from the total number of pieces each person receives to find the number of uneaten pieces.
+
+First, we find the total number of pieces each person gets:
+- Each person gets 4 pieces (since the pizzas are cut into 4 pieces each).
+
+Next, we calculate how many pieces each person eats:
+- Bill eats 50% of his 4 pieces, which is \(0.5 \times 4 = 2\) pieces.
+- Dale eats 50% of his 4 pieces, which is \(0.5 \times 4 = 2\) pieces.
+- Ann eats 75% of her 4 pieces, which is \(0.75 \times 4 = 3\) pieces.
+- Cate eats 75% of her 4 pieces, which is \(0.75 \times 4 = 3\) pieces.
+
+Now, we subtract the number of pieces each person eats from the total number of pieces each person receives to find the number of uneaten pieces:
+- Bill has \(4 - 2 = 2\) pieces left.
+- Dale has \(4 - 2 = 2\) pieces left.
+- Ann has \(4 - 3 = 1\) piece left.
+- Cate has \(4 - 3 = 1\) piece left.
+
+Finally, we add the uneaten pieces together to find the total number of uneaten pieces:
+\[2 + 2 + 1 + 1 = 6\]
+
+Therefore, the number of uneaten pizza pieces is \(\boxed{6}\).
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+To calculate the uneaten pizza pieces, we first determine how much each person eats and then subtract that amount from the total number of pieces each person started with. Since each pizza is cut into 4 pieces, each person starts with 4 pieces.
+
+Ann eats 75% of her pizza. So she eats \(4 \times 0.75 = 3\) pieces.
+Bill eats 50% of his pizza. So he eats \(4 \times 0.5 = 2\) pieces.
+Cate eats 75% of her pizza. So she eats \(4 \times 0.75 = 3\) pieces.
+Dale eats 50% of his pizza. So he eats \(4 \times 0.5 = 2\) pieces.
+
+Ann and Cate together eat \(3 + 3 = 6\) pieces.
+Bill and Dale together eat \(2 + 2 = 4\) pieces.
+
+The total pieces eaten by Ann, Bill, Cate, and Dale is \(6 + 4 = 10\) pieces.
+
+Since each person started with 4 pieces, in total they started with \(4 \times 4 = 16\) pieces.
+
+So the number of pieces left uneaten is \(16 - 10 = 6\).
+
+Answer: 6 pizza pieces are left uneaten.
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+To determine how many pizza pieces are left uneaten, we start by calculating the total number of pizza pieces each person eats. Each person's pizza is cut into 4 pieces.
+
+First, we calculate the number of pieces that Bill and Dale eat. Since Bill eats 50% of his pizza and Dale eats 50% of his pizza, we have:
+\[ \text{Pieces eaten by Bill} = 0.5 \times 4 = 2 \]
+\[ \text{Pieces eaten by Dale} = 0.5 \times 4 = 2 \]
+So, Bill and Dale together eat:
+\[ 2 + 2 = 4 \text{ pieces} \]
+
+Next, we calculate the number of pieces that Ann and Cate eat. Since Ann eats 75% of her pizza and Cate eats 75% of her pizza, we have:
+\[ \text{Pieces eaten by Ann} = 0.75 \times 4 = 3 \]
+\[ \text{Pieces eaten by Cate} = 0.75 \times 4 = 3 \]
+So, Ann and Cate together eat:
+\[ 3 + 3 = 6 \text{ pieces} \]
+
+Adding the pieces eaten by Bill, Dale, Ann, and Cate gives us the total number of pieces eaten:
+\[ 4 + 6 = 10 \text{ pieces} \]
+
+Each person's pizza originally had 4 pieces, so the total number of pizza pieces is:
+\[ 4 + 4 + 4 + 4 = 16 \text{ pieces} \]
+
+The number of uneaten pieces is the total number of pieces minus the number of pieces eaten:
+\[ 16 - 10 = 6 \text{ pieces} \]
+
+Therefore, the number of uneaten pizza pieces is:
+\[ \boxed{6} \]
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Reasoning:
+1. Ann, Bill, Cate, and Dale each have 4 pieces of pizza.
+2. Bill and Dale eat 50% of their pizzas, which means they eat 2 pieces each.
+3. Ann and Cate eat 75% of their pizzas, which means they eat 3 pieces each.
+4. Total pieces eaten by Bill and Dale: 2 (Bill) + 2 (Dale) = 4 pieces
+5. Total pieces eaten by Ann and Cate: 3 (Ann) + 3 (Cate) = 6 pieces
+6. Total pieces eaten: 4 + 6 = 10 pieces
+7. Total pieces in all pizzas: 4 (Bill) + 4 (Dale) + 4 (Ann) + 4 (Cate) = 16 pieces
+8. Pieces left uneaten: Total pieces in all pizzas - Pieces eaten = 16 - 10 = 6 pieces
+
+Answer: There are 6 pieces of pizza that are left uneaten.
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 9 RESPONSE ####
+
+
+reason
+Let's start by determining the total number of pizza pieces. Since each person gets a personal pan pizza cut into 4 pieces, and there are 4 people, the total number of pizza pieces is:
+
+\[ 4 \text{ people} \times 4 \text{ pieces per person} = 16 \text{ pieces} \]
+
+Next, we calculate how many pieces each person eats:
+
+- Bill eats 50% of his pizza, so he eats:
+  \[ 0.5 \times 4 = 2 \text{ pieces} \]
+- Dale eats 50% of his pizza, so he eats:
+  \[ 0.5 \times 4 = 2 \text{ pieces} \]
+- Ann eats 75% of her pizza, so she eats:
+  \[ 0.75 \times 4 = 3 \text{ pieces} \]
+- Cate eats 75% of her pizza, so she eats:
+  \[ 0.75 \times 4 = 3 \text{ pieces} \]
+
+Now we sum the pieces eaten by all four people:
+\[ 2 \text{ (Bill)} + 2 \text{ (Dale)} + 3 \text{ (Ann)} + 3 \text{ (Cate)} = 10 \text{ pieces} \]
+
+Finally, we subtract the total number of pieces eaten from the original total to find out how many pieces are left uneaten:
+\[ 16 \text{ pieces} - 10 \text{ pieces} = 6 \text{ pieces} \]
+
+Therefore, there are 6 pizza pieces left uneaten.
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+All 4 people have 4 * 4 = 16 pizza pieces. Bill and Dale eat 5 pizzas or 16 * .5 = 8 pieces. Ann and Cate eat 7 pizzas or 16 * .75 = 12 pieces. 16 - 8 - 12 = 6 pieces are uneaten. 6 pieces are uneaten. Answer: 6.
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+To determine the number of uneaten pizza pieces, we need to calculate how many pieces each person eats and then subtract that from the total number of pieces.
+
+First, let's calculate the total number of pizza pieces available:
+\[ 4 \text{ (Ann's pizzas)} + 4 \text{ (Bill's pizzas)} + 4 \text{ (Cate's pizzas)} + 4 \text{ (Dale's pizzas)} = 16 \text{ pieces} \]
+
+Next, we calculate how many pieces each person eats:
+- Bill and Dale each eat 50% of their pizzas, so each eats \( 4 \times 0.5 = 2 \) pieces.
+- Ann and Cate each eat 75% of their pizzas, so each eats \( 4 \times 0.75 = 3 \) pieces.
+
+Now, we sum the pieces eaten by each person:
+\[ 2 \text{ (Bill's pieces)} + 2 \text{ (Dale's pieces)} + 3 \text{ (Ann's pieces)} + 3 \text{ (Cate's pieces)} = 10 \text{ pieces} \]
+
+Finally, we subtract the total pieces eaten from the total number of pieces to find the number of uneaten pieces:
+\[ 16 - 10 = 6 \]
+
+Therefore, the number of pizza pieces left uneaten is 6.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.6340000033378601
+Total reward: 1.8659999370574951
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Initially, each person eats 4 * 0.75 = 3 pieces of pizza. Then Bill and Dale eat a total of 2 * 3 = 6 pieces. Then, Ann and Cate eat a total of 2 * 3 = 6 pieces. So, Ann, Bill, Cate, and Dale together eat 6 + 6 = 12 pieces. If they started with 4 pizzas, then they have 4 * 4 - 12 = 16 - 12 = 4 pieces left uneaten.
+
+Therefore, the answer is 4.
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+Reasoning:
+1. Each person bought a personal pan pizza cut into 4 pieces.
+2. Bill and Dale eat 50% of their pizzas, so they each eat 2 pieces.
+   - Total pieces eaten by Bill and Dale = 2 * 2 = 4 pieces.
+3. Ann and Cate eat 75% of their pizzas, so they each eat 3 pieces.
+   - Total pieces eaten by Ann and Cate = 3 * 2 = 6 pieces.
+4. The total number of pieces eaten is 4 (Bill and Dale) + 6 (Ann and Cate) = 10 pieces.
+5. Each pizza has 4 pieces, so the total number of pieces Ann, Bill, Cate, and Dale had initially was 4 * 4 = 16 pieces.
+6. The number of uneaten pieces is the total number of pieces minus the pieces eaten: 16 - 10 = 6 pieces.
+
+Answer:
+The number of uneaten pizza pieces is 6.
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+Each person has 4 pieces of pizza. We know that Bill and Dale eat 50% of their pizzas, which means they eat 2 * 4 * 0.5 = 4 pieces.
+
+The total eaten by Ann and Cate is 4 * 2 * 0.75 = 6 pieces.
+
+Adding all the pieces consumed, we get 4 + 4 + 6 = 14 pieces.
+
+Originally, there were 4 * 4 = 16 pieces, so 16 - 14 = 2 pieces left uneaten.
+
+Therefore, the answer is 2.
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+To determine the number of uneaten pizza pieces, we'll first calculate how many pieces each person eats and then subtract the total number of eaten pieces from the initial total.
+
+1. **Calculate total pieces of pizza**:
+    - Each of the 4 people gets 1 personal pan pizza cut into 4 pieces.
+    - Total pieces = 4 pizzas × 4 pieces/pizza = 16 pieces.
+
+2. **Eating percentages**:
+    - Bill and Dale each eat 50% of their pizzas.
+    - Ann and Cate each eat 75% of their pizzas.
+    
+    Since each pizza is cut into 4 pieces:
+    - Bill and Dale eat \(50\% \times 4 = 2\) pieces each.
+    - Ann and Cate eat \(75\% \times 4 = 3\) pieces each.
+
+3. **Total pieces eaten**:
+    - Bill and Dale: \(2 \text{ pieces} \times 2 \text{ people} = 4 \text{ pieces}\)
+    - Ann and Cate: \(3 \text{ pieces} \times 2 \text{ people} = 6 \text{ pieces}\)
+    - Total pieces eaten: \(4 + 6 = 10 \text{ pieces}\)
+
+4. **Pieces left uneaten**:
+    - Initial total pieces: 16 pieces.
+    - Pieces eaten: 10 pieces.
+    - Pieces left uneaten: \(16 - 10 = 6 \text{ pieces}\)
+
+Therefore, the number of pizza pieces left uneaten is 6.
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+Given that each person buys personal pan pizzas cut into 4 pieces, and all pizzas are identical, we need to consider the following:
+1. Each person initially has 4 pieces of pizza.
+2. Bill and Dale eat 50% of their pizzas.
+3. Ann and Cate eat 75% of their pizzas.
+4. No one eats any pizza pieces after this.
+
+For Bill and Dale:
+- They each have 4 pieces, and 50% of 4 pieces is 2 pieces each.
+- Therefore, Bill and Dale together have \(2 + 2 = 4\) pieces eaten.
+- The number of pizzas left uneaten for Bill and Dale is \(4 - 4 = 0\) pieces each.
+
+For Ann and Cate:
+- Each of them has 4 pieces, and 75% of 4 pieces is \(4 \times 0.75 = 3\) pieces.
+- Therefore, Ann and Cate together have \(3 + 3 = 6\) pieces eaten.
+- The number of pizzas left uneaten for Ann and Cate is \(4 - 6 = -2\) pieces, but since they can't have a negative number of uneaten pieces, it means they both ate the same number of pieces. 
+
+Combining the uneaten pieces:
+- The total number of uneaten pieces is the sum of the uneaten pieces for Bill and Dale, which is 0 each, plus the uneaten pieces for Ann and Cate, which is 0 each.
+
+Therefore, the number of uneaten pizza pieces is:
+\[ 0(\text{Bill}) + 0(\text{Dale}) + 0(\text{Ann}) + 0(\text{Cate}) = 0 \]
+
+The final answer is \( 0 \) uneaten pizza pieces.
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+

@@ -1,0 +1,420 @@
+###### ORIGINAL PROMPT #####
+
+Cupcakes are sold in packages of 10 and 15. Jean bought 4 packs of 15 cupcakes.  If she will give one cupcake each to 100 children in the orphanage, how many packs of 10 cupcakes should she need to buy?
+
+#### ANS ####
+
+4
+#### GENERATION 1 RESPONSE ####
+
+
+system
+<reasoning>
+To determine how many packs of 10 cupcakes Jean needs to buy, we first calculate the total number of cupcakes she will need to give to the children. Since she will give one cupcake each to 100 children, she requires 100 cupcakes.
+
+First, we calculate how many cupcakes Jean will have from the packs she already has:
+\[ 4 \text{ packs} \times 15 \text{ cupcakes per pack} = 60 \text{ cupcakes} \]
+
+Next, we need to find out how many more cupcakes Jean needs to buy:
+\[ 100 \text{ cupcakes} - 60 \text{ cupcakes} = 40 \text{ cupcakes} \]
+
+Each pack of 10 cupcakes provides 10 cupcakes, so Jean needs to buy:
+\[ \frac{40 \text{ cupcakes}}{10 \text{ cupcakes per pack}} = 4 \text{ packs} \]
+
+Therefore, Jean should buy 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes, which totals 60 cupcakes.
+She needs to give cupcakes to 100 children, so she needs 100 - 60 = 40 more cupcakes.
+
+Cupcakes are sold in packs of 10, so she needs to buy \(\lceil \frac{40}{10} \rceil = 4\) packs of 10 cupcakes.
+
+Additionally, since she already has 4 packs of 15 cupcakes, she doesn't need to buy those again.
+
+Therefore, she should buy 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, so she already has \(4 \times 15 = 60\) cupcakes. She needs to give cupcakes to 100 children, so she is short \(100 - 60 = 40\) cupcakes. Each pack of 10 cupcakes makes up 1/10 of a full 15-pack, so she needs \(40 / 10 = 4\) packs of 10 cupcakes to make up the 40 missing cupcakes.
+
+Therefore, she needs to buy 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+<reasoning>
+Jean has 4 packs of 15 cupcakes each, which totals 4 * 15 = 60 cupcakes. She needs cupcakes to give one to 100 children in the orphanage. Therefore, she still needs 100 - 60 = 40 cupcakes. Each pack of cupcakes has 10 cupcakes, so if she needs one pack of cupcakes, she will need to buy 1 more for the remaining 40 cupcakes.
+
+Therefore, she should buy 1 pack.
+</reasoning>
+<answer>
+1
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each. That is a total of:
+4 packs * 15 cupcakes/pack = 60 cupcakes.
+
+She needs to give one cupcake each to 100 children, so she needs an additional:
+100 cupcakes - 60 cupcakes = 40 cupcakes.
+
+Each pack of 10 cupcakes provides 10 cupcakes. To get 40 cupcakes, she would need:
+40 cupcakes / 10 cupcakes/pack = 4 packs of 10 cupcakes.
+
+Therefore, Jean should buy 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, which totals to \(4 \times 15 = 60\) cupcakes. Jean needs to give cupcakes to 100 children. After giving 60 cupcakes to the children, she still needs \(100 - 60 = 40\) cupcakes.
+
+Since cupcakes are sold in packages of 10, Jean needs \(\lceil \frac{40}{10} \rceil = 4\) more cupcakes. Thus, she should buy 4 packs of 10 cupcakes.
+
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, which totals 4 * 15 = 60 cupcakes. She needs to give one cupcake each to 100 children, meaning she needs 100 cupcakes in total.
+
+We know that cupcakes are also sold in packs of 10. Therefore, to make up the remaining 100 - 60 = 40 cupcakes, Jean needs to buy 14 packs of 10 cupcakes.
+
+By adding the packs she already bought (4 packs) to the packs she will need to buy (14 packs), Jean will need 4 + 14 = 18 packs of cupcakes in total.
+</reasoning>
+<answer>
+18
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, which totals:
+\[ 4 \times 15 = 60 \]
+
+She will give one cupcake to 100 children, so she needs 100 cupcake servings.
+
+From the 60 cupcakes she already has, she will be short by:
+\[ 100 - 60 = 40 \]
+
+To make up the 40 remaining cupcakes, she will need to buy:
+\[ 40 / 10 = 4 \]
+
+So, she needs to buy 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+<reasoning>
+To determine how many packs of 10 cupcakes Jean needs to buy, let's first calculate the total number of cupcakes she already has.
+
+Jean bought 4 packs of 15 cupcakes each, so the total number of cupcakes is:
+\[4 \times 15 = 60\]
+
+Jean plans to give one cupcake to each of 100 children. Thus, she needs:
+\[100 - 60 = 40\]
+cupcakes more.
+
+Each pack of 10 cupcakes contains 10 cupcakes. Therefore, to get the additional 40 cupcakes, Jean needs:
+\[40 \div 10 = 4\]
+packs of 10 cupcakes.
+
+So, Jean should buy 4 packs of 10 cupcakes.
+
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, so she initially has \(4 \times 15 = 60\) cupcakes.
+
+She needs cupcakes for 100 children. After giving out 60 cupcakes to the children already, she needs \(100 - 60 = 40\) more cupcakes.
+
+Since cupcakes come in packs of 10, Jean needs to buy \(\lceil \frac{40}{10} \rceil = 4\) packs of 10 cupcakes.
+
+Therefore, Jean should buy 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, which means she has a total of \(4 \times 15 = 60\) cupcakes from these packs. She needs enough cupcakes to give one to each of 100 children. Therefore, she needs \(100 - 60 = 40\) additional cupcakes. Since cupcakes are sold in packs of 10, she needs to buy \(40 \div 10 = 4\) packs of 10 cupcakes.
+
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+<reasoning>
+First, let's calculate the total number of cupcakes Jean will give to children. She will give one cupcake each to 100 children, so she will need a total of 100 cupcakes.
+
+Next, we'll determine how many cupcakes Jean has already bought. She bought 4 packs of 15 cupcakes each, so she has bought a total of \(4 \times 15 = 60\) cupcakes.
+
+Now we need to find out how many more cupcakes she needs. Since she needs a total of 100 cupcakes, and she has already bought 60 cupcakes, she still needs \(100 - 60 = 40\) cupcakes.
+
+Since each 10-pack package contains 10 cupcakes, Jean needs to buy \( \lceil 40 / 10 \rceil = 4 \) more packs of 10 cupcakes.
+
+Therefore, she should buy 4 packs of 10 cupcakes to have enough cupcakes for all the children.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+<reasoning>
+Jean already bought 4 packs of 15 cupcakes, which is a total of 4 packs * 15 cupcakes/pack = 60 cupcakes.
+She needs to give one cupcake each to 100 children, so she still needs 100 - 60 = 40 more cupcakes.
+Cupcakes are sold in packages of 10, so Jean needs to buy 40 cupcakes / 10 cupcakes/package = 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each, which totals 4 * 15 = 60 cupcakes. She needs cupcakes for 100 children. She already has 60 cupcakes, so she needs 100 - 60 = 40 more cupcakes. Each pack of 10 cupcakes gives 10 cupcakes, so she needs 40 / 10 = 4 packs of 10 cupcakes.
+</reasoning>
+<answer>
+4
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+<reasoning>
+First, calculate the total number of cupcakes Jean has from the 4 packs of 15 cupcakes: \(4 \times 15 = 60\) cupcakes.
+
+Jean needs to give one cupcake each to 100 children. Therefore, she needs a total of 100 cupcakes.
+
+To determine how many packs of 10 cupcakes are needed, first find the remaining number of cupcakes she needs from pack of 15: \(100 - 60 = 40\) cupcakes.
+
+Now calculate the number of packs needed for the remaining 40 cupcakes: \(40 \div 15 = 2.67\) packs (since you can't buy a fraction of a pack, round up), so Jean needs 3 packs of 15 cupcakes.
+
+In total, Jean needs to buy \(4 + 3 = 7\) packs of cupcakes.
+
+<answer>
+7
+</answer>
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+<reasoning>
+Jean bought 4 packs of 15 cupcakes each. So, she initially has $4 \times 15 = 60$ cupcakes.
+She plans to give 1 cupcake to each of 100 children, which means she needs an additional 90 cupcakes (since she already has 60).
+
+To have 90 more cupcakes, she needs $90 / 10 = 9$ packs of 10 cupcakes.
+
+So, Jean needs to buy 9 packs of 10 cupcakes to have enough cupcakes for 100 children.
+</reasoning>
+<answer>
+9
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+

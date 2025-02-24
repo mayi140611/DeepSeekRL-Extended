@@ -1,0 +1,575 @@
+###### ORIGINAL PROMPT #####
+
+Isabel has some money in her piggy bank. She spent half the amount and bought a toy. She then spent half of the remaining money and bought her brother a book. If she has $51 left, how much money, in dollars, did she have at first?
+
+#### ANS ####
+
+204
+#### GENERATION 1 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had by \( x \) dollars.
+
+1. After spending half of the initial amount on a toy, the remaining amount is:
+\[ \frac{x}{2} \]
+
+2. She then spends half of the remaining amount on a book. The amount spent on the book is:
+\[ \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \]
+
+3. The remaining amount after buying the toy and the book is:
+\[ \frac{x}{2} - \frac{x}{4} \]
+
+We know that she has $51 left, so we can set up the equation:
+\[ \frac{x}{2} - \frac{x}{4} = 51 \]
+
+To solve for \( x \), we first find a common denominator for the fractions on the left side of the equation:
+\[ \frac{2x - x}{4} = 51 \]
+\[ \frac{x}{4} = 51 \]
+
+Now, we multiply both sides by 4:
+\[ x = 51 \times 4 \]
+\[ x = 204 \]
+
+So, Isabel initially had $204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. Isabel spent half of her money on a toy, so she had \( \frac{x}{2} \) left.
+2. She then spent half of the remaining money on a book, which is \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \), leaving her with \( \frac{x}{2} - \frac{x}{4} = \frac{x}{4} \).
+
+We are told that after these expenditures, she has $51 left. Therefore, we can set up the equation:
+\[
+\frac{x}{4} = 51
+\]
+To find \( x \), we can multiply both sides of the equation by 4:
+\[
+x = 51 \times 4
+\]
+\[
+x = 204
+\]
+
+Thus, Isabel initially had $204 in her piggy bank.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+<reasoning>
+Let's break down the problem step by step:
+
+1. **Identify the final amount left**: Isabel has $51 in her piggy bank after spending money on her toy and a book.
+2. **Determine the amount she spent on her brother's book**: When she spent half of the remaining money after buying the toy, she had $51 left. This means the half she spent on the book is $51. Therefore, the total amount before buying the book is $51 * 2 = $102.
+3. **Determine the amount she spent on her toy**: She spent half of the initial amount on the toy. So, the amount spent on the toy is $102 / 2 = $51. 
+4. **Calculate the initial amount**: The sum of the amounts spent on the toy and the book is $51. Therefore, the initial amount is $102 - $51 = $51.
+
+But, we need to correct our calculation because we need to start with the initial amount and derive the amount she had before buying the toy. When she spent half of the initial amount on the toy, she had $51 left. So, the initial amount she had was twice this amount, i.e., $51 * 2 = $102.
+
+So, finally, the amount of money she had initially must be $102 - $51 = $51 / 0.5 (after buying the toy, half the initial amount is spent).
+
+But we need to re-evaluate our logic because we realized the mistake in the final steps. When she spent half of the initial amount on the toy, the remaining half plus $51 equals the initial amount. The final calculation should be:
+- After buying the toy, she had $51 left, so the initial amount was $51 * 2 = $102.
+- Then she spent half of the remaining $51 (after buying the toy) on the book, so the amount spent on the book is $51 (the remaining after buying the toy).
+
+This means the initial amount must have been $102 + $51 (before she buys the book after buying the toy) = $153.
+
+So, the initial amount of money Isabel had is $153.
+</reasoning>
+<answer>
+153
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. She spent half of her initial money on a toy, so she spent \( \frac{x}{2} \). The remaining money is \( x - \frac{x}{2} = \frac{x}{2} \).
+2. She then spent half of the remaining money on her brother's book, which is \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \). The remaining money now is \( \frac{x}{2} - \frac{x}{4} = \frac{x}{4} \).
+3. According to the problem, after these expenditures, she has $51 left. So we have \( \frac{x}{4} = 51 \).
+
+We can solve this equation to find \( x \):
+\[ x = 51 \times 4 \]
+
+Let's compute the value of \( x \).
+</reasoning>
+<answer>
+\[ 51 \times 4 = 204 \]
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 0.5
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. Isabel spent half of the initial amount on a toy, so she had \( \frac{x}{2} \) left.
+2. Then she spent half of the remaining amount on a book, so she had \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \) left.
+3. According to the problem, after these expenses, Isabel had $51 left, so we set up the equation:
+   \[
+   \frac{x}{4} = 51
+   \]
+
+4. To find \( x \), we solve the equation by multiplying both sides by 4:
+   \[
+   x = 51 \times 4 = 204
+   \]
+
+Thus, Isabel initially had $204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \) dollars.
+
+1. Isabel spends half of her money on a toy, so she has \( \frac{x}{2} \) left after this purchase.
+2. She then spends half of the remaining money on a book, leaving her with \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \).
+
+According to the problem, Isabel is left with $51. Therefore, we can set up the equation:
+\[ \frac{x}{4} = 51 \]
+
+To find \( x \), we multiply both sides of the equation by 4:
+\[ x = 51 \times 4 \]
+\[ x = 204 \]
+
+So, Isabel initially had $204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. After spending half of her initial amount on a toy, she has \( \frac{x}{2} \left(1 - \frac{1}{2}\right) = \frac{x}{2} \cdot \frac{1}{2} = \frac{x}{4} \) left.
+2. Then she spends half of the remaining money on a book, so she has \( \frac{1}{2} \cdot \frac{x}{4} = \frac{x}{8} \) left.
+
+We know that after these expenses, Isabel has $51 left. This gives us the equation:
+\[
+\frac{x}{8} = 51
+\]
+
+To find \( x \), we can multiply both sides of the equation by 8:
+\[
+x = 51 \cdot 8
+\]
+
+Finally, we calculate the value:
+\[
+x = 408
+\]
+
+So, Isabel initially had $408.
+</reasoning>
+<answer>
+408
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had in her piggy bank as \( x \) dollars.
+
+1. **First Purchase of the Toy:**
+   - Isabel spent half of her initial amount on a toy.
+   - Remaining money after buying the toy: \( \frac{x}{2} \).
+
+2. **Second Purchase of the Book:**
+   - Isabel then spent half of the remaining money (which is \( \frac{x}{2} \)) on a book for her brother.
+   - Remaining money after buying the book: \( \frac{x}{2} - \frac{x}{4} = \frac{x}{4} \).
+
+3. **Money Remaining:**
+   - According to the problem, Isabel has $51 left after both purchases.
+   - Therefore, we can set up the equation: \( \frac{x}{4} = 51 \).
+
+4. Solving the Equation:
+   - Multiply both sides by 4 to isolate \( x \): \( x = 51 \times 4 \).
+   - Calculate \( x \): \( x = 204 \).
+
+So, the initial amount of money Isabel had in her piggy bank is 204 dollars.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. After buying the toy, Isabel spent half of the amount, so she had \(\frac{x}{2}\) left.
+2. Then she spent half of the remaining money to buy her brother a book, so she had \(\frac{1}{2} \times \frac{x}{2} = \frac{x}{4}\) left.
+
+We know that she had $51 left after these purchases. Therefore, we can set up the equation:
+\[
+\frac{x}{4} = 51
+\]
+
+To find \( x \), we multiply both sides of the equation by 4:
+\[
+x = 51 \times 4
+\]
+\[
+x = 204
+\]
+
+So, Isabel initially had $204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. Isabel spent half of the money on a toy:
+\[ \frac{x}{2} \]
+So, the remaining money after buying the toy is:
+\[ x - \frac{x}{2} = \frac{x}{2} \]
+
+2. Isabel then spent half of the remaining money on a book:
+\[ \frac{1}{2} \left(\frac{x}{2}\right) = \frac{x}{4} \]
+So, the remaining money after buying the book is:
+\[ \frac{x}{2} - \frac{x}{4} = \frac{x}{4} \]
+
+We know that after these purchases, Isabel has $51 left:
+\[ \frac{x}{4} = 51 \]
+
+To find the initial amount \( x \), we can solve the equation:
+\[ x = 51 \times 4 \]
+\[ x = 204 \]
+
+Therefore, Isabel initially had $204 in her piggy bank.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had in her piggy bank as \( x \) dollars.
+
+First, Isabel spent half of the amount, which is \( \frac{x}{2} \), on a toy. After buying the toy, she had:
+\[ x - \frac{x}{2} = \frac{x}{2} \]
+
+Next, she spent half of the remaining money, which is \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \), on a book. After buying the book, she had:
+\[ \frac{x}{2} - \frac{x}{4} = \frac{2x - x}{4} = \frac{x}{4} \]
+
+We know that Isabel has $51 left after these purchases. Therefore, we can set up the following equation:
+\[ \frac{x}{4} = 51 \]
+
+To find \( x \), we multiply both sides of the equation by 4:
+\[ x = 51 \times 4 = 204 \]
+
+So, Isabel initially had $204 in her piggy bank.
+</reasoning>
+<answer>
+204
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.2750000059604645
+Total reward: 2.2249999046325684
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+Let's denote the initial amount of money Isabel had as \( x \) dollars.
+
+First, she spent half of her money on a toy:
+\[ \text{Remaining money after buying toy} = x - \frac{x}{2} = \frac{x}{2} \]
+
+Then, she spent half of the remaining money on a book:
+\[ \text{Remaining money after buying book} = \frac{x}{2} - \frac{\frac{x}{2}}{2} = \frac{x}{2} - \frac{x}{4} = \frac{x}{4} \]
+
+According to the problem, after these expenditures, she has $51 left:
+\[ \frac{x}{4} = 51 \]
+
+To find \( x \), we multiply both sides of the equation by 4:
+\[ x = 51 \times 4 \]
+\[ x = 204 \]
+
+So, Isabel initially had $204.
+
+Therefore, the answer is 204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \) dollars. 
+
+1. Isabel spent half of the money on a toy, so she spent \( \frac{x}{2} \) dollars. The remaining amount is \( x - \frac{x}{2} = \frac{x}{2} \).
+
+2. She then spent half of the remaining money on a book, so she spent \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \) dollars. The remaining amount is \( \frac{x}{2} - \frac{x}{4} = \frac{x}{4} \).
+
+3. According to the problem, after these expenditures, Isabel has $51 left. Therefore, \( \frac{x}{4} = 51 \).
+
+4. To find \( x \), we can solve the equation \( \frac{x}{4} = 51 \) by multiplying both sides by 4, which gives \( x = 204 \).
+
+So, Isabel initially had $204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+<reasoning>
+To solve this problem, we need to work backwards from the amount of money Isabel has left after her purchases. We know that she has $51 left after buying the book. Let's denote her initial amount of money as \( x \).
+
+1. After buying the book, Isabel had $51 left. The amount she spent on the book is half of the remaining amount after buying the toy, which means she spent \( \frac{x}{2} \) on the book.
+2. Therefore, the amount she had before buying the book is \( 51 + \frac{x}{2} \).
+3. After buying the toy, she had \( 51 + \frac{x}{2} \) left. The amount she spent on the toy is half of the remaining amount after buying the book, which means she spent \( \frac{1}{2} \left(51 + \frac{x}{2}\right) \).
+4. Therefore, the amount she had before buying the toy is \( 51 + \frac{1}{2} \left(51 + \frac{x}{2}\right) \).
+5. Since we know she had \( x \) initial amount, we can set up the equation:
+\[ x = 51 + \frac{1}{2} \left(51 + \frac{x}{2}\right) \]
+
+Now we need to solve this equation to find \( x \).
+</reasoning>
+<answer>
+51
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. Isabel spent half of the money on a toy. So, she has \( x / 2 \) left.
+2. She then spent half of the remaining money on a book for her brother, leaving her with \( (x / 2) / 2 = x / 4 \) left.
+3. According to the problem, after these expenditures, she has $51 left. Therefore, \( x / 4 = 51 \).
+
+Now, we can solve for \( x \):
+
+\[ x / 4 = 51 \]
+\[ x = 51 \times 4 \]
+\[ x = 204 \]
+
+So, Isabel initially had $204.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+<reasoning>
+Let's denote the initial amount of money Isabel had as \( x \).
+
+1. She spent half of the amount on a toy, which means she spent \( \frac{x}{2} \). The remaining money after buying the toy is:
+   \[
+   x - \frac{x}{2} = \frac{x}{2}
+   \]
+
+2. She then spent half of the remaining money on a book, which means she spent \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \). The remaining money after buying the book is:
+   \[
+   \frac{x}{2} - \frac{x}{4} = \frac{x}{4}
+   \]
+
+3. According to the problem, she has $51 left after these expenses. So, we set up the equation:
+   \[
+   \frac{x}{4} = 51
+   \]
+
+4. To find \( x \), we multiply both sides of the equation by 4:
+   \[
+   x = 51 \times 4 = 204
+   \]
+
+Therefore, Isabel had $204 at first.
+</reasoning>
+<answer>
+204
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+

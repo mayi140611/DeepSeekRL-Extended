@@ -1,0 +1,318 @@
+###### ORIGINAL PROMPT #####
+
+Mckenna starts her day at 8:00 a.m. She works in her office up to 11:00 a.m. then joins her team of developers at the conference room to talk about projects up to 13:00, from which she works for another two hours and then heads home. How many hours does Mckenna stay at work?
+
+#### ANS ####
+
+7
+#### GENERATION 1 RESPONSE ####
+
+system
+Mckenna starts her work at 8:00 a.m. and stops at 4:00 p.m. (11:00 a.m. + 2 hours = 1 p.m. + 1 hour = 4:00 p.m.).
+
+There are 4 hours in a day and she doesn't include the time from 4:00 p.m. to 11:00 a.m. as it's not stated in the question.
+
+So, 4 - 3 = 1 hour.
+
+</reasoning>
+<answer>
+1
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 2 RESPONSE ####
+
+system
+Mckenna starts her day at 8:00 a.m. and works from 8:00 a.m. to 11:00 a.m., which is 3 hours.
+Then she joins her team from 11:00 a.m. to 13:00, which is 2 hours.
+She works for another two hours after that.
+
+3 (first shift) + 2 (second shift) + 2 (third shift) = 7 hours
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.06499999761581421
+Total reward: 2.565000057220459
+
+#### GENERATION 3 RESPONSE ####
+
+system
+Mckenna works from 8:00 a.m. to 11:00 a.m., which is 3 hours. Then she works from 11:00 a.m. to 13:00, which is another 2 hours. Adding those hours together, she stays at work for 3 + 2 = 5 hours.
+
+</reasoning>
+<answer>
+5
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1379999965429306
+Total reward: 0.6380000114440918
+
+#### GENERATION 4 RESPONSE ####
+
+system
+Mckenna starts her day at 8:00 a.m. and works in her office from 8:00 a.m. to 11:00 a.m., which is a span of 3 hours. Then she joins her team of developers at the conference room from 11:00 a.m. to 13:00, which is another 2 hours. After that, she works for an additional 2 hours. Therefore, she stays at work for a total of 3 + 2 + 2 = 7 hours.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.009999999776482582
+Total reward: 2.490000009536743
+
+#### GENERATION 5 RESPONSE ####
+
+
+user
+1 hour
+</reasoning>
+<answer>
+1
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.33000001311302185
+Total reward: 0.8300000429153442
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Mckenna works in her office from 8:00 a.m. to 11:00 a.m., which is 3 hours.
+
+Then she joins her team of developers at the conference room from 11:00 a.m. to 1:00 p.m., which is 2 hours.
+
+After that, she works for another 2 hours.
+
+Therefore, Mckenna stays at work for a total of 3 + 2 + 2 = 7 hours.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.03500000014901161
+Total reward: 2.5350000858306885
+
+#### GENERATION 7 RESPONSE ####
+
+system
+Mckenna works from 8:00 a.m. to 11:00 a.m., which is 3 hours. Then she spends 4 hours in the conference room, and another 2 hours at home. So, the total hours she stays at work is 3 + 4 + 2 = 9 hours.
+
+</reasoning>
+<answer>
+9
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 8 RESPONSE ####
+
+system
+Mckenna works from 8:00 a.m. to 11:00 a.m., which is 3 hours. From 11:00 a.m. to 1:00 p.m., she joins her team to talk about projects and works for another 2 hours. So, she stays 2 hours at work here. Then she works for 2 more hours after that. Total working hours = 3 hours + 2 hours + 2 hours = 7 hours.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.028999999165534973
+Total reward: 2.5290000438690186
+
+#### GENERATION 9 RESPONSE ####
+
+system
+Mckenna starts at 8:00 a.m. and works until 11:00 a.m., so she works for 11:00 - 8:00 = 3 hours.
+She then works in the conference room from 11:00 to 13:00, which is another 13:00 - 11:00 = 2 hours.
+In the afternoon, she works for 2 hours, and then heads home in the afternoon.
+So, Mckenna stays at work a total of 3 + 2 + 2 = 7 hours.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -8.673617379884035e-19
+Total reward: 2.5
+
+#### GENERATION 10 RESPONSE ####
+
+system
+Mckenna works from 8:00 a.m. to 11:00 a.m. which is 3 hours. Then she stays at the conference room from 11:00 a.m. to 1:00 p.m. which is 2 hours. Adding these together, 3 + 2 = 5 hours.
+
+</reasoning>
+<answer>
+5
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.14900000393390656
+Total reward: 0.6489999890327454
+
+#### GENERATION 11 RESPONSE ####
+
+system
+Mckenna works from 8:00 a.m. to 11:00 a.m., which is 3 hours. Then she works from 11:00 a.m. to 1:00 p.m., which is another 2 hours. She then joins her team at 2:00 p.m. and works for 2 more hours. Therefore, she stays a total of 3 + 2 + 2 = 7 hours at work.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.07599999755620956
+Total reward: 2.5759999752044678
+
+#### GENERATION 12 RESPONSE ####
+
+system
+Mckenna starts her day at 8:00 a.m. and works in her office up to 11:00 a.m., which means she spends 3 hours in her office. After that, she joins her team of developers at 11:00 a.m. and talks about projects until 1:00 p.m., which means she spends 2 hours at the conference room. Additionally, she works for another two hours and then heads home. Therefore, the total time she stays at work is 3 + 2 + 2 = 7 hours.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 13 RESPONSE ####
+
+system
+Mckenna starts her day at 8:00 a.m. and works until 11:00 a.m., which is a total of 3 hours. She then joins her team of developers at 13:00 (1 PM) and works for another 2 hours, ending her work at 3:00 PM. Adding these hours together, Mckenna stays at work for a total of 3 hours + 2 hours = 5 hours.
+
+</reasoning>
+<answer>
+5
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.03400000184774399
+Total reward: 0.5339999794960022
+
+#### GENERATION 14 RESPONSE ####
+
+system
+Mckenna works from 8:00 a.m. to 11:00 a.m., which is 3 hours. She then works from 11:00 a.m. to 1:00 p.m., which is 2 hours. After that, she works from 1:00 p.m. to 3:00 p.m., which is another 2 hours. So in total, she stays at work for 3 + 2 + 2 = 7 hours.
+
+</reasoning>
+<answer>
+7
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.07699999958276749
+Total reward: 2.5769999027252197
+
+#### GENERATION 15 RESPONSE ####
+
+system
+Mckenna's day starts at 8:00 a.m. and works up to 11:00 a.m., which is 3 hours.
+Then she joins her team at 13:00 (1:00 p.m.) and works for another 2 hours.
+Total hours at work = 3 + 2 = 5 hours.
+
+</reasoning>
+<answer>
+5
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.14000000059604645
+Total reward: 0.6399999856948853
+
+#### GENERATION 16 RESPONSE ####
+
+system
+Mckenna starts her day at 8:00 a.m. and works up to 11:00 a.m., which means she is at work for 11:00 - 8:00 = 3 hours.
+She then joins her team of developers at the conference room to talk about projects up to 13:00 (1:00 p.m.), which means she is at work for another 13:00 - 11:00 = 2 hours.
+From 1:00 p.m. to 3:00 p.m., she works for one more hour, so the total time she stays at work is 3 + 2 + 1 = 6 hours.
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.07400000095367432
+Total reward: 0.4259999990463257
+

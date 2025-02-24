@@ -1,0 +1,365 @@
+###### ORIGINAL PROMPT #####
+
+A small poultry farm has 300 chickens, 200 turkeys and 80 guinea fowls. A strange, incurable disease hit the farm and every day the farmer lost 20 chickens, 8 turkeys and 5 guinea fowls. After a week, how many birds will be left in the poultry?
+
+#### ANS ####
+
+349
+#### GENERATION 1 RESPONSE ####
+
+system
+Let's calculate the reduction in each type of bird:
+
+- Chickens: 300 - (20 * 7) = 300 - 140 = 160
+- Turkeys: 200 - (8 * 7) = 200 - 56 = 144
+- Guinea fowls: 80 - (5 * 7) = 80 - 35 = 45
+
+Now we add them up:
+
+160 (chickens) + 144 (turkeys) + 45 (guinea fowls) = 349
+
+The total number of birds left is 349. 
+
+</reasoning>
+<answer>349</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 2.625
+
+#### GENERATION 2 RESPONSE ####
+
+system
+The number of chickens lost in a week is 20 x 7 = 140.
+Thus, the remaining number of chickens is 300 - 140 = 160.
+The number of turkeys lost in a week is 8 x 7 = 56.
+Thus, the remaining number of turkeys is 200 - 56 = 144.
+The number of guinea fowls lost in a week is 5 x 7 = 35.
+Thus, the remaining number of guinea fowls is 80 - 35 = 45.
+
+Therefore, the answer is 160 birds.
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 3 RESPONSE ####
+
+system
+In a single day, the farm lost \( 20 + 8 + 5 = 33 \) birds.
+After a week, the farmers will have lost \( 33 \times 7 = 231 \) birds in total. Thus, there will be a total of \( 300 + 200 + 80 - 231 = 249 \) birds left in the poultry.
+</reasoning>
+<answer>
+249
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.10199999809265137
+Total reward: 0.6019999980926514
+
+#### GENERATION 4 RESPONSE ####
+
+ superintendent
+In one day, the farmer loses a total of 20 + 8 + 5 = 33 birds.
+After a week, a total of 33 x 7 = 231 birds will be lost.
+The poultry will have 300 + 200 + 80 – 231 = 249 birds left.
+
+</reasoning>
+<answer>
+249
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1420000046491623
+Total reward: 0.6420000195503235
+
+#### GENERATION 5 RESPONSE ####
+
+system
+The farmer loses: 20 chickens per day * 7 days = 140 chickens
+The farmer loses: 8 turkeys per day * 7 days = 56 turkeys
+The farmer loses: 5 guinea fowls per day * 7 days = 35 guinea fowls
+The total amount of birds left is: 300 chickens - 140 chickens = 160 chickens
+The total amount of birds left is: 200 turkeys - 56 turkeys = 144 turkeys
+The total amount of birds left is: 80 guinea fowls - 35 guinea fowls = 45 guinea fowls.
+Therefore, there will be: 160 chickens + 144 turkeys + 45 guinea fowls = 349 birds.
+
+</reasoning>
+<answer>
+349
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.17900000512599945
+Total reward: 2.321000099182129
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+Every day, the number of chickens, turkeys and guinea fowls decrease by 20, 8 and 5 respectively.
+
+So after 7 days, the number of chickens left will be: 300-20*7 = 140
+The number of turkeys left will be: 200 - 8*7 = 96 
+And the number of guinea fowls left will be: 80 - 5*7 = 40
+
+So the total number of birds left will be 140+96+40 = 276
+
+</reasoning>
+<answer>
+276
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.006000000052154064
+Total reward: 0.49399998784065247
+
+#### GENERATION 7 RESPONSE ####
+
+system
+The farmer loses 300 chickens in a week, 20/7 = 2 chickens per day.
+So, the total number of chickens lost in a week is 2*7 = 14.
+
+The farmer loses 80 turkeys in a week, 8/7 = 1 turkey per day.
+So, the total number of turkeys lost in a week is 1*7 = 7.
+
+The farmer loses 5 guinea fowls in a week, 5/7 = 5/7.
+
+300-7 = 293 are left.
+200-5 = 195 are left.
+80-2 = 78 are left.
+
+Total number of birds left = 293+195+78= 566.
+
+</reasoning>
+<answer>
+566
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0860000029206276
+Total reward: 0.414000004529953
+
+#### GENERATION 8 RESPONSE ####
+
+system
+Every day, the chicken population decreases by 20 * 300 = 600. The turkey population decreases by 8 * 200 = 1600. The guinea fowl population decreases by 5 * 80 = 400. After a week, the number of the chickens left will be 300 - 600 = -300. The number of the turkeys left will be 200 - 1600 = -1400. And the number of the guinea fowl left will be 80 - 400 = -320. Therefore, the total number of the birds left is -300 + (-1400) + (-320) = -2020.
+
+</reasoning>
+<answer>-2020</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.125
+
+#### GENERATION 9 RESPONSE ####
+
+system
+The farmer loses 20 chickens per day, so in a week he loses 20 * 7 = 140 chickens. He thus has 300 - 140 = 160 chickens.
+The farmer loses 8 turkeys per day, so in a week he loses 8 * 7 = 56 turkeys. He thus has 200 - 56 = 144 turkeys.
+The farmer loses 5 guinea fowls per day, so in a week he loses 5 * 7 = 35 guinea fowls. He thus has 80 - 35 = 45 guinea fowls.
+In total after a week he has 160 + 144 + 45 = 349 birds.
+
+</reasoning>
+<answer>
+349
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0860000029206276
+Total reward: 2.4140000343322754
+
+#### GENERATION 10 RESPONSE ####
+
+system
+Total number of chickens = 300
+
+Total number of turkeys = 200
+
+Number of guinea fowls = 80
+
+Total number of birds in the farm = 300 + 200 + 80 = 580
+
+Number of chickens left after a week = 300 - 20 x 7 = 100
+
+Number of turkeys left after a week = 200 - 8 x 7 = 64
+
+Number of guinea fowls left after a week = 80 - 5 x 7 = 35
+
+Total number of birds left after a week = 100 + 64 + 35 = 200
+
+</reasoning>
+<answer>200</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 0.625
+
+#### GENERATION 11 RESPONSE ####
+
+system
+Every day, the number of birds lost is: 20 + 8 + 5 = 33
+Hence, after a week, the number of chickens left in the farm will be: 300 - 33 * 7 = 91
+Similarly, the number of turkeys and guinea fowls will also decrease by 91 and 35, respectively.
+Thus, the total number of birds left in the farm after a week will be: 91 + 91 + 35 = 217
+</reasoning>
+<answer>
+217
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.003000000026077032
+Total reward: 0.503000020980835
+
+#### GENERATION 12 RESPONSE ####
+
+middleware
+Every day, the number of chickens decreases by 20, the number of turkeys decreases by 8 and the number of guinea fowls decreases by 5. 
+After a week there will be 300-20 * 7 = 300-140 = 160 chickens remaining
+After a week there will be 200-8 * 7 = 200-56 = 144 turkeys remaining
+After a week there will be 80-5 * 7 = 80-35 = 45 guinea fowls remaining
+Total number of birds remaining is 160 + 144 + 45 = 349
+</reasoning>
+<answer>
+349
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.07699999958276749
+Total reward: 2.422999858856201
+
+#### GENERATION 13 RESPONSE ####
+
+system
+Every day, the farmer loses:
+20 chickens - 8 turkeys - 5 guinea fowls = 7 birds
+In a week (7 days), the total birds lost will be:
+7 birds/day * 7 days/week = 49 birds
+Now let's calculate how many birds remain:
+Chickens:   300 - 49 = 251
+Turkeys:     200 - 49 = 151
+Guinea fowls: 80 - 49 = 31
+
+Total remaining birds = 251 + 151 + 31 = 433 
+
+</reasoning>
+<answer>
+433
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.006000000052154064
+Total reward: 0.49399998784065247
+
+#### GENERATION 14 RESPONSE ####
+
+system
+The farm starts with 300 + 200 + 80 = 580 birds.
+Each day, 20 + 8 + 5 = 33 birds are lost.
+In one week, 33 * 7 = 231 birds are lost.
+Therefore, after one week, there are 580 - 231 = 349 birds left.
+
+</reasoning>
+<answer>349</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 2.625
+
+#### GENERATION 15 RESPONSE ####
+
+system
+The total number of chickens lost in 7 days is 20*7=140 chickens. The total number of turkeys lost in 7 days is 8*7=56 turkeys. The total number of guinea fowls lost in 7 days is 5*7=35 guinea fowls. The total number of chickens left in 7 days is 300-140=160 chickens. The total number of turkeys left in 7 days is 200-56=144 turkeys. The total number of guinea fowls left in 7 days is 80-35=45 guinea fowls. The total number of birds left in 7 days is 160+144+45=349 birds. 
+</reasoning>
+<answer>
+349
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.1420000046491623
+Total reward: 2.3580000400543213
+
+#### GENERATION 16 RESPONSE ####
+
+system
+The farmer lost 20 * 7 = 140 chickens in one week.
+The farmer lost 8 * 7 = 56 turkeys in one week.
+The farmer lost 5 * 7 = 35 guinea fowls in one week.
+So after a week, the farmer will have 300 - 140 = 160 chickens left.
+The farmer will have 200 - 56 = 144 turkeys left.
+The farmer will have 80 - 35 = 45 guinea fowls left.
+After a week, the farmer will have 160 +144 + 45 = 349 birds left in the poultry.
+
+</reasoning>
+<answer>
+349
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0729999989271164
+Total reward: 2.427000045776367
+

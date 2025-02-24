@@ -1,0 +1,334 @@
+###### ORIGINAL PROMPT #####
+
+Tim's cat bit him.  He decided to get himself and the cat checked out.  His doctor's visits $300 and insurance covered 75%.  His cat's visit cost $120 and his pet insurance covered $60.  How much did he pay?
+
+#### ANS ####
+
+135
+#### GENERATION 1 RESPONSE ####
+
+system
+Tim's doctor visit cost $300.
+His insurance covered 75% of the visit cost, so the insurance covered $300 * 0.75 = $225.
+Therefore, Tim had to pay $300 - $225 = $75.
+
+His cat's visit cost $120.
+His pet insurance covered $60 of the visit cost, so the insurance covered 60% of the visit.
+Therefore, Tim had to pay $120 * 0.60 = $72.
+
+To find the total amount Tim paid, we add the amount he paid for his doctor's visit to the amount he paid for his cat's visit: $75 + $72 = $147.
+
+</reasoning>
+<answer>
+147
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.14300000667572021
+Total reward: 0.3569999933242798
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+Tim paid for his own doctor's visit: $300 - (300 * 0.75) = $75
+Tim paid for his cat's visit: $120 - $60 = $60
+Tim paid a total of: $75 + $60 = $135
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.18400000035762787
+Total reward: 2.684000015258789
+
+#### GENERATION 3 RESPONSE ####
+
+system
+Tim's total out-of-pocket expense for Dr. Tim is 300*(1-0.75) = 75. 
+His total out-of-pocket expense for his cat is 120-60 = 60. 
+Therefore, he paid 75+60 = 135. 
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.17000000178813934
+Total reward: 2.6700000762939453
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+Tim's doctor visit cost 300 - 300 * 0.75 = 300 - 225 = $75
+His cat's visit cost 120 - 60 = $60
+The total amount he paid is 75 + 60 = $135
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1940000057220459
+Total reward: 2.694000005722046
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+Tim paid for the doctor's visit, which was $300.
+...
+</reasoning>
+<answer>
+Tim paid: $300 - ($300 * 0.25) = $225
+Tim paid for the cat's visit up to $60 cap, and $120 - $60 = $60 was not covered by the insurance.
+...
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.14300000667572021
+Total reward: 0.14300000667572021
+
+#### GENERATION 6 RESPONSE ####
+
+SYSTEM
+Tim's cop pay: $300*0.75=$225
+Cat's cop pay: $120-$60=$60
+
+Total amount paid: $225+$60=$285
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+Tim's doctor visit cost $300 and insurance covered 75%, so he paid 25% of the cost:
+$300 x 0.25 = $75
+Tim's cat visit cost $120 and insurance covered $60, so he paid:
+$120 - $60 = $60
+To find the total amount Tim paid, we add what he paid for his doctor visit and what he paid for his cat visit:
+$75 + $60 = $135
+Therefore, the answer is 135.
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Tim's doctor visit costs $300 and insurance covered 75%, so he paid $300 * 0.25 = $75.
+His cat visit costs $120 and his pet insurance covered $60, so he paid $120 - $60 = $60.
+Therefore, Tim paid $75 + $60 = $135.
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.11800000071525574
+Total reward: 2.618000030517578
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+Tim paid for the cat's visit out of pocket since his pet insurance covered $60, the remaining $60 is not covered by his insurance. He also had to pay $300 for his visit out of pocket. In total, he paid $60 for his cat's visit + $300 for his visit = $360.
+
+</reasoning>
+<answer>
+360
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.07699999958276749
+Total reward: 0.5770000219345093
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+Tim had to pay 300*(1-0.75)=90 for the cat's visit.
+So he had to pay 90+60=$150 for both visits.
+
+He had to pay 300-150=$150 out of pocket. 
+</reasoning>
+<answer>
+150
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.19200000166893005
+Total reward: 0.6920000314712524
+
+#### GENERATION 11 RESPONSE ####
+
+system
+Tim's out-of-pocket expense for his doctor's visit = 300 * (1 - 0.75) = $75.
+Tim's out-of-pocket expense for his cat's visit = 120 - 60 = $60
+Total amount paid by Tim = 60 + 75 = $135.
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.14900000393390656
+Total reward: 2.6489999294281006
+
+#### GENERATION 12 RESPONSE ####
+
+system
+Tim paid for his doctor's visit = 300 - (300 * 75/100) = 150
+Tim paid for the cat's visit = 120 - 60 = 60
+Total amount Tim paid = 150 + 60 = 210
+
+</reasoning>
+<answer>
+210
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.18799999356269836
+Total reward: 0.687999963760376
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+The total cost of Tim's doctor's visit is $300, and the insurance covered 75% of it, so Tim paid 25% of the cost, which is $300 * 0.25 = $75.
+The total cost of his cat's visit is $120, and the pet insurance covered $60, leaving Tim to pay $120 - $60 = $60.
+Therefore, Tim paid $75 for his doctor's visit and $60 for his cat's visit, for a total of $75 + $60 = $135.
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.032999999821186066
+Total reward: 2.4670000076293945
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+Tim's doctor's visit cost $300 and insurance covered 75%, so he paid 25% of the bill. 
+300 * 0.25 = $75
+
+His cat's visit cost $120 and insurance covered $60, so he paid the remaining $60.
+60
+
+He paid a total of $75 + $60 = $135.
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.10300000011920929
+Total reward: 2.6029999256134033
+
+#### GENERATION 15 RESPONSE ####
+
+ superintendent
+The cost of Tim's doctor's visit was $300 * 0.75 = $225 after insurance. The cost of his cat's visit was $120 - $60 = $60 after insurance. Therefore, Tim paid $225 + $60 = $285.
+</reasoning>
+<answer>
+285
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1469999998807907
+Total reward: 0.6470000147819519
+
+#### GENERATION 16 RESPONSE ####
+
+system
+Tim's out-of-pocket cost for his doctor visit: $300 * 0.25 = $75  
+His out-of-pocket cost for his cat's visit: $120 - $60 = $60  
+Total out-of-pocket cost: $75 + $60 = $135
+
+</reasoning>
+<answer>
+135
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.1599999964237213
+Total reward: 2.6600000858306885
+

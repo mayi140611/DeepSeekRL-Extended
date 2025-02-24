@@ -1,0 +1,709 @@
+###### ORIGINAL PROMPT #####
+
+Tommy is making 12 loaves of bread. He needs 4 pounds of flour per loaf. A 10-pound bag of flour costs $10 and a 12-pound bag costs $13. When he is done making his bread, he has no use for flour and so he will throw away whatever is left. How much does he spend on flour if he buys the cheapest flour to get enough?
+
+#### ANS ####
+
+50
+#### GENERATION 1 RESPONSE ####
+
+system
+To determine how much Tommy spends on flour, we first need to calculate the total amount of flour he needs.
+
+To make 12 loaves of bread, each needing 4 pounds of flour, Tommy requires:
+\[ 12 \text{ loaves} \times 4 \text{ pounds/loaf} = 48 \text{ pounds of flour} \]
+
+Next, we need to find out how many bags of flour he needs to buy to get at least 48 pounds. Let's start with the 10-pound bags.
+
+If Tommy buys one 10-pound bag, he would have:
+\[ 10 \text{ pounds} < 48 \text{ pounds} \]
+
+To get more than 48 pounds, he needs to buy an additional 10-pound bag:
+\[ 10 \text{ pounds} + 10 \text{ pounds} = 20 \text{ pounds} \]
+
+This would give him:
+\[ 20 \text{ pounds} < 48 \text{ pounds} \]
+
+He will then need to buy another 10-pound bag:
+\[ 20 \text{ pounds} + 10 \text{ pounds} = 30 \text{ pounds} \]
+
+This would give him:
+\[ 30 \text{ pounds} < 48 \text{ pounds} \]
+
+Finally, he will need to buy another 10-pound bag:
+\[ 30 \text{ pounds} + 10 \text{ pounds} = 40 \text{ pounds} \]
+
+Now, he has:
+\[ 48 \text{ pounds} > 40 \text{ pounds} \]
+
+To get exactly 48 pounds, he would need to buy 2 more 10-pound bags:
+\[ 2 \times 10 = 20 \text{ pounds} \]
+
+To get the remaining 8 pounds, he would need a 12-pound bag:
+\[ 40 \text{ pounds} + (2 \times 10 \text{ pounds}) + 12 \text{ pounds} = 48 \text{ pounds} \]
+
+To determine the cost, we calculate the cost of these bags:
+- 2 bags of 10-pound flour cost:
+\[ 2 \times 10 = 20 \text{ dollars} \]
+- 2 bags of 12-pound flour cost:
+\[ 2 \times 13 = 26 \text{ dollars} \]
+- Total cost:
+\[ 20 + 26 = 46 \text{ dollars} \]
+
+Thus, the total cost of the cheapest flour that provides enough flour for the 12 loaves of bread is:
+\[ 
+\boxed{46 \text{ dollars}}
+\]
+
+</reasoning>
+<answer>
+46
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+To determine the cheapest flour Tommy needs to buy, we first calculate the total amount of flour required. Since Tommy is making 12 loaves of bread, and each loaf requires 4 pounds of flour, the total amount of flour needed is:
+\[ 12 \text{ loaves} \times 4 \text{ pounds per loaf} = 48 \text{ pounds} \]
+
+Next, we need to compare the costs of purchasing the flour in bags of 10 pounds and bags of 12 pounds to find the cheapest option. If Tommy buys 4 bags of 10-pound flour, the total amount of flour he will have is:
+\[ 4 \times 10 = 40 \text{ pounds} \]
+This is 8 pounds short of the 48 pounds required. If Tommy buys 4 bags of 12-pound flour, the total amount of flour he will have is:
+\[ 4 \times 12 = 48 \text{ pounds} \]
+This is exactly the amount of flour needed. Since 40 pounds is insufficient, Tommy should buy 4 bags of the 12-pound flour.
+
+The cost of 4 bags of 12-pound flour is:
+\[ 4 \times 13 = 52 \text{ dollars} \]
+
+Therefore, the amount Tommy spends on flour is:
+\[ \boxed{52} \]
+
+</reasoning>
+<answer>
+52
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we first calculate the total amount of flour needed:
+
+Total flour needed = 12 loaves * 4 pounds per loaf = 48 pounds
+
+Next, we need to find out how much flour Tommy can get from the cheapest option. We will compare the 10-pound bags at $10 each and the 12-pound bags at $13 each.
+
+From 10-pound bags:
+- Tommy could buy 4 (48/10 = 4.8, so 4 bags)
+- Total cost for 4 bags = 4 * $10 = $40
+
+From 12-pound bags:
+- Tommy could buy 3 (48/12 = 4, so 3 bags)
+- Total cost for 3 bags = 3 * $13 = $39
+
+Comparing the two options:
+- Cheapest option: 4 bags at $10 each = $40
+
+Therefore, Tommy spends $40 on flour if he buys the cheapest option.
+
+</reasoning>
+<answer>
+40
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we need to calculate the total amount of flour required and compare it to the cost of the bags he can buy.
+
+1. Tommy needs 4 pounds of flour per loaf: \(4 \text{ pounds/loaf} \times 12 \text{ loaves} = 48 \text{ pounds}\)
+
+2. Calculate the cost of the cheapest flour to get at least 48 pounds of flour:
+   - 10-pound bag costs $10: \(48 \text{ pounds} > 4 \text{ times} \left( \frac{48 \text{ pounds}}{10 \text{ pounds}} \right) = 4.8 \times 10 = \$48\)
+   - 12-pound bags cost $13, and \(48 \geq \left\lceil \frac{48}{12} \right\rceil \times 12 = 4 \times 12 = 48\)
+
+   Since 12-pound bags cost less than 48 times 10 pounds, the cheapest way to get 48 pounds is with 4 bags of 12 pounds each, which totals $13.
+
+3. Tommy spends $13 on flour.
+
+</reasoning>
+<answer>
+13
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+To determine the cheapest flour Tommy needs to buy and how much he spends, we first need to calculate the total amount of flour required. Tommy needs 4 pounds of flour per loaf, and he is making 12 loaves.
+
+\[
+4 \text{ pounds/loaf} \times 12 \text{ loaves} = 48 \text{ pounds of flour}
+\]
+
+Next, we need to find out how many bags of flour Tommy needs, which is the minimum number of 10-pound bags or 12-pound bags that sum up to at least 48 pounds.
+
+### Option 1: Using only 10-pound bags
+- Tommy needs at least 48 pounds of flour.
+- Number of 10-pound bags required:
+  \[
+  \left\lceil \frac{48}{10} \right\rceil = 5 \text{ bags}
+  \]
+- Cost of 5 bags:
+  \[
+  5 \text{ bags} \times \$10/\text{bag} = \$50
+  \]
+
+### Option 2: Using only 12-pound bags
+- Tommy needs at least 48 pounds of flour.
+- Number of 12-pound bags required:
+  \[
+  \left\lceil \frac{48}{12} \right\rceil = 4 \text{ bags}
+  \]
+- Cost of 4 bags:
+  \[
+  4 \text{ bags} \times \$13/\text{bag} = \$52
+  \]
+
+### Option 3: Mixing 10-pound and 12-pound bags
+To minimize the cost, we should use the 10-pound bags as much as possible within the constraints.
+
+- Let \( x \) be the number of 10-pound bags.
+- Let \( y \) be the number of 12-pound bags.
+- Total flour required: 
+  \[
+  10x + 12y \geq 48
+  \]
+- Cost of flour:
+  \[
+  10x + 13y
+  \]
+
+We need to minimize the cost while ensuring the flour requirement is met. Testing combinations:
+
+- If \( x = 4 \) (40 pounds):
+  \[
+  40 \text{ pounds needed, 8 pounds extra}
+  \]
+  Since 8 pounds is more than enough (48 - 40 = 8 pounds), using 4 bags of 10-pound flour is fine.
+
+- Cost:
+  \[
+  4 \text{ bags} \times \$10/\text{bag} = \$40
+  \]
+
+- Therefore, the least cost is:
+  \[
+  \$40
+  \]
+
+### Conclusion
+Tommy spends the least amount of money on flour by buying 4 bags of 10-pound flour, which costs $40. 
+
+</reasoning>
+<answer>
+40
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we need to calculate the total amount of flour required for 12 loaves of bread and then compare the costs of different bag sizes to find the cheapest option.
+
+First, calculate the total amount of flour needed:
+\[ 12 \text{ loaves} \times 4 \text{ pounds/loaf} = 48 \text{ pounds} \]
+
+Next, we need to determine the cheapest way to get 48 pounds of flour. There are two main options: buying 10-pound bags or 12-pound bags.
+
+**Option 1: Buy 4 10-pound bags**
+\[ 4 \text{ bags} \times 10 \text{ pounds/bag} = 40 \text{ pounds} \]
+The remaining flour needed:
+\[ 48 \text{ pounds} - 40 \text{ pounds} = 8 \text{ pounds} \]
+Buying another 10-pound bag would be more cost-effective than another 12-pound bag.
+
+**Option 2: Buy 4 12-pound bags**
+\[ 4 \text{ bags} \times 12 \text{ pounds/bag} = 48 \text{ pounds} \]
+This is exactly the amount of flour needed.
+
+Since buying 4 12-pound bags gives exactly 48 pounds of flour without any waste, this is the most cost-effective option.
+
+Now, calculate the total cost:
+\[ 4 \text{ bags} \times 13 \text{ dollars/bag} = 52 \text{ dollars} \]
+
+Therefore, Tommy spends \(\boxed{52}\) dollars on flour if he buys the cheapest flour to get enough.
+
+</reasoning>
+<answer>
+52
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we first need to calculate the total amount of flour required for 12 loaves of bread.
+
+1. Calculate the total amount of flour needed:
+\[ 12 \text{ loaves} \times 4 \text{ pounds per loaf} = 48 \text{ pounds} \]
+
+2. Determine if Tommy needs to buy 10-pound or 12-pound bags of flour.
+
+Since 48 pounds divided by 10 (the weight of a single 10-pound bag) gives a quotient of 4.8, Tommy needs at least 5 bags of 10-pound flour.
+
+Since 48 divided by 12 (the weight of a single 12-pound bag) gives a quotient of 4, Tommy only needs 4 bags of 12-pound flour.
+
+3. Calculate the total cost:
+- The price for 5 bags of 10 pounds each is:
+\[ 5 \times \$10 = \$50 \]
+
+- The price for 4 bags of 12 pounds each is:
+\[ 4 \times \$13 = \$52 \]
+
+Tommy must buy 5 bags of 10 pounds to get the exact 48 pounds of flour. 
+
+So he spends $50 on flour.
+
+</reasoning>
+<answer>
+50
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we need to calculate the amount of flour required and the cost of the cheapest option that can provide enough flour.
+
+Tommy needs 4 pounds of flour per loaf, and he is making 12 loaves of bread. Therefore, the total amount of flour required is:
+
+\[
+4 \text{ pounds/loaf} \times 12 \text{ loaves} = 48 \text{ pounds}
+\]
+
+Next, we need to find out how many 10-pound and 12-pound bags of flour Tommy needs to buy to cover at least 48 pounds.
+
+First, let's determine how many 10-pound bags are needed:
+
+\[
+\left\lceil \frac{48 \text{ pounds}}{10 \text{ pounds/bag}} \right\rceil = 5 \text{ bags}
+\]
+
+Each 10-pound bag costs $10, so the total cost for the 5 bags is:
+
+\[
+5 \text{ bags} \times 10 \text{ dollars/bag} = 50 \text{ dollars}
+\]
+
+Next, let's determine how many 12-pound bags are needed to cover the remaining 8 pounds (since \( 48 \text{ pounds} - 48 \text{ pounds} = 0 \text{ pounds} \), but we need to consider the possibility of needing an additional bag for the remaining 8 pounds):
+
+\[
+\left\lceil \frac{8 \text{ pounds}}{12 \text{ pounds/bag}} \right\rceil = 1 \text{ bag}
+\]
+
+Each 12-pound bag costs $13, so the cost for the additional 1 bag is:
+
+\[
+1 \text{ bag} \times 13 \text{ dollars/bag} = 13 \text{ dollars}
+\]
+
+Adding the costs from both bags, the total amount Tommy spends on flour is:
+
+\[
+50 \text{ dollars} + 13 \text{ dollars} = 63 \text{ dollars}
+\]
+
+Therefore, the amount Tommy spends on flour is:
+
+\[
+\boxed{63}
+\]
+
+</reasoning>
+<answer>
+63
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+Tommy needs 12 loaves of bread * 4 pounds of flour per loaf = 48 pounds of flour in total.
+
+To get at least 48 pounds of flour, he will need to buy 48 pounds / 12 pounds per bag = 4 bags.
+
+The cheapest option is 4 bags of 10 pounds each, which would cost 4 bags * $10 per bag = $40.
+
+</reasoning>
+<answer>
+40
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+To determine the amount Tommy spends on flour, we first need to calculate the total amount of flour required.
+
+Tommy is making 12 loaves of bread, and each loaf requires 4 pounds of flour. Therefore, the total amount of flour needed is:
+\[ 12 \text{ loaves} \times 4 \text{ pounds/loaf} = 48 \text{ pounds} \]
+
+Next, we need to find out how many bags of flour Tommy needs to purchase to get at least 48 pounds of flour. Each 10-pound bag costs $10, and each 12-pound bag costs $13.
+
+First, let's see how many 10-pound bags Tommy would need:
+\[ \left\lceil \frac{48 \text{ pounds}}{10 \text{ pounds/bag}} \right\rceil = \left\lceil 4.8 \right\rceil = 5 \text{ bags} \]
+The total cost for 5 bags of 10-pound flour would be:
+\[ 5 \text{ bags} \times 10 \text{ dollars/bag} = 50 \text{ dollars} \]
+
+Now, let's see how many 12-pound bags Tommy would need:
+\[ \left\lceil \frac{48 \text{ pounds}}{12 \text{ pounds/bag}} \right\rceil = \left\lceil 4 \right\rceil = 4 \text{ bags} \]
+The total cost for 4 bags of 12-pound flour would be:
+\[ 4 \text{ bags} \times 13 \text{ dollars/bag} = 52 \text{ dollars} \]
+
+Comparing the two options:
+- For 5 bags of 10-pound flour, the cost is $50.
+- For 4 bags of 12-pound flour, the cost is $52.
+
+Since the cheaper option is 5 bags of 10-pound flour, Tommy spends:
+\[ \boxed{50} \text{ dollars} \]
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.0
+Total reward: 0.0
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we need to calculate how many pounds of flour he needs in total and then find the cheapest option to get that amount.
+
+1. Calculate the total pounds of flour needed:
+\[ 12 \text{ loaves} \times 4 \text{ pounds per loaf} = 48 \text{ pounds} \]
+
+2. Determine the cheapest way to get 48 pounds of flour:
+   - A 10-pound bag costs $10, so it's the cheapest option for 10 pounds.
+   - A 12-pound bag costs $13, which is more expensive.
+
+Since 48 pounds is more than 40 pounds (which is more than 3 lots of 12 pounds), Tommy should buy 3 lots of 12-pound bags.
+
+3. Calculate the cost:
+\[ 3 \text{ lots} \times $13 \text{ per bag} = $39 \]
+
+So, Tommy spends $39 on flour.
+
+</reasoning>
+<answer>
+39
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+First, let's calculate the total amount of flour Tommy needs for 12 loaves of bread. Since each loaf requires 4 pounds of flour:
+
+\[12 \text{ loaves} \times 4 \text{ pounds per loaf} = 48 \text{ pounds of flour}\]
+
+Now, let's determine how many 10-pound bags and 12-pound bags Tommy needs to get 48 pounds of flour. 
+
+For 10-pound bags:
+\[48 \text{ pounds} \div 10 \text{ pounds per bag} = 4.8 \text{ bags}\]
+Since Tommy can't buy a fraction of a bag, he needs to buy 5 bags of 10-pound flour.
+
+For 12-pound bags:
+\[48 \text{ pounds} \div 12 \text{ pounds per bag} = 4 \text{ bags}\]
+He needs 4 bags of 12-pound flour.
+
+Now, let's calculate the cost of the flour:
+For 5 bags of 10-pound flour:
+\[5 \text{ bags} \times \$10 \text{ per bag} = \$50\]
+
+For 4 bags of 12-pound flour:
+\[4 \text{ bags} \times \$13 \text{ per bag} = \$52\]
+
+Adding these costs together:
+\[\$50 \text{ (for 10-pound bags)} + \$52 \text{ (for 12-pound bags)} = \$102\]
+
+Therefore, Tommy spends \$102 on flour.
+...
+<answer>
+\$102
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.7689999938011169
+Total reward: -0.7689999938011169
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+To determine how much Tommy spends on flour, we first need to calculate the total amount of flour required for 12 loaves of bread.
+
+\[
+12 \text{ loaves of bread} \times 4 \text{ pounds of flour per loaf} = 48 \text{ pounds of flour}
+\]
+
+Next, we need to determine how many bags of flour Tommy needs to buy to get at least 48 pounds of flour. We will compare the cheapest option between the two available bags: a 10-pound bag and a 12-pound bag.
+
+Using the 10-pound bag:
+\[
+\frac{48 \text{ pounds}}{10 \text{ pounds per bag}} = 4.8 \text{ bags}
+\]
+
+Since Tommy cannot buy a fraction of a bag, he needs to buy 5 bags of the 10-pound flour.
+
+Using the 12-pound bag:
+\[
+\frac{48 \text{ pounds}}{12 \text{ pounds per bag}} = 4 \text{ bags}
+\]
+
+Since 4 bags is less than 5, the 12-pound bag is sufficient.
+
+Now we calculate the total cost for the 4 bags of 12-pound flour:
+\[
+4 \text{ bags} \times \$13 \text{ per bag} = \$52
+\]
+
+Therefore, the amount Tommy spends on flour is:
+<answer>
+\[
+\boxed{52}
+\]
+</answer>
+</reasoning>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.22599999606609344
+Total reward: 0.22599999606609344
+
+#### GENERATION 14 RESPONSE ####
+
+system
+To determine how much Tommy spends on flour, we need to calculate how much flour he will need in total and then compare different options to find the cheapest way to buy it.
+
+1. **Calculate the total amount of flour needed:**
+   - Tommy is making 12 loaves of bread.
+   - Each loaf requires 4 pounds of flour.
+   - Total flour needed = 12 loaves × 4 pounds/loaf = 48 pounds.
+
+2. **Compare the cost of different amounts of flour:**
+
+   - **10-pound bags:**
+     - Each 10-pound bag costs $10.
+     - To get 48 pounds, Tommy would need 4.8 times 10-pound bags.
+     - Number of 10-pound bags needed = 4.8 ≈ 5 (since he can't buy a fraction of a bag, he needs to buy 5 bags).
+
+     Cost for 5 bags = 5 × $10 = $50.
+
+   - **12-pound bags:**
+     - Each 12-pound bag costs $13.
+     - To get 48 pounds, Tommy would need 4 times 12-pound bags.
+     - Number of 12-pound bags needed = 4.
+
+     Cost for 4 bags = 4 × $13 = $52.
+
+3. **Determine the cheaper option:**
+   - The cost of 5 bags priced at $50 is less than the cost of 4 bags priced at $52.
+
+Therefore, Tommy spends the cheapest on flour when he buys 5 bags of 10-pound flour.
+
+</reasoning>
+<answer>
+50
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+To determine how many bags of flour Tommy needs, we calculate the total amount of flour required:
+
+4 pounds/loaf * 12 loaves = 48 pounds
+
+Next, we determine how many 10-pound and 12-pound bags he needs to buy to get at least 48 pounds of flour.
+
+First, we calculate how many 10-pound bags are needed:
+
+48 pounds / 10 pounds/bag = 4.8 bags
+
+Since Tommy cannot buy a fraction of a bag, he needs to buy 5 bags of 10-pound flour.
+
+The cost for 5 bags of 10-pound flour is:
+
+Cost = 5 bags * $10/bag = $50
+
+Now, let's calculate how many 12-pound bags he needs to purchase:
+
+48 pounds / 12 pounds/bag = 4 bags
+
+The cost for 4 bags of 12-pound flour is:
+
+Cost = 4 bags * $13/bag = $52
+
+Since the cost of 5 bags of 10-pound flour is lower, Tommy will spend $50 on flour if he buys the cheapest flour to get the right amount of flour.
+
+</reasoning>
+<answer>
+50
+</answer>
+
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.37299999594688416
+Total reward: 2.872999906539917
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+To find the cheapest way to get 48 pounds of flour (12 loaves × 4 pounds/loaf), we first need to determine the number of bags Tommy needs.
+
+A 10-pound bag costs $10, and Tommy needs 48 pounds, so:
+
+\( \frac{48 \text{ pounds}}{10 \text{ pounds/bag}} = 4.8 \text{ bags} \)
+
+Since Tommy can't buy a fraction of a bag, he needs to round up to 5 bags to have enough flour.
+
+A 10-pound bag costs $10, so for 5 bags, the cost would be:
+
+\( 5 \text{ bags} = 5 \times $10 = $50 \)
+
+A 12-pound bag costs $13, so for 5 bags, the cost would be:
+
+\( 5 \text{ bags} = 5 \times $13 = $65 \)
+
+Therefore, the cheapest way for Tommy to get enough flour is to buy 5 bags of 10-pound bags for a total cost of $50.
+
+</reasoning>
+<answer>
+50
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+

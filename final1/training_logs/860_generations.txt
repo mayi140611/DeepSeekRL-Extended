@@ -1,0 +1,612 @@
+###### ORIGINAL PROMPT #####
+
+A coffee shop brews 10 coffee cups per hour on a weekday and 120 coffee cups in total over the weekend. If the coffee shop is open 5 hours a day every single day, how many coffee cups are brewed in 1 week?
+
+#### ANS ####
+
+370
+#### GENERATION 1 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in one week, we need to calculate the number of cups brewed during weekdays and weekends separately, and then sum them up.
+
+First, calculate the number of cups brewed during weekdays:
+- The shop brews 10 coffee cups per hour on a weekday.
+- The shop is open 5 hours a day.
+- There are 5 weekdays in a week, so:
+  \[
+  \text{Cups brewed on a weekday} = 10 \, \text{cups/hour} \times 5 \, \text{hours/day} = 50 \, \text{cups/day}
+  \]
+- There are 5 weekdays in a week, so:
+  \[
+  \text{Total cups on weekdays} = 50 \, \text{cups/day} \times 5 \, \text{days} = 250 \, \text{cups}
+  \]
+
+Next, calculate the number of cups brewed during the weekend:
+- The shop brews 120 coffee cups in total over the weekend.
+- Since the weekend consists of one weekend day and one weekend night, we consider these as two separate periods.
+- The shop is open 5 hours a day during each period.
+- The total number of cups brewed over the weekend can be calculated as:
+  \[
+  \text{Cups brewed on weekend day} = 10 \, \text{cups/hour} \times 5 \, \text{hours} = 50 \, \text{cups}
+  \]
+- The shop is closed on the weekend night, so no coffee is brewed during this time. Therefore:
+  \[
+  \text{Total cups on weekend night} = 0 \, \text{cups}
+  \]
+- The total number of cups brewed during the weekend is:
+  \[
+  \text{Total cups on weekends} = 50 \, \text{cups} + 0 \, \text{cups} = 50 \, \text{cups}
+  \]
+
+Finally, sum the cups brewed over the weekdays and the weekend to get the total for the week:
+  \[
+  \text{Total cups in a week} = \text{Total cups on weekdays} + \text{Total cups on weekends} = 250 \, \text{cups} + 50 \, \text{cups} = 300 \, \text{cups}
+  \]
+
+</reasoning>
+<answer>
+300
+</answer>
+
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in one week, we need to consider the daily production on weekdays and the daily production on weekends, taking into account the number of hours the shop is open and the different production rates on weekdays and weekends.
+
+First, calculate the number of coffee cups brewed on a weekday:
+- The shop produces 10 coffee cups per hour.
+- The shop is open for 5 hours a day.
+- Therefore, on a weekday, the shop produces \( 10 \times 5 = 50 \) coffee cups.
+
+Next, calculate the number of coffee cups brewed on a weekend day:
+- The shop produces 120 coffee cups in total over the weekend.
+- The shop is open for 5 hours a day, so the total production is 120 coffee cups.
+
+Now, calculate the total number of coffee cups produced in a week:
+- There are 5 weekdays and 2 weekend days in a week.
+- On weekdays, the shop produces 50 coffee cups per day, so on 5 weekdays, it produces \( 50 \times 5 = 250 \) coffee cups.
+- On weekends, the shop produces a total of 120 coffee cups.
+- Therefore, in a week, the total number of coffee cups produced is \( 250 + 120 = 370 \).
+
+So, the total number of coffee cups brewed in 1 week is 370.
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 3 RESPONSE ####
+
+
+system
+<reasoning>
+To calculate the total number of coffee cups brewed in one week, we need to consider the coffee cups brewed during the weekdays and the weekend separately.
+
+On a weekday, the coffee shop brews 10 coffee cups per hour and is open for 5 hours. Therefore, the number of coffee cups brewed per weekday is:
+\[ 10 \, \text{cups/hour} \times 5 \, \text{hours/day} = 50 \, \text{cups/day} \]
+
+Since there are 5 weekdays in a week, the total number of coffee cups brewed during the weekdays is:
+\[ 50 \, \text{cups/day} \times 5 \, \text{days} = 250 \, \text{cups} \]
+
+Over the weekend, the coffee shop brews a total of 120 coffee cups.
+
+Therefore, the total number of coffee cups brewed in a week is the sum of the coffee cups brewed during weekdays and the coffee cups brewed over the weekend:
+\[ 250 \, \text{cups} + 120 \, \text{cups} = 370 \, \text{cups} \]
+
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 3 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 4 RESPONSE ####
+
+
+system
+<reasoning>
+To solve this, let's break it down:
+
+1. On weekdays, the coffee shop brews 10 coffee cups per hour for 5 hours each day. So in a day, it brews \(10 \times 5 = 50\) coffee cups.
+2. Since there are 5 weekdays in a week, it brews \(50 \times 5 = 250\) coffee cups in weekdays.
+3. During the weekend, the coffee shop brews a total of 120 coffee cups. Since there are 2 days in the weekend, it brews \(120 \div 2 = 60\) coffee cups each day.
+4. So, for a weekend day, it brews \(60\) coffee cups, and since there are 2 days, it brews \(60 \times 2 = 120\) coffee cups.
+5. Adding up the coffee cups brewed in a week, we get \(250\) (weekdays) + \(120\) (weekend) = \(370\) coffee cups.
+
+Therefore, the coffee shop brews 370 coffee cups in one week.
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 4 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in one week, we need to calculate the number of cups brewed during weekdays and the number of cups brewed over the weekend separately, and then sum these amounts.
+
+First, let's calculate the number of cups brewed during weekdays:
+- The coffee shop brews 10 cups per hour.
+- It is open for 5 hours each day.
+- There are 5 weekdays.
+
+Thus, the number of cups brewed on a weekday is:
+\[ 10 \, \text{cups/hour} \times 5 \, \text{hours/day} = 50 \, \text{cups/day} \]
+
+For 4 weekdays:
+\[ 50 \, \text{cups/day} \times 4 \, \text{days} = 200 \, \text{cups} \]
+
+Now, let's calculate the number of cups brewed on the weekend:
+- The coffee shop brews a total of 120 cups over the weekend.
+
+We then add the cups brewed during weekdays and the weekend:
+\[ 200 \, \text{cups} + 120 \, \text{cups} = 320 \, \text{cups} \]
+
+So, the total number of coffee cups brewed in one week is 320.
+</reasoning>
+<answer>
+320
+</answer>
+
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 6 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in a week, we need to consider both the weekday and weekend hours.
+
+First, let's calculate the number of coffee cups brewed on a weekday:
+- The coffee shop brews 10 coffee cups per hour on weekdays.
+- It operates for 5 hours a day.
+
+So, the number of cups brewed on one weekday is:
+\[ 10 \text{ cups/hour} \times 5 \text{ hours/day} = 50 \text{ cups/day} \]
+
+There are 5 weekdays in a typical week, so the total number of cups brewed on weekdays is:
+\[ 50 \text{ cups/day} \times 5 \text{ days} = 250 \text{ cups} \]
+
+Next, let's calculate the number of coffee cups brewed on the weekend. We are given that the coffee shop brews a total of 120 cups over the weekend.
+
+Now, we can find the total number of coffee cups brewed in one week by adding the weekday and weekend totals:
+\[ 250 \text{ cups (weekdays)} + 120 \text{ cups (weekend)} = 370 \text{ cups} \]
+
+Therefore, the total number of coffee cups brewed in one week is \(370\) cups.
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 6 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 7 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in a week, we need to calculate the number of cups brewed during the weekdays and the weekends separately, and then sum them up.
+
+First, let's calculate the number of cups brewed on a weekday:
+- The shop brews 10 coffee cups per hour.
+- It operates 5 hours a day.
+- Let's assume there are \( d \) weekdays in a week.
+
+The number of cups brewed during a weekday can be calculated as:
+\[ \text{Cups per weekday} = 10 \, \text{cups/hour} \times 5 \, \text{hours/day} = 50 \, \text{cups/day} \]
+
+Next, let's calculate the number of cups brewed on the weekend:
+- The shop brews 120 coffee cups in total over the weekend.
+- Let's assume there are 2 weekend days in a week.
+
+The number of cups brewed during the weekend can be calculated as:
+\[ \text{Cups per weekend day} = 120 \, \text{cups} / 2 \, \text{days} = 60 \, \text{cups/day} \]
+
+Now, let's calculate the total number of cups brewed during the weekdays:
+\[ \text{Total cups during weekdays} = 50 \, \text{cups/day} \times d \, \text{days} \]
+
+Next, let's calculate the total number of cups brewed during the weekend:
+\[ \text{Total cups during weekend} = 60 \, \text{cups/day} \times 2 \, \text{days} = 120 \, \text{cups} \]
+
+Finally, we add the cups brewed during the weekdays and during the weekend to get the total number of cups brewed in one week:
+\[ \text{Total cups in one week} = \text{Total cups during weekdays} + \text{Total cups during weekend} \]
+\[ = (50 \, \text{cups/day} \times d \, \text{days}) + (120 \, \text{cups}) \]
+
+Since it is assumed that there are 5 weekdays in a week, we can substitute \( d \) with 5:
+\[ \text{Total cups in one week} = (50 \, \text{cups/day} \times 5 \, \text{days}) + 120 \, \text{cups} \]
+\[ = 250 \, \text{cups/day} \times 5 \, \text{days} + 120 \, \text{cups} \]
+\[ = 1250 \, \text{cups} + 120 \, \text{cups} \]
+\[ = 1370 \, \text{cups} \]
+
+Therefore, the total number of coffee cups brewed in one week is 1370.
+</reasoning>
+<answer>
+1370
+</answer>
+
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+To find out how many coffee cups are brewed in 1 week, we need to calculate the number of coffee cups brewed during the weekdays and the weekends separately, and then add them together.
+
+First, let's calculate the number of coffee cups brewed during the weekdays:
+The coffee shop is open for 5 hours a day, and it brews 10 coffee cups per hour. Therefore, in one day it brews 5 hours * 10 cups/hour = 50 cups.
+
+Since there are 5 weekdays in a week, the total number of coffee cups brewed during the weekdays is 50 cups/day * 5 days = 250 cups.
+
+Next, let's calculate the number of coffee cups brewed during the weekends:
+The coffee shop brews 120 coffee cups in total over the weekend. Since this is spread over 2 days (Saturday and Sunday), the number of coffee cups brewed in one day (either Saturday or Sunday) is 120 cups/day.
+
+Therefore, the number of coffee cups brewed in one week (which includes 2 days of the weekend) is 120 cups/day * 2 days = 240 cups.
+
+Finally, we add the number of coffee cups brewed during the weekdays and the weekends to get the total number of coffee cups brewed in one week:
+250 cups (weekdays) + 240 cups (weekend) = 490 cups.
+
+So, the coffee shop brews 490 coffee cups in 1 week.
+
+</reasoning>
+<answer>
+490
+</answer>
+
+
+#### GENERATION 8 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 0.875
+
+#### GENERATION 9 RESPONSE ####
+
+
+system
+<reasoning>
+To find out how many coffee cups are brewed in a week, we need to first determine the total number of coffee cups brewed during the weekdays and the weekend.
+
+On a weekday, the coffee shop brews 10 coffee cups per hour. Since it is open 5 hours a day, the number of cups brewed per weekday is:
+\[ 10 \text{ cups/hour} \times 5 \text{ hours/day} = 50 \text{ cups/day} \]
+
+There are 5 weekdays in a week, so the total number of cups brewed during weekdays is:
+\[ 50 \text{ cups/day} \times 5 \text{ days} = 250 \text{ cups} \]
+
+Over the weekend, the coffee shop brews 120 coffee cups in total. This can be broken down into the number of cups brewed on Saturday and Sunday if we assume the same schedule for both days but since the total is given for the entire weekend, we'll just use it as is.
+
+Adding the weekday and weekend totals, we get the total number of cups brewed in a week:
+\[ 250 \text{ cups} + 120 \text{ cups} = 370 \text{ cups} \]
+
+Therefore, the coffee shop brews 370 coffee cups in one week.
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+<reasoning>
+To calculate the total number of coffee cups brewed in 1 week, we first need to find the number of cups brewed during the weekdays and the weekend separately.
+
+1. Weekdays: The coffee shop brews 10 coffee cups per hour and is open for 5 hours a day. So, the number of cups brewed per day in a week is \(10 \times 5 = 50\) cups. Since there are 5 weekdays, the total number of cups brewed during the weekdays is \(50 \times 5 = 250\) cups.
+
+2. Weekend: The coffee shop brews 120 coffee cups over the entire weekend. Since there are 2 days in the weekend, the total number of cups brewed during the weekend is \(120\) cups.
+
+3. Total: The total number of cups brewed in 1 week is the sum of the cups brewed during the weekdays and the weekend, which is \(250 + 120 = 370\) cups.
+
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 11 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in one week, we need to calculate the number of cups brewed on weekdays and weekends separately, and then sum them up.
+
+First, let's calculate the number of coffee cups brewed on weekdays:
+- The coffee shop brews 10 coffee cups per hour on a weekday.
+- The coffee shop is open 5 hours a day.
+- There are 5 weekdays in a week.
+
+So, the number of coffee cups brewed on weekdays per day is:
+\[ 10 \text{ cups/hour} \times 5 \text{ hours/day} = 50 \text{ cups/day} \]
+Since there are 5 weekdays in a week, the total number of coffee cups brewed on weekdays in one week is:
+\[ 50 \text{ cups/day} \times 5 \text{ days} = 250 \text{ cups} \]
+
+Next, let's calculate the number of coffee cups brewed on weekends:
+- The coffee shop brews a total of 120 coffee cups over the weekend.
+
+Since there are 2 days in a weekend and the number of coffee cups brewed per day is the same (calculated above), the total number of coffee cups brewed on weekends in one week is:
+\[ 120 \text{ cups} \]
+
+Now, we sum the total number of coffee cups brewed on weekdays and weekends for the entire week:
+\[ 250 \text{ cups (weekdays)} + 120 \text{ cups (weekends)} = 370 \text{ cups} \]
+
+Therefore, the total number of coffee cups brewed in one week is:
+\[ 370 \text{ cups} \]
+
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 12 RESPONSE ####
+
+
+system
+To calculate the total number of coffee cups brewed in a week, we need to break down the problem into two parts: weekdays and weekends.
+
+**Weekdays:**
+- The coffee shop brews 10 coffee cups per hour.
+- On a weekday, the coffee shop is open for 5 hours a day.
+- There are 5 weekdays in a week.
+
+First, calculate the number of cups brewed in one weekday:
+\[ 10 \text{ cups/hour} \times 5 \text{ hours/day} = 50 \text{ cups/day} \]
+
+Next, calculate the total number of cups brewed in all weekdays:
+\[ 50 \text{ cups/day} \times 5 \text{ days} = 250 \text{ cups} \]
+
+**Weekends:**
+- The coffee shop brews a total of 120 cups over the weekend.
+
+**Total for the week:**
+Add the weekend totals to the weekday totals to get the total cups brewed in a week:
+\[ 250 \text{ cups} (weekdays) + 120 \text{ cups} (weekend) = 370 \text{ cups} \]
+
+Therefore, the total number of coffee cups brewed in one week is 370.
+
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.375
+Total reward: 2.875
+
+#### GENERATION 13 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in 1 week, we need to calculate the daily production and then extend it to the weekly total.
+
+Weekdays: 
+- The coffee shop brews 10 coffee cups per hour on a weekday.
+- The shop is open for 5 hours a day.
+- Therefore, the number of coffee cups brewed per day on a weekday = 10 coffee cups/hour * 5 hours/day = 50 coffee cups/day.
+
+Weekends: 
+- The coffee shop brews 120 coffee cups on the weekend in total.
+- To find the number of coffee cups brewed per day on a weekend, we divide the total number of cups over the weekend by the number of days in the weekend: 120 coffee cups / 2 days = 60 coffee cups/day.
+
+Now let's calculate the total coffee cups brewed in a week:
+
+- Weekdays total: 50 coffee cups/day * 5 days = 250 coffee cups.
+- Weekend total: 60 coffee cups/day * 2 days = 120 coffee cups.
+- Total weekly production: 250 coffee cups + 120 coffee cups = 370 coffee cups.
+
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 14 RESPONSE ####
+
+
+system
+<reasoning>
+To calculate the total number of coffee cups brewed in one week, we need to consider both the weekday and weekend brewing patterns.
+
+1. **Monday to Friday (Weekday Brewing)**:
+   - The coffee shop brews 10 coffee cups per hour.
+   - It operates 5 hours per day.
+   - On each weekday, it brews \(10 \text{ cups/hour} \times 5 \text{ hours} = 50 \text{ coffee cups}\).
+   - Since there are 5 weekdays, the total for weekdays is \(50 \text{ cups/day} \times 5 \text{ days} = 250 \text{ coffee cups}\).
+
+2. **Brewing on the Weekend**:
+   - On each weekend day, it brews a total of 120 coffee cups (10 cups per hour for 12 hours \(\times 6\) hours, i.e., 100 cups for Saturday and 100 cups for Sunday).
+   - Thus, on the weekend, it brews \(120 + 120 = 240 \text{ coffee cups}\).
+
+3. **Total for the Week**:
+   - The total brewing for the week is the sum of the weekday and weekend quantities.
+   - Therefore, the total for the week is \(250 \text{ coffee cups} + 240 \text{ coffee cups} = 490 \text{ coffee cups}\).
+
+</reasoning>
+<answer>
+490
+</answer>
+
+
+#### GENERATION 14 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 1.0
+
+#### GENERATION 15 RESPONSE ####
+
+
+system
+<reasoning>
+To determine the total number of coffee cups brewed in one week, we need to calculate the number of cups brewed on weekdays and weekends separately, and then sum them up.
+
+First, let's calculate the number of cups brewed on weekdays:
+- The coffee shop brews 10 coffee cups per hour on a weekday.
+- It is open for 5 hours a day.
+- There are 5 weekdays in a week.
+
+So, the number of cups brewed on weekdays per day is:
+\[ 10 \text{ cups/hour} \times 5 \text{ hours} = 50 \text{ cups/day} \]
+
+Thus, the total number of cups brewed on weekdays in one week is:
+\[ 50 \text{ cups/day} \times 5 \text{ days} = 250 \text{ cups} \]
+
+Next, let's calculate the number of cups brewed on the weekend:
+- The coffee shop brews 120 coffee cups over the weekend.
+- There are 2 weekend days in a week.
+
+So, the total number of cups brewed on the weekend in one week is:
+\[ 120 \text{ cups} \]
+
+Finally, to find the total number of cups brewed in one week, we add the cups brewed on weekdays and the cups brewed on the weekend:
+\[ 250 \text{ cups} (weekdays) + 120 \text{ cups} (weekend) = 370 \text{ cups} \]
+
+Therefore, the total number of coffee cups brewed in one week is \( 370 \) cups.
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 15 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+<reasoning>
+To solve this problem, we need to determine the total number of coffee cups brewed in a week. We know that the coffee shop brews 10 coffee cups per hour on a weekday and 120 coffee cups in total over the weekend.
+
+First, let's calculate the number of weekdays in a week. Assuming a typical week has 5 weekdays, we calculate the number of coffee cups brewed on weekdays:
+\[ \text{Coffee cups per weekday} = 10 \, \text{cups/hour} \times 5 \, \text{hours/day} = 50 \, \text{cups/day} \]
+\[ \text{Total coffee cups on weekdays} = 50 \, \text{cups/day} \times 5 \, \text{days} = 250 \, \text{cups} \]
+
+Next, we calculate the number of coffee cups brewed on the weekend. The problem states that the coffee shop brews 120 coffee cups in total over the weekend, and since we are only asked for the total for the week, we can directly use this information.
+
+Now, we add the coffee cups brewed on weekdays and the weekend to get the total for the week:
+\[ \text{Total coffee cups in 1 week} = \text{Total coffee cups on weekdays} + \text{Total coffee cups over the weekend} \]
+\[ \text{Total coffee cups in 1 week} = 250 \, \text{cups} + 120 \, \text{cups} = 370 \, \text{cups} \]
+
+So, the coffee shop brews 370 coffee cups in 1 week.
+</reasoning>
+<answer>
+370
+</answer>
+
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.5
+Total reward: 3.0
+

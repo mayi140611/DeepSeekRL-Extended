@@ -1,0 +1,344 @@
+###### ORIGINAL PROMPT #####
+
+Archibald eats 1 apple a day for two weeks. Over the next three weeks, he eats the same number of apples as the total of the first two weeks. Over the next two weeks, he eats 3 apples a day. Over these 7 weeks, how many apples does he average a week?
+
+#### ANS ####
+
+10
+#### GENERATION 1 RESPONSE ####
+
+system
+In the first two weeks, Archibald eats 1 apple/day * 14 days/week * 2 weeks = 28 apples
+Over the next three weeks, he eats the same number of apples as the total of the first two weeks, so he eats 28 apples.
+
+Over the next two weeks, he eats 3 apples/day * 14 days/week * 2 weeks = 84 apples
+
+In total, Archibald eats 28 apples + 28 apples + 84 apples = 130 apples
+
+Therefore, he averages 130 apples/7 weeks = 18.57 apples/week
+
+</reasoning>
+<answer>
+18.57
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.09700000286102295
+Total reward: -0.09700000286102295
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+He eats 14 apples in the first 2 weeks because 2 x 14 = 28
+He eats 14 apples in the next 3 weeks because 3 x 14 = 42
+He eats 39 apples over 7 weeks because 28 + 42 = 70
+
+He averages 11 apples a week because 70 / 7 = 10
+
+</reasoning>
+<answer>
+11
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.11400000005960464
+Total reward: 0.6140000224113464
+
+#### GENERATION 3 RESPONSE ####
+
+system
+In the first two weeks, Archibald eats 1 apple/day * 14 days/week * 2 weeks = 28 apples.
+Over the next three weeks, he eats 28 apples.
+Over the next two weeks, he eats 3 apples/day * 14 days/week * 2 weeks = 84 apples.
+In seven weeks, he eats a total of 28 + 28 + 84 = 140 apples.
+On average, he eats 140 apples/7 weeks = 20 apples/week.
+
+</reasoning>
+<answer>
+20
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.004000000189989805
+Total reward: 0.4959999918937683
+
+#### GENERATION 4 RESPONSE ####
+
+system
+He eats 14 by the first two weeks because 7 x 2 = 14
+Over the next 3 weeks, he eats 14 because 14 = 14
+Over the next 2 weeks, he eats 12 because 3 x 4 = 12
+So he eats 30 apples because 14 + 14 + 12 = 30
+
+30 / 7 = 4.28
+
+</reasoning>
+<answer>
+4.28
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.11400000005960464
+Total reward: 0.11400000005960464
+
+#### GENERATION 5 RESPONSE ####
+
+system
+In the first two weeks, he eats 1 x 14 = 14 apples.
+Over the next three weeks, he eats 14 apples the same number of times as the total of the first two weeks, so 14 x 14 = 196 apples.
+Over the last two weeks he eats 3 x 14 = 42 apples.
+He eats 14 + 196 + 42 = 252 apples in total.
+He averages 252 x (1/7) = 36 apples per week.
+
+</reasoning>
+<answer>
+36
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.007000000216066837
+Total reward: 0.5070000290870667
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Archibald eats 1 apple per day for two weeks, which totals 14 apples (1 apple/day * 14 days). Over the next three weeks, he eats the same number of apples as the total of the first two weeks, which is 14 apples (as calculated above).
+
+Over the next two weeks, he eats 3 apples per day, which totals 6 * 3 = 18 apples.
+
+In total, over the 7 weeks, Archibald eats 14 + 14 + 18 = 46 apples.
+
+To find the average, divide the total number of apples by the number of weeks:
+
+{eq}\frac{46\ \mathrm{apples}}{7\ \mathrm{weeks}} \approx 6.57\ \mathrm{apples/week}
+
+</answer>
+<reasoning>
+To solve this problem, we need to calculate the total number of apples Archibald eats over the 7 weeks, and then find the average by dividing this total by the number of weeks. For the first two weeks, he eats the same number of apples as in the previous two weeks, so that's 14 apples (1 apple per day times 14 days). For the next three weeks, he eats the same number as in the previous two weeks, which is also 14 apples. For the final two weeks, he eats 3 apples per day, which totals 18 apples (3 apples per day times 2 weeks). Adding these totals together gives us the total number of apples eaten over the 7 weeks, which is 46. The average number of apples per week is then calculated by dividing the total number of apples by the number of weeks, which is 46 apples divided by 7 weeks, approximately 6.57 apples per week.
+</reasoning>
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.6029999852180481
+Total reward: -0.6029999852180481
+
+#### GENERATION 7 RESPONSE ####
+
+system
+In the first two weeks, he eats a total of 21 apples. In the next three weeks, he eats the same number, 21. In the next two weeks, he eats 12. In total, he eats 74 apples over the 7 weeks. On average, he eats 10.5 apples per week.
+
+</reasoning>
+<answer>
+10.5
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.10100000351667404
+Total reward: 0.10100000351667404
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Archibald eats 1 apple for 14 days in the first two weeks, which totals to 14 apples. In the next three weeks, he eats the same amount of apples as the total from the first two weeks, so he eats 14 apples again. In the final two weeks, he eats 3 apples a day, so that's 3 apples/day * 14 days = 42 apples. The total number of apples he eats over the 7 weeks is 14 (first 2 weeks) + 14 (second 2 weeks) + 42 (last 2 weeks) = 70 apples. The average number of apples eaten per week is 70/7 = 10 apples.
+
+</reasoning>
+<answer>
+10
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.16699999570846558
+Total reward: 2.3329999446868896
+
+#### GENERATION 9 RESPONSE ####
+
+system
+Archibald eats 1 apple a day for 14 days in the first two weeks. 
+In the next three weeks, he eats the same number of apples, which is 28 apples in total.
+In the next two weeks, he eats 3 apples a day, which is 6 apples in the week.
+In total, he eats 28 + 6 = 34 apples over the 7 weeks.
+
+To find the average number of apples he eats per week, we divide the total number of apples by the number of weeks: 34 apples / 7 weeks = 4.857
+
+</reasoning>
+<answer>
+4.86
+</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.10100000351667404
+Total reward: -0.10100000351667404
+
+#### GENERATION 10 RESPONSE ####
+
+system
+Archibald eats 1 apple a day for two weeks, which means he eats \(2 \times 7 = 14\) apples. Over the next three weeks, he eats the same number of apples as the total of the first two weeks, which is \(14\) apples. Over the next two weeks, he eats 3 apples a day, which means he eats \(2 \times 3 = 6\) apples. Adding these up, the total number of apples eaten over the 7 weeks is \(14 + 14 + 6 = 34\). To find the average number of apples eaten a week over these 7 weeks, we divide the total number of apples by the number of weeks, which gives \(34 \div 7 = 4.857142857142857\). Taking the average, we get \(4.\overline{857}\). Therefore, Archibald averages \(4.\overline{857}\) apples a week.
+
+</reasoning>
+<answer>
+4.<overline{857}>
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 0.0
+Integer format: 0.0
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.37599998712539673
+Total reward: -0.37599998712539673
+
+#### GENERATION 11 RESPONSE ####
+
+system
+Archibald eats 1 apple per day for two weeks, which is 14 apples. For the next three weeks, he eats the same number of apples as the total of the first two weeks, so he eats 14 more apples over those three weeks. That makes 14 + 14 = 28 apples. Over the next two weeks, he eats 3 apples a day, which is 3 * 14 = 42 apples. Adding up the apples eaten over these 7 weeks, we have 14 + 28 + 42 = 84. To find the average number of apples he eats over 7 weeks, we divide 84 by 7, which equals 12.
+
+</reasoning>
+<answer>
+12
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.15800000727176666
+Total reward: 0.34200000762939453
+
+#### GENERATION 12 RESPONSE ####
+
+system
+In two weeks, he eats 14 apples, which is the same as two weeks ago. Over the following three weeks, he eats the same amount, which is 14 apples. Over the final two weeks, he eats 6 apples, which is the same as a daily average of 3 each week. Adding all of these up, he eats a total of 42 apples over the 7 weeks.
+
+42 apples is the total amount consumed. 42 divided by 7 equals an average of 6 per week.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.0689999982714653
+Total reward: 0.4309999942779541
+
+#### GENERATION 13 RESPONSE ####
+
+system
+In the first two weeks, he eats 1*7 = 7 apples.
+Then he eats 7 apples for 3 weeks = 21 apples.
+Over the next 2 weeks, he eats 3*7 = 21 apples.
+In total he eats 21+21 = 42 apples in 7 weeks.
+Therefore, he eats 42/7 = 6 apples a week.
+
+</reasoning>
+<answer>
+6
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.10199999809265137
+Total reward: 0.6019999980926514
+
+#### GENERATION 14 RESPONSE ####
+
+system
+Archibald eats 1 apple a day for two weeks, which totals to 1 * 14 = 14 apples. Over the next three weeks, he eats the same number of apples as the total of the first two weeks, which means he eats 14 apples again. Over the next two weeks, he eats 3 apples a day, which totals to 3 * 14 = 42 apples. All together, he eats 14 + 14 + 42 = 70 apples over the 7 weeks. To find the average number of apples he eats per week, we divide the total number of apples by the number of weeks, which is 70 / 7 = 10 apples per week.
+
+</reasoning>
+<answer>
+10
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.1850000023841858
+Total reward: 2.315000057220459
+
+#### GENERATION 15 RESPONSE ####
+
+system
+In the first two weeks, he eats 1*14=14 apples. Since the next three weeks he eats the same amount, he eats 14 apples. In the next two weeks, he eats 3*14=42 apples a week. He eats 42*2=84 apples. Over the 7 weeks he eats 14+14+84=112 apples. He eats 112/7=16 apples a week.
+
+</reasoning>
+<answer>
+16
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.05900000035762787
+Total reward: 0.5590000152587891
+
+#### GENERATION 16 RESPONSE ####
+
+system
+In the first two weeks, Archibald eats 1 apple/day * 14 days/week * 2 weeks = 28 apples.
+The same number of apples is eaten in the next three weeks, so a total of 28 apples.
+Over the next two weeks, Archibald eats 3 apples/day * 14 days/week * 2 weeks = 84 apples.
+The total number of apples eaten over these 7 weeks is 28 + 28 + 84 = 140 apples.
+The average number of apples eaten per week is 140 apples/7 weeks = 20 apples/week.
+
+</reasoning>
+<answer>
+20
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.09700000286102295
+Total reward: 0.40299999713897705
+

@@ -1,0 +1,423 @@
+###### ORIGINAL PROMPT #####
+
+Lisa and Carly go shopping together. Lisa spends $40 on t-shirts then spends half of this amount on jeans and twice this amount on coats. Carly spends only a quarter as much as Lisa on t-shirts but spends 3 times as much on jeans and a quarter of the amount Lisa spent on coats. In dollars, how much did Lisa and Carly spend in total?
+
+#### ANS ####
+
+230
+#### GENERATION 1 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts, $40/2=$20 on jeans, and $40*2=$80 on coats.
+Carly spends $40/4=$10 on t-shirts, $40*3=$120 on jeans, and $40/4=$10 on coats.
+In total, they spend $40+$20+$80+$10+$10+$120=$320.
+
+</reasoning>
+<answer>
+320
+</answer>
+
+#### GENERATION 1 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.12700000405311584
+Total reward: 0.6269999742507935
+
+#### GENERATION 2 RESPONSE ####
+
+
+system
+Lisa spends $40 on t-shirts. She spends half of this amount on jeans, which is $40 / 2 = $20. She spends twice this amount on coats, which is $40 * 2 = $80. Thus, Lisa spends a total of $40 + $20 + $80 = $140.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is $40 / 4 = $10. She spends 3 times as much on jeans, which is $20 * 3 = $60. She spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20. Thus, Carly spends a total of $10 + $60 + $20 = $90.
+
+In total, Lisa and Carly spend $140 + $90 = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 2 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.20000000298023224
+Total reward: 2.299999952316284
+
+#### GENERATION 3 RESPONSE ####
+
+header
+Reasoning
+Let's break down the spending for Lisa and Carly step by step:
+
+1. **Lisa's Spending:**
+   - T-shirts: $40
+   - Jeans: \( \frac{1}{2} \times 40 = $20 \)
+   - Coats: \( 2 \times 40 = $80 \)
+
+2. **Carly's Spending:**
+   - T-shirts: \( \frac{1}{4} \times 40 = $10 \)
+   - Jeans: \( 3 \times 20 = $60 \)
+   - Coats: \( \frac{1}{4} \times 80 = $20 \)
+
+Now, we can calculate the total amount spent by Lisa and Carly by summing up their individual expenditures.
+
+**Total spending by Lisa:**
+\[ $40 + $20 + $80 = $140 \]
+
+**Total spending by Carly:**
+\[ $10 + $60 + $20 = $90 \]
+
+**Total combined spending:**
+\[ $140 + $90 = $230 \]
+
+**Answer**
+
+\[
+\begin{align*}
+\text{Total spending by Lisa:} & \quad $140 \\
+\text{Total spending by Carly:} & \quad $90 \\
+\hline
+\text{Total combined spending:} & \quad $230
+\end{align*}
+\]
+
+Therefore, the total amount spent by Lisa and Carly is $230.
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 3 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.5559999942779541
+Total reward: 1.944000005722046
+
+#### GENERATION 4 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts. She spends half of $40 on jeans, which is $20. She spends twice that amount on coats, which is $40.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is $10. She spends 3 times as much on jeans as Lisa, which is $30. She spends a quarter of the amount Lisa spent on coats, which is $10.
+
+In total, Lisa spends $40 (t-shirts) + $20 (jeans) + $40 (coats) = $100. Carly spends $10 (t-shirts) + $30 (jeans) + $10 (coats) = $50.
+
+Lisa and Carly spend $100 + $50 = $150 in total.
+
+</reasoning>
+<answer>
+150
+</answer>
+
+#### GENERATION 4 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.17900000512599945
+Total reward: 0.32099997997283936
+
+#### GENERATION 5 RESPONSE ####
+
+
+system
+Lisa spends $40 on t-shirts. 
+She spends half of this amount on jeans, which is $40/2 = $20.
+She spends twice this amount on coats, which is $40 * 2 = $80.
+Lisa's total spending is $40 + $20 + $80 = $140.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is $40/4 = $10.
+She spends 3 times as much on jeans, which is $20 * 3 = $60.
+She spends a quarter of the amount Lisa spent on coats, which is $80/4 = $20.
+
+Carly's total spending is $10 + $60 + $20 = $90.
+
+In total, Lisa and Carly spent $140 + $90 = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 5 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.18799999356269836
+Total reward: 2.312000036239624
+
+#### GENERATION 6 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts. She spends half of this amount on jeans, which is $40 / 2 = $20. Lisa spends twice the amount she spent on jeans on coats, which is $20 * 2 = $40. So, Lisa spends a total of $40 (t-shirts) + $20 (jeans) + $40 (coats) = $100.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is $40 / 4 = $10. Carly spends three times as much on jeans as Lisa, which is $20 * 3 = $60. Carly spends a quarter of the amount Lisa spent on coats, which is $40 / 4 = $10. So, Carly spends a total of $10 (t-shirts) + $60 (jeans) + $10 (coats) = $80.
+
+In dollars, Lisa and Carly spent a total of $100 (Lisa) + $80 (Carly) = $180.
+
+</reasoning>
+<answer>
+180
+</answer>
+
+#### GENERATION 6 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.31200000643730164
+Total reward: 0.18799999356269836
+
+#### GENERATION 7 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts.
+She spends half this amount on jeans, which is $40 / 2 = $20.
+She spends twice the amount on coats, which is $40 * 2 = $80.
+Lisa's total spending amount is $40 + $20 + $80 = $140.
+Carly spends a quarter as much as Lisa on t-shirts, which is $40 / 4 = $10.
+She spends 3 times as much on jeans, which is $20 * 3 = $60.
+She spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20.
+Carly's total spending amount is $10 + $60 + $20 = $90.
+In total, Lisa and Carly spend $140 + $90 = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 7 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.19900000095367432
+Total reward: 2.3010001182556152
+
+#### GENERATION 8 RESPONSE ####
+
+
+system
+Lisa spends $40 on t-shirts. 
+Then she spends half of $40 on jeans, which is $20.
+She spends twice $40 on coats, which is $80.
+The total amount Lisa spends is $40 + $20 + $80 = $140.
+
+Carly spends a quarter of Lisa's t-shirt amount on t-shirts, which is $40/4 = $10. 
+She spends 3 times Lisa's jeans amount on jeans, which is $20*3 = $60.
+She spends a quarter of Lisa's coat amount on coats, which is $80/4 = $20.
+The total amount Carly spends is $10 + $60 + $20 = $90.
+
+Therefore, the total amount spent by Lisa and Carly is $140 + $90 = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 8 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.21299999952316284
+Total reward: 2.2869999408721924
+
+#### GENERATION 9 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts.
+She spends half of this amount on jeans, which is $40 / 2 = $20.
+She spends twice this amount on coats, which is $40 * 2 = $80.
+So, Lisa's total spending is $40 (t-shirts) + $20 (jeans) + $80 (coats) = $140.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is $40 / 4 = $10.
+She spends 3 times as much on jeans as Lisa, which is $20 * 3 = $60.
+She spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20.
+So, Carly's total spending is $10 (t-shirts) + $60 (jeans) + $20 (coats) = $90.
+
+In total, Lisa and Carly spent $140 (Lisa) + $90 (Carly) = $230.
+
+</reasoning>
+<answer>230</answer>
+
+#### GENERATION 9 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: 0.125
+Total reward: 2.625
+
+#### GENERATION 10 RESPONSE ####
+
+
+system
+Lisa spends $40 on t-shirts. She then spends half of this amount on jeans, which is $40 / 2 = $20. She also spends twice the amount she spent on t-shirts on coats, which is $40 * 2 = $80. Carly spends a quarter as much as Lisa on t-shirts, which is $40 / 4 = $10. She spends three times as much on jeans as Lisa, which is $20 * 3 = $60. She spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20. Lisa and Carly spent $40 + $20 + $80 + $10 + $60 + $20 = $230 in total.
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 10 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.15600000321865082
+Total reward: 2.3439998626708984
+
+#### GENERATION 11 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts. She spends half of this amount on jeans, which is $40 / 2 = $20. She spends twice the amount on coats, which is $40 * 2 = $80.
+
+Carly spends a quarter as much on t-shirts as Lisa, which is $40 / 4 = $10. She spends three times as much on jeans, which is $20 * 3 = $60. She spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20.
+
+In total, Lisa spends $40 + $20 + $80 = $140. Carly spends $10 + $60 + $20 = $90. 
+
+Therefore, Lisa and Carly spent a total of $140 + $90 = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 11 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.19200000166893005
+Total reward: 2.308000087738037
+
+#### GENERATION 12 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts.
+She spends half of this amount on jeans, which is $40 / 2 = $20.
+She spends twice this amount on coats, which is $40 * 2 = $80.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is $40 / 4 = $10.
+She spends 3 times as much as Lisa on jeans, which is $20 * 3 = $60.
+She spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20.
+
+Total amount spent by Lisa: $40 (t-shirts) + $20 (jeans) + $80 (coats) = $140.
+Total amount spent by Carly: $10 (t-shirts) + $60 (jeans) + $20 (coats) = $90.
+
+Total amount spent by Lisa and Carly together: $140 (Lisa) + $90 (Carly) = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 12 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.29100000858306885
+Total reward: 2.2090001106262207
+
+#### GENERATION 13 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts. She spends half of this on jeans, which is \( \frac{40}{2} = \$20 \), and twice this amount on coats, which is \( 2 \times 40 = \$80 \). So Lisa spends a total of \( 40 + 20 + 80 = \$140 \).
+
+Carly spends a quarter as much as Lisa on t-shirts, which is \( \frac{40}{4} = \$10 \). She spends 3 times as much on jeans, which is \( 3 \times 20 = \$60 \), and a quarter of the amount Lisa spent on coats, which is \( \frac{80}{4} = \$20 \). So Carly spends a total of \( 10 + 60 + 20 = \$90 \).
+
+The total amount spent by Lisa and Carly is \( 140 + 90 = \$230 \).
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 13 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.25600001215934753
+Total reward: 2.24399995803833
+
+#### GENERATION 14 RESPONSE ####
+
+system
+Lisa spends $40 on t-shirts. She spends half of this amount on jeans, which is $40/2 = $20. She also spends twice the amount on coats, which is $40 x 2 = $80. 
+
+So, the total amount Lisa spent is $40 (t-shirts) + $20 (jeans) + $80 (coats) = $140.
+
+Carly spends 1/4 as much as Lisa on t-shirts, which is $40 / 4 = $10. She spends 3 times as much as Lisa on jeans, which is $20 x 3 = $60. She also spends a quarter of the amount Lisa spent on coats, which is $80 / 4 = $20.
+
+So, the total amount Carly spent is $10 (t-shirts) + $60 (jeans) + $20 (coats) = $90.
+
+Therefore, the total amount spent by Lisa and Carly is $140 + $90 = $230.
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 14 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.3009999990463257
+Total reward: 2.1989998817443848
+
+#### GENERATION 15 RESPONSE ####
+
+system
+Lisa spends $40, half of which is spent on jeans, which is $40/2 = $20. Twice the amount spent on jeans is spent on coats, which is $20*2 = $40. In total Lisa spends $40+$20+$40 = $100.
+
+Carly spends a quarter as much as Lisa on t-shirts, which is 1/4*$40 = $10. Three times as much on jeans as Lisa, which is 3*$20 = $60. A quarter of the amount Lisa spent on coats, which is 1/4*$40 = $10. In total Carly spends $10+$60+$10 = $80.
+
+In total Lisa and Carly spent $100+$80 = $180.
+
+</reasoning>
+<answer>
+180
+</answer>
+
+#### GENERATION 15 SCORES ####
+Correctness: 0.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.14800000190734863
+Total reward: 0.35199999809265137
+
+#### GENERATION 16 RESPONSE ####
+
+
+system
+Lisa spends $40 on t-shirts. Then she spends half of that on jeans, which is \( \frac{40}{2} = $20 \), and twice that amount on coats, which is \( 40 \times 2 = $80 \). In total, Lisa spends \( 40 + 20 + 80 = $140 \).
+
+Carly spends a quarter as much as Lisa on t-shirts, so she spends \( \frac{40}{4} = $10 \). She spends three times as much on jeans as Lisa, which is \( 20 \times 3 = $60 \), and a quarter of the amount Lisa spent on coats, which is \( 80 \div 4 = $20 \). In total, Carly spends \( 10 + 60 + 20 = $90 \).
+
+In total, Lisa and Carly spend \( 140 + 90 = $230 \).
+
+</reasoning>
+<answer>
+230
+</answer>
+
+#### GENERATION 16 SCORES ####
+Correctness: 2.0
+Integer format: 0.5
+Strict format: 0.0
+Soft format: 0.0
+XML count: -0.24699999392032623
+Total reward: 2.253000020980835
+
