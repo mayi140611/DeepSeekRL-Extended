@@ -135,7 +135,7 @@ def generate_completions(
     """
     # 1. Prepare prompting
     prompt = [
-        {'role': 'system', 'content': train_loader.system_prompt},
+        {'role': 'system', 'content': args.system_prompt},
         {'role': 'user', 'content': question}
     ]
     prompt_text = tokenizer.apply_chat_template(prompt, tokenize=False
@@ -301,13 +301,16 @@ def compute_loss(
     # Only need the generated tokens' logits
     logits_to_keep = completion_ids.size(1)
 
+    # Get training model logits
+    # input_ids = torch.cat([prompt_ids, completion_ids], dim=1)
+
+    # per_token_logps = utils.get_per_token_logps(model, input_ids, attention_mask, logits_to_keep)
+    per_token_logps = utils.get_per_token_logps(model, prompt_completion_ids, attention_mask, logits_to_keep)
+
     # Get reference model logits
     with torch.inference_mode():
         ref_per_token_logps = utils.get_per_token_logps(base_model, prompt_completion_ids, attention_mask, logits_to_keep)
 
-    # Get training model logits
-    input_ids = torch.cat([prompt_ids, completion_ids], dim=1)
-    per_token_logps = utils.get_per_token_logps(model, input_ids, attention_mask, logits_to_keep)
 
     # Compute KL divergence
     per_token_kl = torch.exp(ref_per_token_logps - per_token_logps) - (ref_per_token_logps - per_token_logps) - 1
@@ -362,7 +365,10 @@ def grpo_loss(
     prompt_completion_ids, prompt_ids, completion_ids, attention_mask, completions_text, prompt_text = generate_completions(
         model, tokenizer, question, device, args
     )
-
+    tt = tokenizer([prompt_text+e for e in completions_text], return_tensors="pt", padding=True, padding_side="left", add_special_tokens=False)
+    prompt_completion_ids1, attention_mask1 = tt.input_ids.to(device), tt.attention_mask.to(device)
+    tt = tokenizer([e for e in completions_text], return_tensors="pt", padding=True, padding_side="left", add_special_tokens=False)
+    completion_ids1, completion_mask1 = tt.input_ids.to(device), tt.attention_mask.to(device)    
     # Score completions
     rewards, advantages, rewards_per_func, metrics, log_data = score_completions(
         completions_text, question, answer, eval_class, device, args
@@ -375,8 +381,8 @@ def grpo_loss(
     # Compute loss
     completion_mask = attention_mask[:, prompt_ids.size(1):]
     loss, loss_metrics = compute_loss(
-        model, base_model, prompt_completion_ids, prompt_ids, completion_ids,
-        attention_mask, completion_mask, advantages, args
+        model, base_model, prompt_completion_ids1, prompt_ids, completion_ids1,
+        attention_mask1, completion_mask1, advantages, args
     )
 
     # Combine metrics
@@ -449,7 +455,7 @@ if __name__ == "__main__":
 
     ## Set which data set 
     train_loader, test_loader = rldatasets.get_dataloaders(args.dataset_name)
-
+    args.system_prompt = train_loader.system_prompt
     ## Set which evaluation criteria to use 
     eval_class = evaluator.get_evaluator(args.evaluator)
 

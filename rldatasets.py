@@ -134,7 +134,7 @@ def build_eng2pidgin_dataloaders() -> Tuple[Eng2PidginLoader, Eng2PidginLoader]:
 
     # Randomly split into train/test sets
     total_samples = len(questions)
-    test_size = int(total_samples * 0.0015)  # 10% for test set
+    test_size = int(total_samples * 0.0013)  # 10% for test set
     
     # Generate random indices for test set
     test_indices = random.sample(range(total_samples), test_size)

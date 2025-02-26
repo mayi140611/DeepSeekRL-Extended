@@ -111,6 +111,7 @@ def selective_log_softmax(logits, index):
     return per_token_logps
 
 def get_per_token_logps(model, input_ids, attention_mask, logits_to_keep):
+    
     # We add 1 to `logits_to_keep` because the last logits of the sequence is later excluded
     logits = model(input_ids=input_ids, attention_mask=attention_mask, logits_to_keep=logits_to_keep + 1).logits
     logits = logits[:, :-1, :]  # (B, L-1, V), exclude the last logit: it corresponds to the next token pred
