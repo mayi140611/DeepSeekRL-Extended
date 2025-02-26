@@ -62,6 +62,102 @@ Respond in the following format:
 </answer>
 """
 
+class WmtEng2ZhLoader(DataLoader):
+    """
+    A loader class that provides iteration over WmtEng2Zh.
+    
+    This class implements both sequential and random access to math problems through
+    standard Python iterator protocols. It can be used to iterate over problems either
+    in order or randomly, making it suitable for both training and evaluation.
+    
+    Attributes:
+        questions (List[str]): List of math question strings
+        answers (List[str]): List of corresponding answer strings
+        random (bool): If True, returns problems randomly; if False, returns sequentially
+        current_index (int): Current position in the lists for sequential access
+    """
+    
+    def __init__(self, questions: list[str], answers: list[str], random: bool = False) -> None:
+        super().__init__(random)
+        self.questions = questions
+        self.answers = answers
+        self.pre_prompt = """You need to translate the given English as chinese. You should think carefully about the text, and translate it to chinese, then provide your translation.
+            It is very important that you put your thinking process inside <reasoning> tags and your final translation inside <answer> tags, like this:
+
+            
+            <reasoning>
+            Your step-by-step thinking process here
+            </reasoning>
+            <answer>
+            Your final translation here
+            </answer>
+
+            All of your returned text should either be in the <reasoning> or <answer> tags - no text outside! Start each answer by immediately starting with <reasoning>. 
+            NOTE: It is is extremely important you answer in this way - do not put any information or text outside of these tags!
+
+            Text: """
+        self.system_prompt = self.pre_prompt#SYSTEM_PROMPT
+        
+    def __len__(self) -> int:
+        return len(self.questions)
+        
+    def __iter__(self) -> 'WmtEng2ZhLoader':
+        return self
+        
+    def __next__(self) -> tuple[str, str]:
+        if self.current_index >= len(self.questions):
+            raise StopIteration
+        
+        if self.random:
+            idx = random.randint(0, len(self.questions) - 1)
+        else:
+            idx = self.current_index
+            self.current_index += 1
+            
+        return self.questions[idx], self.answers[idx]
+
+    def reset(self):
+        self.current_index = 0 
+
+
+def build_wmteng2zh_dataloaders() -> Tuple[WmtEng2ZhLoader, WmtEng2ZhLoader]: 
+    dir1 = '/home/jupyter/ollama_models/blob/mm/0myprojects220424/a-250220_0331-mine-复现r1/output/'
+    with open(dir1 + 'newsdev2021.ha-en.en') as f\
+        , open(dir1 + 'newsdev2021.ha-en.zh') as f1:
+        data_en = f.read().split('\n')
+        data_pcm = f1.read().split('\n')
+        print(len(data_en), len(data_pcm))
+
+    questions = data_en
+    parsed_answers = data_pcm
+
+    # Randomly split into train/test sets
+    total_samples = len(questions)
+    test_size = int(total_samples * 0.019)  # 10% for test set
+    
+    # Generate random indices for test set
+    test_indices = random.sample(range(total_samples), test_size)
+    test_indices_set = set(test_indices)
+    
+    # Convert to numpy arrays for easier indexing
+    questions = np.array(questions)
+    parsed_answers = np.array(parsed_answers)
+    
+    # Create boolean mask for test indices
+    test_mask = np.zeros(total_samples, dtype=bool)
+    test_mask[list(test_indices_set)] = True
+    
+    # Split using boolean indexing
+    test_questions = questions[test_mask]
+    test_answers = parsed_answers[test_mask]
+    train_questions = questions[~test_mask] 
+    train_answers = parsed_answers[~test_mask]
+
+    # Setup data loaders 
+    trainloader = WmtEng2ZhLoader(train_questions.tolist(), train_answers.tolist())
+    testloader = WmtEng2ZhLoader(test_questions.tolist(), test_answers.tolist())
+    
+    return trainloader, testloader
 
 class Eng2PidginLoader(DataLoader):
     """
@@ -278,6 +374,8 @@ def get_dataloaders(dataset_name: str) -> Tuple[DataLoader, DataLoader]:
         return build_gsm8k_dataloaders()
     elif dataset_name.lower() == 'eng2pidgen':
         return build_eng2pidgin_dataloaders()
+    elif dataset_name.lower() == 'wmteng2zh':
+        return build_wmteng2zh_dataloaders()
     else:
         raise ValueError(f"Dataset {dataset_name} not supported. Currently only 'gsm8k' is available.")
 

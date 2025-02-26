@@ -78,7 +78,7 @@ def get_evaluator(name: str) -> RewardEvaluator:
     """
     if name.lower() == "gsm8k":
         return GSM8kEvaluator()
-    elif name.lower() == 'eng2pidgen':
+    elif name.lower() in 'eng2pidgen wmteng2zh'.split():
         return Eng2PidginEvaluator()
     else:
         raise NotImplementedError(f"No evaluator implemented for {name}")
