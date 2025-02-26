@@ -261,7 +261,9 @@ class Eng2PidginEvaluator(RewardEvaluator):
         """Reward for XML tag counting."""
         def count_xml(text: str) -> float:
             count = 0.0
-            if text.count("<reasoning>\n") == 1: count += 0.125
+            if text.count("<reasoning>\n") == 1: 
+                count += 0.125
+                count -= len(text.split("<reasoning>\n")[0])*0.003  # 对<reasoning>前面出现内容进行惩罚
             if text.count("\n</reasoning>\n") == 1: count += 0.125
             if text.count("\n<answer>\n") == 1:
                 count += 0.125
