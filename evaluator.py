@@ -8,6 +8,9 @@ import torch
 from abc import ABC, abstractmethod
 from typing import List, Dict, Tuple, Any
 from translation_utils import compute_bleu
+from sacrebleu.metrics import BLEU, CHRF
+bleu = BLEU()
+chrf = CHRF()
 
 class RewardEvaluator(ABC):
     """
@@ -234,13 +237,14 @@ class Eng2PidginEvaluator(RewardEvaluator):
         """Reward for correct answer."""
         responses = [completion[0]['content'] for completion in completions]
         extracted = [self._extract_xml_answer(r) for r in responses]
-        return [compute_bleu([[list(a.strip())]], [list(r)]) for r, a in zip(extracted, answer)]
+        # return [compute_bleu([[list(a.strip())]], [list(r)]) for r, a in zip(extracted, answer)]
+        return bleu.corpus_score(extracted, [[answer] * len(extracted)]).score / 100
 
-    def _int_format_reward(self, completions) -> List[float]:
-        """Reward for integer format."""
+    def _int_format_reward(self, completions, answer) -> List[float]:
+        """Reward for correct answer."""
         responses = [completion[0]['content'] for completion in completions]
         extracted = [self._extract_xml_answer(r) for r in responses]
-        return [0 for r in extracted]
+        return chrf.corpus_score(extracted, [[answer] * len(extracted)]).score / 100
 
     def _strict_format_reward(self, completions) -> List[float]:
         """Reward for strict XML format."""
@@ -291,7 +295,7 @@ class Eng2PidginEvaluator(RewardEvaluator):
         # Compute all reward functions
         all_scores = [
             self._correctness_reward(prompts, completions, answer),
-            self._int_format_reward(completions),
+            self._int_format_reward(completions, answer),
             self._strict_format_reward(completions),
             self._soft_format_reward(completions),
             self._xml_count_reward(completions)

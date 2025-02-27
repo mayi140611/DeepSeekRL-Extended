@@ -81,9 +81,9 @@ class WmtEng2ZhLoader(DataLoader):
         super().__init__(random)
         self.questions = questions
         self.answers = answers
-        self.pre_prompt = """You need to translate the given English as chinese. You should think carefully about the text, and translate it to chinese, then provide your translation.
-            It is very important that you put your thinking process inside <reasoning> tags and your final translation inside <answer> tags, like this:
-
+        # 把给定的英语直译为汉语，注意尽量按照字面意思直接翻译，翻译结果要保持自然连贯，不要衍生其它内容。
+        self.pre_prompt = """Translate the given English into Chinese, pay attention to the literal translation as much as possible, The translation result should be kept natural and coherent, and do not derive other content.
+            And put your thinking process inside <reasoning></reasoning>tags and your final translation inside <answer></answer> tags, like this:
             
             <reasoning>
             Your step-by-step thinking process here
@@ -92,8 +92,7 @@ class WmtEng2ZhLoader(DataLoader):
             Your final translation here
             </answer>
 
-            All of your returned text should either be in the <reasoning> or <answer> tags - no text outside! Start each answer by immediately starting with <reasoning>. 
-            NOTE: It is is extremely important you answer in this way - do not put any information or text outside of these tags!
+            NOTE: All of your returned text should either be in the <reasoning> or <answer> tags - no text outside! 
 
             Text: """
         self.system_prompt = self.pre_prompt#SYSTEM_PROMPT
