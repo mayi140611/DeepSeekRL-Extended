@@ -81,8 +81,10 @@ def get_evaluator(name: str) -> RewardEvaluator:
     """
     if name.lower() == "gsm8k":
         return GSM8kEvaluator()
-    elif name.lower() in 'eng2pidgen wmteng2zh'.split():
+    elif name.lower() in 'eng2pidgen'.split():
         return Eng2PidginEvaluator()
+    elif name.lower() in 'wmteng2zh'.split():
+        return Eng2ZhEvaluator()
     else:
         raise NotImplementedError(f"No evaluator implemented for {name}")
 
@@ -237,20 +239,149 @@ class Eng2PidginEvaluator(RewardEvaluator):
         """Reward for correct answer."""
         responses = [completion[0]['content'] for completion in completions]
         extracted = [self._extract_xml_answer(r) for r in responses]
+        # print(extracted, [answer], bleu.corpus_score(extracted, [answer]))
         # return [compute_bleu([[list(a.strip())]], [list(r)]) for r, a in zip(extracted, answer)]
-        return bleu.corpus_score(extracted, [[answer] * len(extracted)]).score / 100
+        return [bleu.corpus_score([r], [[a]]).score / 100 for r, a in zip(extracted, answer)]
 
     def _int_format_reward(self, completions, answer) -> List[float]:
         """Reward for correct answer."""
         responses = [completion[0]['content'] for completion in completions]
         extracted = [self._extract_xml_answer(r) for r in responses]
-        return chrf.corpus_score(extracted, [[answer] * len(extracted)]).score / 100
+        return [chrf.corpus_score([r], [[a]]).score / 100 for r, a in zip(extracted, answer)]
 
     def _strict_format_reward(self, completions) -> List[float]:
         """Reward for strict XML format."""
-        pattern = r"^<reasoning>\n.*?\n</reasoning>\n<answer>\n.*?\n</answer>\n$"
+        pattern = r"^<reasoning>\n.*?\n</reasoning>\n<answer>\n.*?\n</answer>$"
         responses = [completion[0]["content"] for completion in completions]
-        matches = [bool(re.match(pattern, r)) for r in responses]
+        matches = [bool(re.match(pattern, r, re.DOTALL)) for r in responses]
+        return [0.5 if m else 0.0 for m in matches]
+
+    def _soft_format_reward(self, completions) -> List[float]:
+        """Reward for relaxed XML format."""
+        pattern = r"<reasoning>.*?</reasoning>\s*<answer>.*?</answer>"
+        responses = [completion[0]["content"] for completion in completions]
+        # matches = [bool(re.match(pattern, r)) for r in responses]   match只匹配开头，且需要考虑换行符的问题
+        matches = [bool(re.search(pattern, r, re.DOTALL)) for r in responses]
+        return [0.5 if m else 0.0 for m in matches]
+
+    def _xml_count_reward(self, completions) -> List[float]:
+        """Reward for XML tag counting."""
+        def count_xml(text: str) -> float:
+            count = 0.0
+            if text.count("<reasoning>\n") == 1: 
+                count += 0.125
+                count -= len(text.split("<reasoning>\n")[0])*0.003  # 对<reasoning>前面出现内容进行惩罚
+            if text.count("\n</reasoning>\n") == 1: count += 0.125
+            if text.count("\n<answer>\n") == 1:
+                count += 0.125
+                count -= len(text.split("\n</answer>\n")[-1])*0.001
+            if text.count("\n</answer>") == 1:
+                count += 0.125
+                count -= (len(text.split("\n</answer>")[-1]) - 1)*0.001
+            return count
+            
+        responses = [completion[0]["content"] for completion in completions]
+        return [count_xml(r) for r in responses]
+
+    def compute_rewards(
+        self,
+        prompts: List[List[Dict[str, str]]],
+        completions: List[List[Dict[str, str]]],
+        answer: Any,
+        device: str
+    ) -> Tuple[torch.Tensor, Dict[str, float]]:
+        """Compute all rewards for the given completions."""
+
+        num_completions = len(completions)
+        rewards_per_func = torch.zeros(num_completions, self.num_reward_functions, device=device)
+
+        # Compute all reward functions
+        all_scores = [
+            self._correctness_reward(prompts, completions, answer),
+            self._int_format_reward(completions, answer),
+            self._strict_format_reward(completions),
+            self._soft_format_reward(completions),
+            self._xml_count_reward(completions)
+        ]
+        
+        # Fill rewards tensor
+        for i, scores in enumerate(all_scores):
+            rewards_per_func[:, i] = torch.tensor(scores, dtype=torch.float32, device=device)
+        
+        # Compute metrics
+        reward_per_func = rewards_per_func.mean(0)
+        
+        # Calculate accuracy (perfect correctness score)
+        correctness_scores = rewards_per_func[:, 0]  # First reward function is correctness
+        num_perfect = (correctness_scores == 2.0).sum().item()
+        accuracy = num_perfect / num_completions
+        
+        metrics = {
+            "rewards/correctness_reward_func": reward_per_func[0].item(),
+            "rewards/int_reward_func": reward_per_func[1].item(), 
+            "rewards/strict_format_reward_func": reward_per_func[2].item(),
+            "rewards/soft_format_reward_func": reward_per_func[3].item(),
+            "rewards/xmlcount_reward_func": reward_per_func[4].item(),
+            "reward": rewards_per_func.sum(dim=1).mean().item(),
+            "accuracy": accuracy
+        }
+        
+        return rewards_per_func, metrics
+
+    def get_reward_breakdown(self, reward_scores: torch.Tensor) -> Dict[str, float]:
+        """Convert reward scores tensor to labeled dictionary."""
+        return {
+            'correctness': reward_scores[0].item(),
+            'integer_format': reward_scores[1].item(),
+            'strict_format': reward_scores[2].item(),
+            'soft_format': reward_scores[3].item(),
+            'xml_count': reward_scores[4].item()
+        }
+    
+class Eng2ZhEvaluator(RewardEvaluator):
+    """
+    Reward evaluator for Eng2中文dataset.
+    
+    Implements reward functions for:
+    - Answer correctness
+    - Integer format validation
+    - XML formatting (strict and soft)
+    - XML tag counting
+    """
+    
+    def __init__(self):
+        self.num_reward_functions = 5
+    
+    def _extract_xml_answer(self, text: str) -> str:
+        """Extract answer from XML tags."""
+        # answer = text.split("<answer>")[-1]
+        # answer = answer.split("</answer>")[0]
+        pattern = r"<answer>(.*?)</answer>"
+        rs = re.findall(pattern, text, re.DOTALL)
+        answer = ''
+        if rs:
+            answer = rs[0]
+        return answer.strip()
+    
+    def _correctness_reward(self, prompts, completions, answer) -> List[float]:
+        """Reward for correct answer."""
+        responses = [completion[0]['content'] for completion in completions]
+        extracted = [self._extract_xml_answer(r) for r in responses]
+        # print(extracted, [answer], bleu.corpus_score(extracted, [answer]))
+        # return [compute_bleu([[list(a.strip())]], [list(r)]) for r, a in zip(extracted, answer)]
+        return [bleu.corpus_score([' '.join(list(r))], [[' '.join(list(a))]]).score / 100 for r, a in zip(extracted, answer)]
+
+    def _int_format_reward(self, completions, answer) -> List[float]:
+        """Reward for correct answer."""
+        responses = [completion[0]['content'] for completion in completions]
+        extracted = [self._extract_xml_answer(r) for r in responses]
+        return [chrf.corpus_score([' '.join(list(r))], [[' '.join(list(a))]]).score / 100 for r, a in zip(extracted, answer)]
+
+    def _strict_format_reward(self, completions) -> List[float]:
+        """Reward for strict XML format."""
+        pattern = r"^<reasoning>\n.*?\n</reasoning>\n<answer>\n.*?\n</answer>$"
+        responses = [completion[0]["content"] for completion in completions]
+        matches = [bool(re.match(pattern, r, re.DOTALL)) for r in responses]
         return [0.5 if m else 0.0 for m in matches]
 
     def _soft_format_reward(self, completions) -> List[float]:
