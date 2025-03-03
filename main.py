@@ -13,6 +13,7 @@ import llms
 import utils
 import evaluator
 import rldatasets
+import re
 
 def eval_on_test_set(
     model: PreTrainedModel,
@@ -365,6 +366,16 @@ def grpo_loss(
     prompt_completion_ids, prompt_ids, completion_ids, attention_mask, completions_text, prompt_text = generate_completions(
         model, tokenizer, question, device, args
     )
+    for e in completions_text:
+        rr = re.findall(r'(<reasoning>.*?</reasoning>)', e, re.DOTALL)
+        if rr:
+            break
+    completions_text.pop()
+    st = ''
+    if rr:
+        st = rr[0]
+    completions_text.append(st+f'\n<answer>\n{answer}\n</answer>')
+    
     tt = tokenizer([prompt_text+e for e in completions_text], return_tensors="pt", padding=True, padding_side="left", add_special_tokens=False)
     prompt_completion_ids1, attention_mask1 = tt.input_ids.to(device), tt.attention_mask.to(device)
     tt = tokenizer([e for e in completions_text], return_tensors="pt", padding=True, padding_side="left", add_special_tokens=False)

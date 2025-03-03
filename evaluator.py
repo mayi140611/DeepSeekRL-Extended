@@ -382,7 +382,7 @@ class Eng2ZhEvaluator(RewardEvaluator):
         pattern = r"^<reasoning>\n.*?\n</reasoning>\n<answer>\n.*?\n</answer>$"
         responses = [completion[0]["content"] for completion in completions]
         matches = [bool(re.match(pattern, r, re.DOTALL)) for r in responses]
-        return [0.5 if m else 0.0 for m in matches]
+        return [0.25 if m else 0.0 for m in matches]
 
     def _soft_format_reward(self, completions) -> List[float]:
         """Reward for relaxed XML format."""
@@ -390,7 +390,7 @@ class Eng2ZhEvaluator(RewardEvaluator):
         responses = [completion[0]["content"] for completion in completions]
         # matches = [bool(re.match(pattern, r)) for r in responses]   match只匹配开头，且需要考虑换行符的问题
         matches = [bool(re.search(pattern, r, re.DOTALL)) for r in responses]
-        return [0.5 if m else 0.0 for m in matches]
+        return [0.25 if m else 0.0 for m in matches]
 
     def _xml_count_reward(self, completions) -> List[float]:
         """Reward for XML tag counting."""
@@ -409,7 +409,7 @@ class Eng2ZhEvaluator(RewardEvaluator):
             return count
             
         responses = [completion[0]["content"] for completion in completions]
-        return [count_xml(r) for r in responses]
+        return [count_xml(r)/2 for r in responses]
 
     def compute_rewards(
         self,
