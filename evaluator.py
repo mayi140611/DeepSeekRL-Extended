@@ -102,13 +102,34 @@ class GSM8kEvaluator(RewardEvaluator):
     """
     
     def __init__(self):
-        self.num_reward_functions = 5
+        self.num_reward_functions = 6
     
     def _extract_xml_answer(self, text: str) -> str:
         """Extract answer from XML tags."""
-        answer = text.split("<answer>")[-1]
-        answer = answer.split("</answer>")[0]
+        # answer = text.split("<answer>")[-1]
+        # answer = answer.split("</answer>")[0]
+        pattern = r"<answer>(.*?)</answer>"
+        rs = re.findall(pattern, text, re.DOTALL)
+        answer = ''
+        if rs:
+            answer = rs[0]
         return answer.strip()
+    def _extract_xml_reason(self, text: str) -> str:
+        """Extract answer from XML tags."""
+        # answer = text.split("<answer>")[-1]
+        # answer = answer.split("</answer>")[0]
+        pattern = r"<reasoning>(.*?)</reasoning>"
+        rs = re.findall(pattern, text, re.DOTALL)
+        answer = ''
+        if rs:
+            answer = rs[0]
+        return answer.strip()
+    
+    def _reason_len_reward(self, prompts, completions, answer) -> List[float]:
+        """推理长度奖励"""
+        responses = [completion[0]['content'] for completion in completions]
+        extracted = [self._extract_xml_reason(r) for r in responses]
+        return [(len(r)-2000)*0.0005 for r, a in zip(extracted, answer)]
     
     def _correctness_reward(self, prompts, completions, answer) -> List[float]:
         """Reward for correct answer."""
@@ -124,16 +145,17 @@ class GSM8kEvaluator(RewardEvaluator):
 
     def _strict_format_reward(self, completions) -> List[float]:
         """Reward for strict XML format."""
-        pattern = r"^<reasoning>\n.*?\n</reasoning>\n<answer>\n.*?\n</answer>\n$"
+        pattern = r"^<reasoning>\n.*?\n</reasoning>\n<answer>\n.*?\n</answer>$"
         responses = [completion[0]["content"] for completion in completions]
-        matches = [bool(re.match(pattern, r)) for r in responses]
+        matches = [bool(re.match(pattern, r, re.DOTALL)) for r in responses]
         return [0.5 if m else 0.0 for m in matches]
 
     def _soft_format_reward(self, completions) -> List[float]:
         """Reward for relaxed XML format."""
         pattern = r"<reasoning>.*?</reasoning>\s*<answer>.*?</answer>"
         responses = [completion[0]["content"] for completion in completions]
-        matches = [bool(re.match(pattern, r)) for r in responses]
+        # matches = [bool(re.match(pattern, r)) for r in responses]   match只匹配开头，且需要考虑换行符的问题
+        matches = [bool(re.search(pattern, r, re.DOTALL)) for r in responses]
         return [0.5 if m else 0.0 for m in matches]
 
     def _xml_count_reward(self, completions) -> List[float]:
@@ -169,6 +191,7 @@ class GSM8kEvaluator(RewardEvaluator):
         all_scores = [
             self._correctness_reward(prompts, completions, answer),
             self._int_format_reward(completions),
+            self._reason_len_reward(prompts, completions, answer),
             self._strict_format_reward(completions),
             self._soft_format_reward(completions),
             self._xml_count_reward(completions)
@@ -189,9 +212,10 @@ class GSM8kEvaluator(RewardEvaluator):
         metrics = {
             "rewards/correctness_reward_func": reward_per_func[0].item(),
             "rewards/int_reward_func": reward_per_func[1].item(), 
-            "rewards/strict_format_reward_func": reward_per_func[2].item(),
-            "rewards/soft_format_reward_func": reward_per_func[3].item(),
-            "rewards/xmlcount_reward_func": reward_per_func[4].item(),
+            "rewards/reason_len_reward_func": reward_per_func[2].item(),
+            "rewards/strict_format_reward_func": reward_per_func[3].item(),
+            "rewards/soft_format_reward_func": reward_per_func[4].item(),
+            "rewards/xmlcount_reward_func": reward_per_func[5].item(),
             "reward": rewards_per_func.sum(dim=1).mean().item(),
             "accuracy": accuracy
         }

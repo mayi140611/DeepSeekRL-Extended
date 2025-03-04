@@ -314,46 +314,52 @@ class GSM8KLoader(DataLoader):
 
 
 def build_gsm8k_dataloaders() -> Tuple[GSM8KLoader, GSM8KLoader]: 
-    data = load_dataset('openai/gsm8k', 'main')["train"]
+    ds = load_dataset('openai/gsm8k', 'main')
+    loaders = []
+    for tt in "train test".split():
+        data = ds[tt]
+        questions = []
+        parsed_answers = [] 
+        for i in tqdm(range(len(data)), desc="Processing"):
+            # Try to get answer - if is None dont use this sample 
+            ans = extract_hash_answer(data[i]['answer'])
+            if ans is None: 
+                continue 
+            else:
+                questions.append(data[i]['question'])
+                parsed_answers.append(ans)
 
-    questions = []
-    parsed_answers = [] 
-    for i in tqdm(range(len(data)), desc="Processing"):
-        # Try to get answer - if is None dont use this sample 
-        ans = extract_hash_answer(data[i]['answer'])
-        if ans is None: 
-            continue 
+        # # Randomly split into train/test sets
+        # total_samples = len(questions)
+        # test_size = int(total_samples * 0.01)  # 10% for test set
+        
+        # # Generate random indices for test set
+        # test_indices = random.sample(range(total_samples), test_size)
+        # test_indices_set = set(test_indices)
+        
+        # # Convert to numpy arrays for easier indexing
+        # questions = np.array(questions)
+        # parsed_answers = np.array(parsed_answers)
+        
+        # # Create boolean mask for test indices
+        # test_mask = np.zeros(total_samples, dtype=bool)
+        # test_mask[list(test_indices_set)] = True
+        
+        # # Split using boolean indexing
+        # test_questions = questions[test_mask]
+        # test_answers = parsed_answers[test_mask]
+        # train_questions = questions[~test_mask] 
+        # train_answers = parsed_answers[~test_mask]
+
+        # Setup data loaders 
+        # trainloader = GSM8KLoader(train_questions.tolist(), train_answers.tolist())
+        # testloader = GSM8KLoader(test_questions.tolist(), test_answers.tolist())
+        if tt == 'test':
+            len1 = 19
+            loaders.append(GSM8KLoader(questions[:len1], parsed_answers[:len1]))
         else:
-            questions.append(data[i]['question'])
-            parsed_answers.append(ans)
-
-    # Randomly split into train/test sets
-    total_samples = len(questions)
-    test_size = int(total_samples * 0.01)  # 10% for test set
-    
-    # Generate random indices for test set
-    test_indices = random.sample(range(total_samples), test_size)
-    test_indices_set = set(test_indices)
-    
-    # Convert to numpy arrays for easier indexing
-    questions = np.array(questions)
-    parsed_answers = np.array(parsed_answers)
-    
-    # Create boolean mask for test indices
-    test_mask = np.zeros(total_samples, dtype=bool)
-    test_mask[list(test_indices_set)] = True
-    
-    # Split using boolean indexing
-    test_questions = questions[test_mask]
-    test_answers = parsed_answers[test_mask]
-    train_questions = questions[~test_mask] 
-    train_answers = parsed_answers[~test_mask]
-
-    # Setup data loaders 
-    trainloader = GSM8KLoader(train_questions.tolist(), train_answers.tolist())
-    testloader = GSM8KLoader(test_questions.tolist(), test_answers.tolist())
-    
-    return trainloader, testloader
+            loaders.append(GSM8KLoader(questions, parsed_answers))
+    return tuple(loaders) #trainloader, testloader
 
 
 def get_dataloaders(dataset_name: str) -> Tuple[DataLoader, DataLoader]:
